@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/linux/65384/
+code: |
+  $ pv /dev/urandom > /dev/null
+  18MB 0:00:05 [ 3,6MB/s] [...<=>............................]

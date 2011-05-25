@@ -1,0 +1,9 @@
+link: http://xtips.ru/?act=tview&tid=43
+desc: Создание/удаление маршрутов в Linux
+code: |
+  # route add -net 192.168.20.0 netmask 255.255.255.0 gw 192.168.16.254
+  # ip route add 192.168.20.0/24 via 192.168.16.254
+  # route add -net 192.168.20.0 netmask 255.255.255.0 dev eth0
+  # route add default gw 192.168.51.254
+  # ip route add default via 192.168.51.254
+  # route delete -net 192.168.20.0 netmask 255.255.255.0

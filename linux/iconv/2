@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=10
+desc: Перекодироввка файла cp1251->koi8-r
+code: |
+  $ iconv -f cp1251 -t koi8-r filename > filename1

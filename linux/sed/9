@@ -1,0 +1,4 @@
+desc: Заменить строку string1 строкой string2
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed 's/string1/string2/g'

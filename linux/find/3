@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=54
+desc: Найти и удалить все временные файлы vim'а
+code: |
+  $ find ./ -name '*.sw[op]' -delete

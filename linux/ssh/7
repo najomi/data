@@ -1,0 +1,4 @@
+desc: Перенаправить соединения от $HOST:1434 к внутр. imap:143
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ ssh -R 1434:imap:143 root@$HOST

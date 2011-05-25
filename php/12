@@ -1,0 +1,3 @@
+desc: Получить расширение файла
+code: |
+  $ext = pathinfo($filename, PATHINFO_EXTENSION);

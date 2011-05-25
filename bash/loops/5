@@ -1,0 +1,7 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Чтение строк из файла
+code: |
+  while read a
+  do
+     echo $a
+  done < filelist.txt

@@ -1,0 +1,3 @@
+link: http://xtips.ru/?act=tview&tid=26
+desc: Удалить все строки, не содержащие 'string'
+code: :v/string/d

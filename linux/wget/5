@@ -1,0 +1,4 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Продолжить (-c continue) загрузку ранее не полностью загруженного файла:
+code: |
+  $ wget -c http://example.org/file.iso

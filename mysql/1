@@ -1,0 +1,7 @@
+link: http://xtips.ru/?act=tview&tid=25
+desc: |
+  Добавляем нового пользователя в СУБД MySQL с одновременным
+  присваиванием ему во владения вашей БД:
+code: |
+  GRANT ALL PRIVILEGES ON наша_база.* TO 'наш_пользователь'@'localhost'
+  IDENTIFIED BY 'наш_пароль' WITH GRANT OPTION;

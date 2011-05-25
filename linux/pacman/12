@@ -1,0 +1,4 @@
+link: http://wiki.archlinux.org/index.php/Pacman
+desc: Узнать к какому пакету относится файл
+code: |
+  $ pacman -Qo /path/to/a/file

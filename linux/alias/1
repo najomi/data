@@ -1,0 +1,4 @@
+link: http://www.commandlinefu.com/commands/view/3356/alias-to-close-terminal-with-q
+desc: Выход из shell для vim'еров :)
+code: |
+  $ alias ':q'='exit'

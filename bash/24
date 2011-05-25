@@ -1,0 +1,7 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: |
+  Первая команда удаляет из истории баша все дубликаты
+  Вторая увеличивает объём истории
+code: |
+  $ export HISTCONTROL=erasedups
+  $ export HISTSIZE=1000

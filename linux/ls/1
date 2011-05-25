@@ -1,0 +1,4 @@
+link: http://www.thegeekstuff.com/2009/07/linux-ls-command-examples/
+desc: Список дерикторий в текущем каталоге
+code: |
+  ls -d */

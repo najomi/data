@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=30
+desc: Освобождаем индексные дескрипторы:
+code: |
+  # echo 2 > /proc/sys/vm/drop_caches

@@ -1,0 +1,4 @@
+link: http://sysadminblog.ru/blog/bash/292.html
+desc: Записать что-то в файл
+code: |
+  $ sudo cp <(echo 'Hello, World!') /etc/something.conf

@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Удаление самой длинной, из найденых, подстроки $substring в строке $string. Поиск с конца строки
+code: |
+  ${string%%regsubstring}

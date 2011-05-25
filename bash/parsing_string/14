@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Замещает первое вхождение $substring строкой $replacement
+code: |
+  ${string/regsubstring/replacement}

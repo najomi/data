@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=121
+desc: Создание скриншота удаленного рабочего стола
+code: |
+  $ DISPLAY=":0.0" import -window root screenshot.png

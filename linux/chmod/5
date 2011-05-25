@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: Убрать у всех право на выполнение
+code: |
+  $ chmod a-x file

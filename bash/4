@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использовать аргументы предыдущей команды
+code: |
+  $ ls -l foo
+  $ touch !:2
+  $ cp !:1 bar

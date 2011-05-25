@@ -1,0 +1,11 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+code: |
+  $ I=foobar
+  $ echo ${I/oo/aa} #replacement
+  faabar
+  $ echo ${I:1:2}   #substring
+  oo
+  $ echo ${I%bar}   #trailing substitution
+  foo
+  $ echo ${I#foo}   #leading substitution
+  bar

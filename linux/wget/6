@@ -1,0 +1,4 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Скачать страницу с глубиной следования 10, записывая протокол в файл log:
+code: |
+  $ wget -r -l 10 http://example.org/ -o log

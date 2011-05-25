@@ -1,0 +1,6 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: |
+  Только отобразить различия. Делайте много 
+  раз чтобы проверить прошли ли нормально закачки
+code: |
+  $ rsync -P rsync://rsync.server.com/path/to/file file

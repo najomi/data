@@ -1,0 +1,6 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: Добавить пользователю и группе права на чтение и запись
+code: |
+  $ chmod ug+rw mydir
+  $ ls -ld mydir
+  drw-rw----   2 unixguy  uguys  96 Dec 8 12:53 mydir

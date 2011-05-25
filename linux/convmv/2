@@ -1,0 +1,6 @@
+link: http://www.linux.org.ru/forum/desktop/4093860
+desc: |
+  Исправить кодировку в названии файлов из zip архива, запакованного под
+  windows
+code: |
+  convmv -f cp1252 -t cp850 * --notest  && convmv -f cp866 -t utf-8 * --notest

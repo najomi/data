@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Md5sum
+desc: Проверить контрольную сумму у файла
+code: |
+  $ md5sum -c file.md5

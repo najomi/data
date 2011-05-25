@@ -1,0 +1,6 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: |
+  Установить пользователю право на чтение и запись, а группе и остальным
+  убрать все права
+code: |
+  $ chmod u=rw,go= file 

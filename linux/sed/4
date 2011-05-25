@@ -1,0 +1,4 @@
+link: http://ru.wikibooks.org/wiki/Linux-hand-book 
+desc: Добавить в конец файла "[mounts]" затем перенос на новую строка и "user root".
+code: |
+  $ sed -i '$ a \\n[mounts]\nuser root' /etc/munin/config 

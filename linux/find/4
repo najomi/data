@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Рецепты_командной_строки
+desc: Сохранить все *.xml вместе с деревом каталогов в архиве.
+code: |
+  $ find ./dir -name "*.xml" -print | zip archive -@

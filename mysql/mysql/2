@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Заливаем архив бекапа в базу
+code: |
+  gunzip < /path/to/outputfile.sql.gz | mysql -u USER -pPASSWORD DATABASE
+  # или так
+  zcat /path/to/outputfile.sql.gz | mysql -u USER -pPASSWORD DATABASE

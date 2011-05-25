@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Исправление ошибок в последней команде
+code: |
+  $ cat /proc/cupinfo
+  cat: /proc/cupinfo: No such file or directory
+  $ ^cup^cpu

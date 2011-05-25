@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Создание бекапа с указанием его даты
+code: |
+  mysqldump -u USER -pPASSWORD DATABASE | gzip > `date +dump.sql.%Y%m%d.%H%M%S.gz`

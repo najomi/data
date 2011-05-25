@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=13
+desc: Смотрим конфиги без комментариев
+code: |
+  $ cat config_filename | grep -vE "^#|^$"

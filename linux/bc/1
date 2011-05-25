@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+code: |
+  $ FP=`echo "scale=4; 10 / 3" | bc` # FP="3.3333"
+  $ echo $FP
+  3.3333

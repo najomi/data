@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Если нужно сделать дамп только одной или нескольких таблиц
+code: |
+  mysqldump -u USER -pPASSWORD DATABASE TABLE1 TABLE2 TABLE3 > dump.sql

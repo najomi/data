@@ -1,0 +1,4 @@
+desc: Выбрать название файла без суффикса из пути
+code: |
+  $ basename /home/jsmith/base.wiki .wiki
+  base

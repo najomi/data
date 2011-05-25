@@ -1,0 +1,6 @@
+desc: Разрешить пользователю выполнять команды без пароля через sudo
+code: |
+  # visudo
+  <username> ALL=(root) NOPASSWD:/etc/init.d/apache2 reload
+  <username> ALL=(root) NOPASSWD:/usr/sbin/apache2 -t
+  <username> ALL=(root) NOPASSWD:/usr/sbin/nginx -t

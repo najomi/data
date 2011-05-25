@@ -1,0 +1,13 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Сравнения чисел 
+code: |
+  [ A -eq B ]   # равно
+  [ A -ne B ]   # не равно
+  [ A -gt B ]
+  [ A -lt B ]
+  [ A -ge B ]
+  [ A -le B ]
+  (( A < B ))
+  (( A <= B ))
+  (( A > B ))
+  (( A >= B ))

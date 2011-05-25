@@ -1,0 +1,7 @@
+link: http://svnbook.red-bean.com/en/1.4/svn-book.html
+desc: Посмотреть что в репозитории
+code: |
+  $ svn list file:///usr/local/svn/newrepos/some/project
+  bar.c
+  foo.c
+  subdir/

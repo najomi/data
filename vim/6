@@ -1,0 +1,2 @@
+desc: Заставить вим не раскрывать табы при редактировании makefile
+code: '# vim: set tabstop=4 shiftwidth=4 noexpandtab:'

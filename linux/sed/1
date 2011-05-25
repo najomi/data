@@ -1,0 +1,4 @@
+link: http://ru.wikibooks.org/wiki/Linux-hand-book 
+desc: Заменить foo на too.
+code: |
+  $ sed -i 's/foo/too/'

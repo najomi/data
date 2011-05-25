@@ -1,0 +1,3 @@
+desc: Посмотреть список баз данных
+code: |
+  SELECT datname FROM pg_database;

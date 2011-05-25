@@ -1,0 +1,6 @@
+desc: Пройтись по списку файлов в директории по определённому шаблону
+code: |
+  <?php
+  foreach(glob('/tmp/*') as $f)
+  	echo basename($f."\n");
+  

@@ -1,0 +1,8 @@
+link: http://www.cyberciti.biz/faq/bash-for-loop/
+code: |
+  # Начиная с 4 версии - можно указывать шаг цикла
+  echo "Bash version ${BASH_VERSION}..."
+  for i in {0..10..2}
+  do
+  	echo "Welcome $i times"
+  done

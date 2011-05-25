@@ -1,0 +1,6 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: |
+  Скачать содержимое каталога http://example.org/~luzer/my-archive/ и
+  всех его подкаталогов, при этом не поднимаясь по иерархии каталогов выше:
+code: |
+  $ wget -r --no-parent http://example.org/~luzer/my-archive/

@@ -1,0 +1,5 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Находит и извлекает первое совпадение $substring в $string c конца
+code: |
+  expr match "$string" '.*\($substring\)'
+  expr "$string" : '.*\($substring\)'

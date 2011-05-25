@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/docs/terminal_colours/
+desc: Смотрим видео в ascii
+code: |
+  $ mplayer -vo caca video.mpg

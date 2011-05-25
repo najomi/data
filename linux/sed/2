@@ -1,0 +1,4 @@
+link: http://ru.wikibooks.org/wiki/Linux-hand-book 
+desc: Удалить 14ю строку.
+code: |
+  $ sed -i '14d' /file

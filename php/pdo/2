@@ -1,0 +1,13 @@
+desc: Экранировать строку для использования её в sql запросе
+link: http://ru.php.net/manual/en/pdo.quote.php
+code: |
+  <?php
+  $conn = new PDO('sqlite:/home/lynn/music.sql3');
+  
+  /* Simple string */
+  $string = 'Nice';
+  print "Unquoted string: $string\n";
+  print "Quoted string: " . $conn->quote($string) . "\n";
+  ?>
+  Unquoted string: Nice
+  Quoted string: 'Nice'

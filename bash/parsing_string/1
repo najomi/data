@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Номер позиции первого совпадения
+code: |
+  expr index $string $substring

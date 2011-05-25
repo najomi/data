@@ -1,0 +1,20 @@
+link: http://user.su/index.php/Bash:Основы
+code: |
+  fact ()
+  {
+    local number=$1   # Переменная "number" локальная!
+    if [ "$number" -eq 0 ]
+    then
+      factorial=1 
+    else
+      let "decrnum = number - 1"
+      fact $decrnum  # Рекурсивный вызов функции.
+      let "factorial = $number * $?"
+    fi
+    return $factorial
+  }
+  
+  fact $1
+  echo "Факториал числа $1 = $?"
+  
+  exit 0

@@ -1,0 +1,10 @@
+link: http://ru2.php.net/manual/en/zip.examples.php
+desc: Распаковать архив в текущую директорию:
+code: |
+  <?php 
+  $zip = new ZipArchive; 
+  $zip->open('teste.zip'); 
+  $zip->extractTo(‘./’); 
+  $zip->close(); 
+  echo "Ok!"; 
+  ?>

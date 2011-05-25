@@ -1,0 +1,4 @@
+link: http://www.opennet.ru/tips/info/239.shtml
+desc: Перечитать конфиг без перезапуска иксов:
+code: |
+  $ xrdb -merge ~/.Xdefaults

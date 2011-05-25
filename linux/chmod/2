@@ -1,0 +1,6 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: Убрать у всех право на запись
+code: |
+  $ chmod a-w myfile
+  $ ls -l myfile
+  -r-xr-xr-x   2 unixguy  uguys 96 Dec 8 12:53 myfile

@@ -1,0 +1,4 @@
+desc:  Дать пользователю все права на базу данных
+code: |
+  grant all privileges on database dbname to dbuser
+  

@@ -1,0 +1,2 @@
+code: |
+  $ mksquashfs ~/_backup backup.sqsh

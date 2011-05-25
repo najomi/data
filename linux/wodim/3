@@ -1,0 +1,4 @@
+link: http://wiki.archlinux.org/index.php/CD_Burning
+desc: Записать аудио cd
+code: |
+  $ wodim -v -pad speed=1 dev=/dev/cdrw -dao -swab *.wav

@@ -1,0 +1,3 @@
+link: http://www.devco.net/archives/2006/02/13/public_-_private_key_encryption_using_openssl.php
+code: |
+  $ openssl genrsa -aes256 -out private.pem 4096

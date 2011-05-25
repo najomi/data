@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Wc_(Unix)
+desc: Выдать колличество байтов
+code: |
+  $ wc -c <filename>

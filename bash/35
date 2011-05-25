@@ -1,0 +1,6 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Длина строки 
+code: |
+  ${#string}
+  expr length $string
+  expr "$string" : '.*'

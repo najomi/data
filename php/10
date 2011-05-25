@@ -1,0 +1,16 @@
+link: http://php.net/manual/en/function.set-time-limit.php
+desc: |
+  Ограничить время выполнения скрипта 2 секундами и вывести на экран только
+  первые 2000 символов
+code: |
+  <?php 
+  set_time_limit(2);
+  register_shutdown_function('shutdown');
+  ob_start(); 
+  /*
+   * echo ...
+   */
+  function shutdown () {
+  	echo substr(ob_get_clean(), 0, 2000);
+  }
+  ?>

@@ -1,0 +1,4 @@
+link: http://www.commandlinefu.com/commands/view/2184/rip-a-dvd-to-avi-format
+desc: Копирование DVD в avi 
+code: |
+  $ mencoder dvd://1 -aid 128 -o track-1.avi -oac copy -ovc lavc -lavcopts vcodec=mpeg4

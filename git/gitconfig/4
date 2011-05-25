@@ -1,0 +1,8 @@
+link: http://habrahabr.ru/blogs/development/68341/
+desc: Задание основных настроек
+code: |
+  $ git config --global user.name «First Last»
+  $ git config --global user.email «email@example.com»
+  $ git config --global color.diff «auto»
+  $ git config --global color.status «auto»
+  $ git config --global color.branch «auto»

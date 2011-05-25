@@ -1,0 +1,4 @@
+link: http://wiki.archlinux.org/index.php/CD_Burning
+desc: Отчистить cdrw
+code: |
+  $ wodim -v dev=/dev/cdrw -blank=fast

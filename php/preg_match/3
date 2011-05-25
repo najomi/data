@@ -1,0 +1,9 @@
+link: http://php.net/manual/en/function.preg-match.php
+code: |
+  <?php
+  $pattern = '/^([a-z0-9])(([-a-z0-9._])*([a-z0-9]))*\@([a-z0-9])' .
+             '(([a-z0-9-])*([a-z0-9]))+' .
+             '(\.([a-z0-9])([-a-z0-9_-])?([a-z0-9])+)+$/i';
+  
+  echo preg_match ($pattern, "email-address-to-validate@host.tld");
+  ?>

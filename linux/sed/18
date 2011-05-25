@@ -1,0 +1,4 @@
+desc: Получить title из HTML страницы
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed -n 's/.*<title>\(.*\)<\/title>.*/\1/ip;T;q'

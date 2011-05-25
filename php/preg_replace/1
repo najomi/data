@@ -1,0 +1,7 @@
+code: |
+  <?php
+  // Преобразовать строку в верблюжьей нотации
+  echo strtolower(preg_replace('/(.)([A-Z])/','$1_$2','CamelCase'));
+  /*
+  camel_case
+  */

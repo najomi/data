@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использовать последний аргумент предыдущей команды
+code: |
+  $ ls /tmp /var
+  $ ls !$

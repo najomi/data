@@ -1,0 +1,4 @@
+link: http://ru.wikibooks.org/wiki/Linux-hand-book 
+desc: Удалить строку содержащую Network или network.
+code: |
+  $ sed -i '/[Nn]etwork/d' /file

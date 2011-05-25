@@ -1,0 +1,12 @@
+link: http://www.cyberciti.biz/faq/bash-for-loop/
+code: |
+  for I in 1 2 3 4 5
+  do
+    statements1
+    statements2
+    if (condition)
+    then
+  	continue
+    fi
+    statements3
+  done

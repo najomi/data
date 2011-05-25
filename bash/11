@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Проверка строки по регулярному выражению
+code: |
+  if [[ "mystring" =~ REGEX ]] ; then
+    echo match
+  fi

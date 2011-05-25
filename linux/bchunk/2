@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=39
+desc: Конвертация cue в iso
+code: |
+  $ bchunk imagefile.cue imagefile.iso

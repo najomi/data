@@ -1,0 +1,4 @@
+desc: Сохранить веб страницу (как она открывается локально) в текущую директорию
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ (cd cli && wget -nd -pHEKk http://www.pixelbeat.org/cmdline.html)

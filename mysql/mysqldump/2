@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Создаём структуру базы без данных
+code: |
+  mysqldump --no-data - u USER -pPASSWORD DATABASE > /path/to/file/schema.sql

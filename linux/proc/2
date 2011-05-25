@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=30
+desc: Освобождаем страницы кеша:
+code: |
+  # echo 1 > /proc/sys/vm/drop_caches

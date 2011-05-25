@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=23
+desc: посмотреть все наличествующие дисковые устройства
+code: |
+  # sysctl kern.disks

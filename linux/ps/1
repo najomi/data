@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=35
+desc: Посмотреть все уникальные PID'ы процессов
+code: |
+  # ps -auxefw

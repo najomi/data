@@ -1,0 +1,3 @@
+desc: Убить все процессы определённого пользователя
+code: |
+  $ sudo killall -KILL -u bloom

@@ -1,0 +1,5 @@
+link: http://wiki.archlinux.org/index.php/Pacman
+desc: Установить конкретный пакет
+code: |
+  # pacman -U /path/to/package/package_name-version.pkg.tar.gz
+  # pacman -U http://www.examplepackage/repo/examplepkg.tar.gz

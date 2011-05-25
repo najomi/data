@@ -1,0 +1,4 @@
+link: http://www.commandlinefu.com/commands/view/5354/bash-pause-command
+desc: Остановка баш скрипта, до нажатия любой клавиши
+code: |
+  $ read -sn1 -p "Press any key to continue..."; echo

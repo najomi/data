@@ -1,0 +1,3 @@
+desc: Примонтировать папку по ssh
+code: |
+  $ sshfs hostname: mountpoint

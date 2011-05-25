@@ -1,0 +1,4 @@
+desc: Выровнять числа по правой границе
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ seq 10 | sed "s/^/      /; s/ *\(.\{7,\}\)/\1/"

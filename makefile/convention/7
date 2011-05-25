@@ -1,0 +1,3 @@
+link: http://www.wlug.org.nz/MakeFile
+desc: Дополнительно удалить то что было создано командой ./configure
+code: $ make distclean

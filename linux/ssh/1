@@ -1,0 +1,7 @@
+link: http://juick.com/Cirno/873427 
+desc: |
+  Перенести всё содержимое папки кроме файла upload.sh по ssh на удалённый
+  сервер 
+code: |
+  $ tar cv ./* --exclude=upload.sh | ssh cirno.in \
+      "tar --overwrite --extract -C /var/www/cirno.in/htdocs" 

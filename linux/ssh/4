@@ -1,0 +1,4 @@
+desc: Запустить GUI команду на удаленном хосте $HOST от имени пользователя $USER
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ ssh -f -Y $USER@$HOSTNAME xeyes

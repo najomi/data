@@ -1,0 +1,4 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Загрузка всех URL, указанных в файле FILE:
+code: |
+  $ wget -i FILE

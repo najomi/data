@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=53
+desc: Посмотреть MAC'и всех сетевых устройств на компьютере 
+code: |
+  $ ifconfig -a| grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}'

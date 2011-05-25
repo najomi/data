@@ -1,0 +1,3 @@
+desc: Поиск по части имени
+code: |
+  $ find ~/ -name dead*

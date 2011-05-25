@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=86
+desc: Создаем PDF из JPEG
+code: |
+  $ convert *.jpg -adjoin -monitor MyPDF.pdf

@@ -1,0 +1,4 @@
+link: nocch@ya.ru
+desc: Заархивировать все файлы текущей директории
+code: |
+  $ zip -r archive_name * 

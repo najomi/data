@@ -1,0 +1,4 @@
+desc: Оперативно обновлять локальную копию сайта (удобно использовать с cron)
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ wget --mirror http://www.example.com/

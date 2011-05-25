@@ -1,0 +1,6 @@
+link: http://xtips.ru/?act=tview&tid=60
+desc: |
+  Копируем локальный [исходный_файл] на удалённый ssh-host
+  командой:
+code: |
+  $ scp [исходный_файл] user@host:/dir/[целевой_файл]

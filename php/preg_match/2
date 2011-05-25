@@ -1,0 +1,19 @@
+link: http://php.net/manual/en/function.preg-match.php
+code: |
+  <?php
+  preg_match("/(?P<foo>abc)(.*)(?P<bar>xyz)/",
+             'abcdefghijklmnopqrstuvwxyz',
+             $matches);
+  print_r($matches);
+  ?>
+  ------------------------------
+  Array
+  (
+      [0] => abcdefghijklmnopqrstuvwxyz
+      [foo] => abc
+      [1] => abc
+      [2] => defghijklmnopqrstuvw
+      [bar] => xyz
+      [3] => xyz
+  )
+  

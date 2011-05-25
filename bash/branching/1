@@ -1,0 +1,12 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Условия if 
+code: |
+  if [ condition ]
+  then
+      command
+  elif [ condition ]
+  then
+      command
+  else
+      command
+  fi

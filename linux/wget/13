@@ -1,0 +1,4 @@
+desc: Продолжить скачивание частично скаченного файла
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ wget -c http://www.example.com/large.file

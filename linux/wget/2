@@ -1,0 +1,4 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Скачивание файла в указанный каталог (-P):
+code: |
+  $ wget -P /path/for/save ftp://ftp.example.org/some_file.iso

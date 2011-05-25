@@ -1,0 +1,4 @@
+desc: Подмонтировать сетевую папку
+code: |
+  mount -t cifs //192.168.1.1/incoming mnt \
+  	-o iocharset=utf8,user=guest,uid=1000,gid=100 -rw

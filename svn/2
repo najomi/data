@@ -1,0 +1,4 @@
+link: http://stremoukhov.ru/svn-ignore-cherez-komandnuiu-stroku
+desc: Изменить шаблоны игнорирования
+code: |
+  $ svn propedit svn:ignore PATH

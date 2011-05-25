@@ -1,0 +1,9 @@
+desc: Положить директорию в стек, чтобы позже вернуться к ней с помощью popd
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ pushd /var
+  $ pushd /etc
+  $ popd > /dev/null ; echo $PWD
+  /etc
+  $ popd > /dev/null ; echo $PWD
+  /var

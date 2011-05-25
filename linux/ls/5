@@ -1,0 +1,7 @@
+desc: Сортировать числа по человечьи
+code: |
+  $ ls
+  1.txt 10.txt 2.txt 3.txt
+  
+  $ ls -v 
+  1.txt 2.txt 3.txt 10.txt

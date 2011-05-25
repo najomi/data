@@ -1,0 +1,11 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+code: |
+  Поместить курсор в начало/конец строки
+  Ctrl + a / Ctrl + e
+  
+  Поменять местами текущий и предыдущий символ/слово
+  Ctrl + t / Alt + t 
+  
+  Поменять в верхний/нижний регистр всё от текущей
+  позиции до конца слова
+  Alt + u / Alt + l 

@@ -1,0 +1,5 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Извлекает $length символов из $string, начиная с позиции $position
+code: |
+  ${string:position:length}
+  expr substr $string $position $length

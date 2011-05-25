@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=38
+desc: Iso-образ из директории с файлами
+code: |
+  # mkisofs -J -L -r -V TITLE -o imagefile.iso /path/to/dir

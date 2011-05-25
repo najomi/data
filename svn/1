@@ -1,0 +1,4 @@
+link: http://stremoukhov.ru/svn-ignore-cherez-komandnuiu-stroku
+desc: Добавить директорию и файлы в игнор лист.
+code: |
+  $ svn propset svn:ignore '*' ./tmp/

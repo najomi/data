@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Заливаем бекап в базу данных
+code: |
+  $ mysql -u USER -pPASSWORD DATABASE < /path/to/dump.sql

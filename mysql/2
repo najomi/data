@@ -1,0 +1,4 @@
+desc: Сбрасываем auto_increment в таблице
+code: |
+  alter table ai_test drop column id;
+  alter table ai_test add column id int auto_increment primary key;

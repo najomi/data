@@ -1,0 +1,3 @@
+desc: Создать пользователя базы данных
+code: |
+  CREATE USER user WITH PASSWORD 'qwe123oj';

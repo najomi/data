@@ -1,0 +1,10 @@
+link: http://cheat.errtheblog.com/s/git
+desc: Задание алиасов
+code: |
+  [alias]
+      st = status
+      ci = commit
+      br = branch
+      co = checkout
+      df = diff
+      lg = log -p

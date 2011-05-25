@@ -1,0 +1,18 @@
+link: http://user.su/index.php/Bash:Основы
+desc: |
+  Элементы массива разделяются пробелами
+  Для обработки строк, как элементов массива
+  нужно на время изменить разделитель:
+code: |
+  LD_IFS="$IFS"
+  IFS=$'\n'
+  
+  declare -a a
+  a=( $(cat "file.txt") )
+  echo "Total:" ${#a[@]}
+  for i in "${a[@]}"
+  do
+      echo "$i"
+  done
+  
+  IFS="$OLD_IFS"

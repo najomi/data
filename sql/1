@@ -1,0 +1,27 @@
+desc: Получить случайные значения в различных базах данных
+link: http://www.petefreitag.com/item/466.cfm
+code: |
+  MySQL:
+  SELECT column FROM table
+  ORDER BY RAND()
+  LIMIT 1
+  
+  PostgreSQL:
+  SELECT column FROM table
+  ORDER BY RANDOM()
+  LIMIT 1
+  
+  Microsoft SQL Server:
+  SELECT TOP 1 column FROM table
+  ORDER BY NEWID()
+  
+  IBM DB2:
+  SELECT column, RAND() as IDX 
+  FROM table 
+  ORDER BY IDX FETCH FIRST 1 ROWS ONLY
+  
+  Oracle:
+  SELECT column FROM
+  ( SELECT column FROM table
+  ORDER BY dbms_random.value )
+  WHERE rownum = 1

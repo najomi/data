@@ -1,0 +1,19 @@
+code: |
+  <?php
+  # Получение названия свойств объектов в рантайме
+  function var_name(){
+  	return "name";
+  }
+  
+  $f = new stdClass;
+  $f->{var_name()} = "Bubujka!";
+  $f->{"e-mail"} = "zendzirou@gmail.com!";
+  
+  print_r($f);
+  /*
+  stdClass Object
+  (
+      [name] => Bubujka!
+      [e-mail] => zendzirou@gmail.com!
+  )
+  */

@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=14
+desc: Freebsd статистика использования сетевых буферов
+code: |
+  $ netstat -m

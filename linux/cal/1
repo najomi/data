@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=109
+desc: Посмотреть календарь на год в терминале 
+code: |
+  $ cal 2010

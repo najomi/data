@@ -1,0 +1,6 @@
+desc: Рекурсивный поиск шаблона в группе файлов
+code: |
+  grep -R /way/to/*any/folder/ foo
+  grep foo `ls -R /way/to/any*/folder/text.file`
+  grep foo `find /way/to/*any/folder/ -name "text.file"`
+  for file in /way/to/some/folder/text*.file; do grep foo $file; done

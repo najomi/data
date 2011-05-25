@@ -1,0 +1,7 @@
+link: http://xtips.ru/?act=tview&tid=48
+desc: Монтирование samba-ресурсов с файлами в русской кодировке в Linux
+code: |
+  $ cat ~/.smb/pass
+  username=myusername
+  password=mypassword
+  $ smbmount //workstation/share ~/smb/workstation/share -o credentials=~/.smb/pass,iocharset=utf8

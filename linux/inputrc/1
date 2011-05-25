@@ -1,0 +1,4 @@
+link: http://superuser.com/questions/155167/tab-completion-with-directories-links
+desc:  Дополнять слэшем симлинки на директории по табу
+code: |
+  set mark-symlinked-directories on

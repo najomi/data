@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/linux/65384/
+code: |
+  $ pv rt94-171-06 | gzip > rt94-171-06.gz
+  128MB 0:00:15 [ 9.1MB/s] [=====>.....................] 18% ETA 0:01:07

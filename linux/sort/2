@@ -1,0 +1,4 @@
+desc: Сортировать данные в обратном порядке
+link: http://en.wikipedia.org/wiki/Sort_(Unix)
+code: |
+  $ du -b ~ | sort -nr

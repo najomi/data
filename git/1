@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/160608/how-to-do-a-git-export-like-svn-export
+desc: Сделать экспорт (аля svn export) ветки мастер в другую папку:
+code: |
+  $ git archive master | tar -x -C /somewhere/else

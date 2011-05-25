@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Если параметр отсутствует, то используется значение по-умолчанию
+code: |
+  ${parameter-default}, ${parameter:-default}

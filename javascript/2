@@ -1,0 +1,5 @@
+desc: |
+  Добавить к html элементу событие, так что оно
+  будет выполняться в пространстве этого элемента
+code: |
+  <a href='#' onclick='return js_link.call(this)'>link</a>

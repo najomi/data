@@ -1,0 +1,11 @@
+desc: Вывести размер каждого файла в каталоге в байтах вместе с его именем
+code: |
+  $ du -b /etc/rc.d/* 
+  636	/etc/rc.d/acpid
+  559	/etc/rc.d/adsl
+  1252	/etc/rc.d/alsa
+  1824	/etc/rc.d/avahi-daemon
+  1763	/etc/rc.d/avahi-dnsconfd
+  2267	/etc/rc.d/bluetooth
+  1224	/etc/rc.d/cpufreq
+  ...

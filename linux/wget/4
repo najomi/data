@@ -1,0 +1,4 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Скачивание в фоновом режиме (-b):
+code: |
+  $ wget -b ftp://ftp.example.org/some_file.iso

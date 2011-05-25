@@ -1,0 +1,21 @@
+link: http://svnbook.red-bean.com/en/1.4/svn-book.html
+code: |
+  Показать лог с 5 по 19 ревизию в хронологическом порядке
+  $ svn log -r 5:19
+  --//-- в обратном порядке
+  $ svn log -r 19:5
+  Показать лог 8 ревизии
+  $ svn log -r 8
+  
+  Показать лог по определённому файлу
+  $ svn log foo.c
+  $ svn log http://foo.com/svn/trunk/code/foo.c
+  
+  Показать подробный лог 8 ревизии
+  $ svn log -r 8 -v
+  ------------------------------------------------------------------------
+  r8 | sally | 2002-07-14 08:15:29 -0500 | 1 line
+  Changed paths:
+  M /trunk/code/foo.c
+  M /trunk/code/bar.h
+  A /trunk/code/doc/README

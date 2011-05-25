@@ -1,0 +1,6 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Также поддерживается идентификация на сервере:
+code: |
+  $ wget --save-cookies cookies.txt \
+    --post-data 'user=foo&password=bar' \
+    http://example.org/auth.php

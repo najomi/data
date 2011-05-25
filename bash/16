@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Проверить синтаксис скрипта без его выполнения
+code: |
+  $ bash -n script.sh

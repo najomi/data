@@ -1,0 +1,5 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Логические операторы 
+code: |
+  &&    логическое И (and)
+  ||    логическое ИЛИ (or)

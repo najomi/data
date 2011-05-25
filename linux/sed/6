@@ -1,0 +1,4 @@
+link: http://ru.wikibooks.org/wiki/Linux-hand-book 
+desc: Вставить в начало файла '# vim: ft=ruby' и перенос строки.
+code: |
+  $ sed '1i \# vim: ft=ruby\n'  

@@ -1,0 +1,9 @@
+link: http://cheat.errtheblog.com/s/git
+desc: Раскрасить пробелы
+code: |
+  [color]
+      ui = true
+  [color "diff"]
+      whitespace = red reverse
+  [core]
+      whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol

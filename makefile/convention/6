@@ -1,0 +1,3 @@
+link: http://www.wlug.org.nz/MakeFile
+desc: Удалить собранные файлы (противоположность make all)
+code: $ make clean

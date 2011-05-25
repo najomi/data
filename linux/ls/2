@@ -1,0 +1,6 @@
+link: http://www.thegeekstuff.com/2009/07/linux-ls-command-examples/
+desc: Открыть последний редактированный файл
+code: |
+  $ vi first-long-file.txt
+  $ vi second-long-file.txt
+  $ vi `ls -t | head -1`

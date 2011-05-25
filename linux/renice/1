@@ -1,0 +1,6 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: |
+  Установить shell (скрипту) низкий приоритет. 
+  Используется для неинтерактивных задач.
+code: |
+  $ renice 19 -p $$

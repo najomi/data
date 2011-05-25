@@ -1,0 +1,10 @@
+link: http://svnbook.red-bean.com/en/1.4/svn-book.html
+desc: Указывает на то что изменилось ещё и в репозитории
+code: |
+  $ svn status -u -v
+  M      *        44        23    sally     README
+  M               44        20    harry     bar.c
+         *        44        35    harry     stuff/trout.c
+  D               44        19    ira       stuff/fish.c
+  A                0         ?     ?        stuff/things/bloo.h
+  Status against revision:   46

@@ -1,0 +1,8 @@
+link: http://stackoverflow.com/questions/1688711/can-we-alias-a-function-in-php
+desc: Создать алиас для функции
+code: |
+  function func_alias($target, $original) {
+  	    eval("function $target() { \$args = func_get_args();".
+  		 " return call_user_func_array('$original', \$args); }");
+  }
+  

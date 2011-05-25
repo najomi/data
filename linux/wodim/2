@@ -1,0 +1,4 @@
+link: http://wiki.archlinux.org/index.php/CD_Burning
+desc: Записать iso-образ на диск
+code: |
+  $ wodim -v dev=/dev/cdrw isoimage.iso

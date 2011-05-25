@@ -1,0 +1,4 @@
+desc: Перенаправить соединения к $HOSTNAME:8080 наружу к $HOST:80
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ ssh -g -L 8080:localhost:80 root@$HOST

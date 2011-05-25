@@ -1,0 +1,6 @@
+link: http://www.linuxquestions.org/questions/linux-general-1/how-to-tell-find-to-not-search-inside-hidden-folders-208169/
+desc: |
+  Из поиска убрать все скрытые папки но показывать скрытые файлы 
+  в обычных каталогах
+code: |
+  find . \( ! -regex '.*/\..*/..*' \) -type f -name "whatever"

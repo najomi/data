@@ -1,0 +1,4 @@
+desc: Сортировать данные по числовому значению
+link: http://en.wikipedia.org/wiki/Sort_(Unix)
+code: |
+  $ du -b ~ | sort -n 

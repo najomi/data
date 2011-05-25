@@ -1,0 +1,4 @@
+desc: Отсортировать IPV4 ip адреса
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sort -t. -k1,1n -k2,2n -k3,3n -k4,4n

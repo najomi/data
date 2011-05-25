@@ -1,0 +1,5 @@
+link: http://ru.wikipedia.org/wiki/Wget
+desc: Использование имя пользователя и пароля на FTP/HTTP:
+code: |
+  $ wget ftp://login:password@ftp.example.org/some_file.iso
+  $ wget --user=login --password=password ftp://ftp.example.org/some_file.iso

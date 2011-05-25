@@ -1,0 +1,2 @@
+desc: Заставляем поле timestamp не изменять своё значение при изменении строки
+code: ALTER TABLE timer CHANGE time time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;

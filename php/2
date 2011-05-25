@@ -1,0 +1,10 @@
+link: http://user.su/index.php/Php:Работа_Php_в_консоли
+code: |
+  <?
+  // Текущий рабочий путь
+  echo getcwd();
+  // Число аргументов
+  echo $argc;
+  // Переданные аргументы
+  print_r($argv);
+  ?>

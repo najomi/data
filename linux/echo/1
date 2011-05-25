@@ -1,0 +1,5 @@
+desc: Вывести список файлов и дерикторий
+code: |
+  $ echo /*
+  /bin /boot /dev /etc /home /lib /lost+found /media /mnt 
+  /opt /proc /root /sbin /srv /sys /tmp /usr /var

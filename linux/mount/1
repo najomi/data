@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=20
+desc: Монтирование iso/mds-образов в linux
+code: |
+  # mount -o loop /path/to/iso/or/mds /mnt/point

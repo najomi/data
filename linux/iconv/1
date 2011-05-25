@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=63
+desc: Перевод кириллицы в транслит
+code: |
+  $ echo Привет | iconv -t koi-7 | tr a-zA-Z A-Za-z

@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=41
+desc: Вывод таблиц маршрутизации
+code: |
+  $ route -n

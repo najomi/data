@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Md5sum
+desc: Вычислить контрольную сумму файла и записать её
+code: |
+  $ md5sum file > file.md5

@@ -1,0 +1,3 @@
+desc: подключиться к удалённой машине
+code: |
+  rdesktop -g 800x600 -P -z -x l -r sound:off -u username 10.1.4.225:3389

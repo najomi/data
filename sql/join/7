@@ -1,0 +1,5 @@
+desc: Соединить всё со всем 
+link: http://www.codinghorror.com/blog/2007/10/a-visual-explanation-of-sql-joins.html
+code: |
+  SELECT * FROM TableA
+  CROSS JOIN TableB

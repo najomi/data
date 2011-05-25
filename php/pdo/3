@@ -1,0 +1,31 @@
+link: http://ru.php.net/manual/en/pdostatement.fetchall.php
+code: |
+  <?php
+  $sth = $dbh->prepare("SELECT name, colour FROM fruit");
+  $sth->execute();
+  
+  /* Fetch all of the remaining rows in the result set */
+  print("Fetch all of the remaining rows in the result set:\n");
+  $result = $sth->fetchAll();
+  print_r($result);
+  ?>
+  Fetch all of the remaining rows in the result set:
+  Array
+  (
+      [0] => Array
+          (
+              [NAME] => pear
+              [0] => pear
+              [COLOUR] => green
+              [1] => green
+          )
+  
+      [1] => Array
+          (
+              [NAME] => watermelon
+              [0] => watermelon
+              [COLOUR] => pink
+              [1] => pink
+          )
+  
+  )

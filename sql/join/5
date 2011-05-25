@@ -1,0 +1,11 @@
+link: http://www.codinghorror.com/blog/2007/10/a-visual-explanation-of-sql-joins.html
+code: |
+  SELECT * FROM TableA
+  LEFT OUTER JOIN TableB
+  ON TableA.name = TableB.name
+  WHERE TableB.id IS null
+  
+  id  name       id     name
+  --  ----       --     ----
+  2   Monkey     null   null
+  4   Spaghetti  null   null

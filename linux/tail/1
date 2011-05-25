@@ -1,0 +1,6 @@
+desc: Выводит 3 последние строки
+code: |
+  $ tail -3 /etc/passwd
+  nocch:x:1002:100:,,,:/home/nocch:/bin/bash
+  avahi:x:84:84:Avahi daemon:/:/bin/false
+  git:x:1004:100:,,,:/home/git:/bin/bash

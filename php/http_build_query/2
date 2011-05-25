@@ -1,0 +1,12 @@
+link: http://php.net/manual/en/function.http-build-query.php
+code: |
+  <?php
+  $data = array('foo', 'bar', 'baz', 'boom', 'cow' => 'milk', 'php' =>'hypertext processor');
+  
+  echo http_build_query($data) . "\n";
+  echo http_build_query($data, 'myvar_');
+  
+  /*
+  0=foo&1=bar&2=baz&3=boom&cow=milk&php=hypertext+processor
+  myvar_0=foo&myvar_1=bar&myvar_2=baz&myvar_3=boom&cow=milk&php=hypertext+processor
+  */

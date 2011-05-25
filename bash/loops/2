@@ -1,0 +1,6 @@
+link: http://user.su/index.php/Bash:Основы
+code: |
+  for ((a=1,b=1;a<10;a++,b++))
+  do
+     ...
+  done

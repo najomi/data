@@ -1,0 +1,5 @@
+link: http://www.commandlinefu.com/commands/view/5375/open-a-file-in-a-gtk-dialog-window
+desc: Открыть файл в диалоговом окне gtk+ 
+code: |
+  $ zenity --title passwd --width 800 --height 600\
+    --text-info --filename /etc/passwd 

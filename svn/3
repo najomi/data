@@ -1,0 +1,10 @@
+link: http://svnbook.red-bean.com/en/1.4/svn-book.html
+desc: Создание локального репозитория
+code: |
+  $ svnadmin create /usr/local/svn/newrepos
+  $ svn import mytree file:///usr/local/svn/newrepos/some/project \
+               -m "Initial import"
+  Adding         mytree/foo.c
+  Adding         mytree/bar.c
+  Adding         mytree/subdir
+  Adding         mytree/subdir/quux.h

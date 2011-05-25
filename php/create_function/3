@@ -1,0 +1,14 @@
+link: http://www.php.net/manual/en/function.create-function.php
+code: |
+  <?php
+  $av = array("the ", "a ", "that ", "this ");
+  array_walk($av, create_function('&$v,$k', '$v = $v . "mango";'));
+  print_r($av);
+  ?>
+  Array
+  (
+    [0] => the mango
+    [1] => a mango
+    [2] => that mango
+    [3] => this mango
+  )

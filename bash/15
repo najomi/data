@@ -1,0 +1,10 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использование булевых операторов в выражении
+code: |
+  if [ 2 -lt 3 ]
+      then echo "Numbers are still good!"
+  fi
+  
+  if [[ 2 < 3 ]]
+      then echo "Numbers are still good!"
+  fi

@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Wc_(Unix)
+desc: Выдать колличество символов
+code: |
+  $ wc -m <filename>

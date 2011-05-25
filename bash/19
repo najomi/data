@@ -1,0 +1,8 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+code: |
+  [lsc@home]$ export PROMPT_COMMAND="date"
+  Fri Jun  5 15:19:18 BST 2009
+  [lsc@home]$ ls
+  file_a  file_b  file_c
+  Fri Jun  5 15:19:19 BST 2009
+  [lsc@home]$ ls

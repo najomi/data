@@ -1,0 +1,4 @@
+desc: Запустить команду command на удаленном хосте $HOST от имени пользователя $USER (команда по умолчанию = shell)
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ ssh $USER@$HOST command

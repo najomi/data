@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=89
+desc: Способ отследить потери пакетов
+code: |
+  $ ping google.com | cat -n

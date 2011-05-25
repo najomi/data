@@ -1,0 +1,3 @@
+link: http://www.wlug.org.nz/MakeFile
+desc: Установить платформо-независимые файлы
+code: $ make install-data

@@ -1,0 +1,11 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Ветвления case 
+code: |
+  case ABC in
+  condition1)
+    command
+  ;;
+  condition2)
+    command
+  ;;
+  esac

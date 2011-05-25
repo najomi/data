@@ -1,0 +1,15 @@
+desc: Использование сеттеров в модели
+link: http://www.phpactiverecord.org/docs/ActiveRecord/Model
+code: |
+  class User extends ActiveRecord\Model {
+  	static $setters = array('password','more','even_more');
+  
+  	# now to define the setter methods. Note you must
+  	# prepend set_ to your method name:
+  	function set_password($plaintext) {
+  		$this->encrypted_password = md5($plaintext);
+  	}
+  }
+  
+  $user = new User();
+  $user->password = 'plaintext';  # will call $user->set_password('plaintext')

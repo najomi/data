@@ -1,0 +1,4 @@
+desc: Заескейпить активные метасимволы оболочки двумя ковычками
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed 's/\([\\`\\"$\\\\]\)/\\\1/g'

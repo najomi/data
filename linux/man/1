@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Создать pdf версию страницы мануала (man)
+code: |
+  $ man -t man | ps2pdf - > man.pdf

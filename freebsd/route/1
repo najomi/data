@@ -1,0 +1,6 @@
+link: http://xtips.ru/?act=tview&tid=42
+desc: Создание/удаление маршрутов в FreeBSD
+code: |
+  # route add 212.117.0.0/16 192.168.1.1
+  # route delete 212.117.0.0/16
+  # route add default 192.168.1.1

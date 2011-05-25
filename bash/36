@@ -1,0 +1,5 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Длина подстроки в строке 
+code: |
+  expr match "$string" '$regsubstring'
+  expr "$string" : '$regsubstring'

@@ -1,0 +1,24 @@
+link: http://php.net/manual/en/function.preg-match.php
+code: |
+  <?php
+  $url  = 'http://name:pass@';
+  $url .= 'example.com:10000';
+  $url .= '/path/to/file.php?a=1&amp;b=2#anchor';
+  
+  $url_data = parse_url ( $url );
+  
+  print_r ( $url_data );
+  
+  ?>
+  ------------------------------
+  Array
+  (
+      [scheme] => http
+      [host] => example.com
+      [port] => 10000
+      [user] => name
+      [pass] => pass
+      [path] => /path/to/file.php
+      [query] => a=1&amp;b=2
+      [fragment] => anchor
+  )

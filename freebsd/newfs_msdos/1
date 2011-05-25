@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=11
+desc: freebsd отформатировать слайс в fat32 
+code: |
+  # newfs_msdos -F 32 /dev/da0s1

@@ -1,0 +1,8 @@
+link: http://ru.php.net/class_alias
+desc: Создать алиас для класса
+code: |
+  <?php
+  class foo { }
+  class_alias('foo', 'bar');
+  $a = new foo;
+  $b = new bar;

@@ -1,0 +1,14 @@
+link: http://www.codinghorror.com/blog/2007/10/a-visual-explanation-of-sql-joins.html
+code: |
+  SELECT * FROM TableA
+  FULL OUTER JOIN TableB
+  ON TableA.name = TableB.name
+  WHERE TableA.id IS null 
+  OR TableB.id IS null
+  
+  id    name       id    name
+  --    ----       --    ----
+  2     Monkey     null  null
+  4     Spaghetti  null  null
+  null  null       1     Rutabaga
+  null  null       3     Darth Vader

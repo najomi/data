@@ -1,0 +1,3 @@
+desc:  Посчитать сколько строк в каждом файле
+code: |
+  for file in *; do echo $file: `cat $file |wc -l` ; done

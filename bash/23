@@ -1,0 +1,7 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использование базовых математических операций.
+code: |
+  $ A=10
+  $ let B="A * 10 + 1" # B=101
+  $ let B="B / 8"      # B=12
+  $ let B="(RANDOM % 6) + 1" # B от 1 до 6

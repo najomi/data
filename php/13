@@ -1,0 +1,9 @@
+desc: Переадресовать все вызовы статичным методам класса 
+code: |
+  <?php
+  class Foo{
+  	public function __call($name,$args){
+  		return call_user_func_array(array('self',$name),$args);
+  	}
+  }
+  ?>

@@ -1,0 +1,4 @@
+desc: Соединить строки (линии) с предшествующим \
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed ':a; /\\$/N; s/\\\n//; ta'

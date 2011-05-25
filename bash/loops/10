@@ -1,0 +1,7 @@
+link: http://www.cyberciti.biz/faq/bash-for-loop/
+code: |
+  # Бесконечный цикл в bash
+  for (( ; ; ))
+  do
+  	echo "infinite loops [ hit CTRL+C to stop]"
+  done

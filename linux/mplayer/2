@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=32
+desc: Смотрим фильм прямо из оперативы (до 1,37ГБ) 
+code: |
+  $ mplayer -cache 1400000 movie.avi

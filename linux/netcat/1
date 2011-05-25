@@ -1,0 +1,4 @@
+link: http://kevin.vanzonneveld.net/techblog/article/flush_memcached_using_bash/
+desc: Отчистить memcached из консоли
+code: |
+  echo "flush_all" | /bin/netcat -q 2 127.0.0.1 11211

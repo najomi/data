@@ -1,0 +1,12 @@
+link: http://www.cyberciti.biz/faq/bash-for-loop/
+code: |
+  FILES="$@"
+  for f in $FILES
+  do
+  	if [ -f ${f}.bak ]
+  	then
+  		echo "Skiping $f file..."
+  		continue
+  	fi
+  	/bin/cp $f $f.bak
+  done

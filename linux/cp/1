@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Скопировать файлы по определённому расширению, сохраняя структуру папок
+code: |
+  $ find dir/ -name '*.txt' | xargs cp -a --target-directory=dir_txt/ --parents

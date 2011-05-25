@@ -1,0 +1,5 @@
+link: http://sysadminblog.ru/blog/bash/292.html
+desc: Дописать строку в файл 
+code: |
+  $ sudo tee -a короткая_речь_маленького_человека.txt \
+  	<<<'Я не буду говорить долго, я буду говорить коротко'>/dev/null

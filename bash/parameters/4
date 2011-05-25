@@ -1,0 +1,6 @@
+link: http://user.su/index.php/Bash:Основы
+desc: |
+  Если parameter инициализирован, то используется его значение, 
+  в противном случае -- выводится err_msg.
+code: |
+  ${parameter?err_msg}, ${parameter:?err_msg}

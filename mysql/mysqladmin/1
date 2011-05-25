@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Создаём новую базу данных
+code: |
+  mysqladmin -u USER -pPASSWORD create NEWDATABASE

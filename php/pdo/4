@@ -1,0 +1,19 @@
+link: http://ru.php.net/manual/en/pdostatement.fetchcolumn.php
+code: |
+  <?php
+  $sth = $dbh->prepare("SELECT name, colour FROM fruit");
+  $sth->execute();
+  
+  /* Fetch the first column from the next row in the result set */
+  print("Fetch the first column from the next row in the result set:\n");
+  $result = $sth->fetchColumn();
+  print("name = $result\n");
+  
+  print("Fetch the second column from the next row in the result set:\n");
+  $result = $sth->fetchColumn(1);
+  print("colour = $result\n");
+  ?>
+  Fetch the first column from the next row in the result set:
+  name = lemon
+  Fetch the second column from the next row in the result set:
+  colour = red

@@ -1,0 +1,4 @@
+link: http://wiki.archlinux.org/index.php/Pacman
+desc: Искать среди установленных
+code: |
+  $ pacman -Qs package

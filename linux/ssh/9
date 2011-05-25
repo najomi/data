@@ -1,0 +1,6 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: | 
+  Сделать резервную копию (сбекапить) жесткого диска и послать ее на удаленный
+  компьютер
+code: |
+  $ dd bs=1M if=/dev/sda | gzip | ssh user@remote 'dd of=sda.gz'

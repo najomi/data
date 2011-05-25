@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Поиск среди заголовков и коротких описаний в мануале
+code: |
+  $ apropos whatis

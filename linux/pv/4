@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/linux/65384/
+code: |
+  $ tar -cf - . | pv -cN tar -s $(du -sb | grep -o '[0-9]*') | gzip | pv -cN gzip > out.tgz
+  tar: 97.1MB 0:00:08 [12.3MB/s] [>......................] 0% ETA 1:50:26
+  gzip: 13.1MB 0:00:08 [1.6MB/s] [....<=>................]

@@ -1,0 +1,9 @@
+link: http://htmlhelp.com/reference/css/style-html.html
+code: |
+  <STYLE TYPE="text/css" MEDIA="screen, projection">
+  <!--
+    @import url(http://www.htmlhelp.com/style.css);
+    @import url(/stylesheets/punk.css);
+    DT { background: yellow; color: black }
+  -->
+  </STYLE>

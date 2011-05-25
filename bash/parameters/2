@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Если значения параметров не задананы явно, то они принимают значения по-умолчанию.
+code: |
+  ${parameter=default}, ${parameter:=default}

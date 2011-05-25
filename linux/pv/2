@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/linux/65384/
+code: |
+  $ tar -czf - . | pv > out.tgz
+  21.9MB 0:00:15 [1.47MB/s] [...<=>.....................]

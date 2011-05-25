@@ -1,0 +1,17 @@
+desc: Пример использования stdClass. Динамическое задание свойств объекта
+code: |
+  <?php
+  $std = new stdClass();
+  $std->first = 1;
+  $std->second->third = 3;
+  print_R($std);
+  ?>
+  stdClass Object
+  (
+      [first] => 1
+      [second] => stdClass Object
+          (
+              [third] => 3
+          )
+  
+  )

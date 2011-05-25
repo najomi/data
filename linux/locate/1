@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Искать в кешированном индексе по именам.
+code: |
+  $ locate -r 'file[^/]*\.txt'

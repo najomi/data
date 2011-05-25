@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использование арифметики
+code: |
+  if [[ $((2+1)) = $((1+2)) ]]
+      then echo "still ok"
+  fi

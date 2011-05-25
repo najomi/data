@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=18
+desc: Freebsd снимаем образ с cd-юка
+code: |
+  $ dd if=/dev/acd0 of=/mnt/img.iso bs=2048

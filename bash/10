@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использование случайных чисел
+code: |
+  $ echo $((RANDOM % 15))

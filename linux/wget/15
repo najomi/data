@@ -1,0 +1,4 @@
+desc: Отображать вывод напрямую (на экран)
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ wget -q -O- http://www.pixelbeat.org/timeline.html | grep 'a href' | head

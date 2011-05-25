@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=83
+desc: Замер времени выполенения команды
+code: |
+  $ time for i in {1..100000} ; do echo $i $>/dev/null ; done

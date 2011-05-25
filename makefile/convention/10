@@ -1,0 +1,3 @@
+link: http://www.wlug.org.nz/MakeFile
+desc: Упакавать всё в архив PACKAGE-VERSION.tar.gz
+code: $ make dist

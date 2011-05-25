@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: Создаём бекап и сразу его архивируем
+code: |
+  mysqldump -u USER -pPASSWORD DATABASE | gzip > /path/to/outputfile.sql.gz

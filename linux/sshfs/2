@@ -1,0 +1,3 @@
+desc: Отмонтировать папку
+code: |
+  $ fusermount -u mountpoint

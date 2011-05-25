@@ -1,0 +1,19 @@
+link: http://user.su/index.php/Bash:Основы
+code: |
+  scan() {
+    local x;
+    for e in "$1"/*; do
+      filename=${e##*\/};
+      if [ -d "$e" -a ! -L "$e" ]
+      then
+        scan "$e";
+      else
+        process "$e";
+      fi
+    done
+  }
+  
+  if [ -d "$@" ]
+  then
+    scan "$@";
+  fi

@@ -1,0 +1,4 @@
+link: http://www.tldp.org/HOWTO/SquashFS-HOWTO/creatingandusing.html#creating
+code: |
+  # mkdir /mnt/dir
+  # mount dir.sqsh /mnt/dir -t squashfs -o loop

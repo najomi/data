@@ -1,0 +1,25 @@
+link: http://www.php.net/manual/en/function.create-function.php
+code: |
+  <?php
+  $sv = array("small", "larger", "a big string", "it is a string thing");
+  print_r($sv);
+  ?>
+  Array
+  (
+    [0] => small
+    [1] => larger
+    [2] => a big string
+    [3] => it is a string thing
+  )
+  
+  <?php
+  usort($sv, create_function('$a,$b','return strlen($b) - strlen($a);'));
+  print_r($sv);
+  ?>
+  Array
+  (
+    [0] => it is a string thing
+    [1] => a big string
+    [2] => larger
+    [3] => small
+  )

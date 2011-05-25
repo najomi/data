@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Посмотреть как будет выполняться скрипт
+code: |
+  $ bash -x script.sh

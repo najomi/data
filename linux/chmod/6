@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: Добавить всем право на чтение и запись
+code: |
+  $ chmod a+rw file 

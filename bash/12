@@ -1,0 +1,13 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использование массивов
+code: |
+  #!/bin/bash
+  
+  array[0]="a string"
+  array[1]="a string with spaces and \"quotation\" marks in it"
+  array[2]="a string with spaces, \"quotation marks\" and (parenthesis) in it"
+  
+  echo "There are ${#array[*]} elements in the array."
+  for n in "${array[@]}"; do
+      echo "element = >>${n}<<"
+  done

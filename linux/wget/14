@@ -1,0 +1,4 @@
+desc: Скачать множество файлов в текущую директорию
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ wget -r -nd -np -l1 -A '*.jpg' http://www.example.com/

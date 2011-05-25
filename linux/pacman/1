@@ -1,0 +1,6 @@
+link: http://wiki.archlinux.org/index.php/Pacman
+desc: Установить пакет
+code: |
+  # pacman -S package_name1 package_name2
+  # pacman -S extra/package_name
+  # pacman -S testing/package_name

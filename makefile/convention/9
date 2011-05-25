@@ -1,0 +1,3 @@
+link: http://www.wlug.org.nz/MakeFile
+desc: Проверить установленную программу и библиотеки
+code: $ make installcheck

@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Sleep_(Unix)
+desc: Подождать 3 часа, а потом включить трек.
+code: |
+  $ sleep 3h ; mplayer foo.mp3

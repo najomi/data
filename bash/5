@@ -1,0 +1,7 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Использование аргументов одной из предыдущих команд
+code: |
+  $ ls -l foo bar
+  $ touch !:2 !:3
+  $ rm !-2:2 !-2:3
+  $ !-3

@@ -1,0 +1,4 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Если параметр имеет какое либо значение, то используется alt_value, иначе -- null ("пустая" строка).
+code: |
+  ${parameter+alt_value}, ${parameter:+alt_value}

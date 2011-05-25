@@ -1,0 +1,4 @@
+link: http://www.commandlinefu.com/commands/view/2278/extract-track-9-from-a-cd
+desc: Копирование трека с CD
+code: |
+  $ mplayer -fs cdda://9 -ao pcm:file=track9.wav

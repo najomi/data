@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Выполнить вторую команду с конца истории
+code: |
+  $ ls -l foo bar
+  $ touch foo bar
+  $ !-2

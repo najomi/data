@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: Рекурсивно добавить пользователю на запись, а остальным это право убрать
+code: |
+  $ chmod -R u+w,go-w file

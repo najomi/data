@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Посмотреть какая команда будет выполнена:
+code: |
+  $ ls /var /tmp
+  $ ls !$ <alt+shift+6> 
+  $ ls /tmp

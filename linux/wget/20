@@ -1,0 +1,4 @@
+desc: Используем wildcard для того чтобы скачать несколько страниц
+code: |
+  $ wget http://site.com/?thread={1..100}
+  $ wget http://site.com/files/main.{css,js}

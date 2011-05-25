@@ -1,0 +1,4 @@
+desc: Отфильтровать не печатаемые символы
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ tr -dc '[:print:]' < /dev/urandom

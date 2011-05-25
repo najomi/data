@@ -1,0 +1,4 @@
+desc: Сделать закачку с уменьшенной скоростью (ограничить скорость до 20 КB/s в этом примере)
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ wget --limit-rate=20k url

@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Подставить все аргументы предыдущей команды
+code: |
+  $ ls -l foo bar
+  $ ls !*

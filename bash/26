@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Раскрыть подстановки в выражениях
+code: |
+  $ rm -r source/d*.c <Alt + *>
+  $ rm -r source/delete_me.c source/do_not_delete_me.c

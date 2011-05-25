@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=71
+desc: Заменить повторяющиеся пустые строки на одну пустую строку
+code: |
+  $ sed -e ':a;/^$/N;/\n$/{D;ba}' file.txt

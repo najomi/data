@@ -1,0 +1,5 @@
+link: http://wiki.archlinux.org/index.php/Pacman
+desc: Удалить так-же конфиги
+code: |
+  # pacman -Rn package_name
+  # pacman -Rns package_name

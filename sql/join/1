@@ -1,0 +1,10 @@
+desc: Дальнейшие примеры будем рассматривать с такими данными:
+link: http://www.codinghorror.com/blog/2007/10/a-visual-explanation-of-sql-joins.html
+code: |
+  TableA        TableB
+  id name       id  name
+  -- ----       --  ----
+  1  Pirate     1   Rutabaga
+  2  Monkey     2   Pirate
+  3  Ninja      3   Darth Vader
+  4  Spaghetti  4   Ninja

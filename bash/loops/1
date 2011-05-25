@@ -1,0 +1,10 @@
+link: http://user.su/index.php/Bash:Основы
+code: |
+  for x in listif [ $condition1 ] && [ $condition2 ]
+  # То же самое, что:  if [ $condition1 -a $condition2 ]
+  # Возвращает true если оба операнда condition1 и condition2 истинны...
+  
+  if [[ $condition1 && $condition2 ]]
+  do
+     ...
+  done

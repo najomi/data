@@ -1,0 +1,61 @@
+link: http://simpletest.sourceforge.net/en/web_tester_documentation.html
+code: |
+  # Совпадает ли title проверяемой страницы?
+  assertTitle($title)
+  
+  # Есть ли видимый или "alt" текст?
+  assertText($text)
+  
+  # Нет ли видимого или "alt" текста?
+  assertNoText($text)
+  
+  # Подходит ли страница под регулярное выражение?
+  assertPattern($pattern)
+  
+  # Не подходит ли страница под регулярное выражение?
+  assertNoPattern($pattern)
+  
+  # Есть ли ссылка на странице?
+  assertLink($label)
+  
+  # Нет ли ссылки на странице?
+  assertNoLink($label)
+  
+  # Есть ли ссылка с id=$id?
+  assertLinkById($id)
+  
+  # Нет ли ссылки с id=$id?
+  assertNoLinkById($id)
+  
+  # Есть ли поле с таким именем и значением?
+  assertField($name, $value)
+  
+  # Есть ли поле с таким id и значением?
+  assertFieldById($id, $value)
+  
+  # HTTP ответ совпадает с одним из значений в списке?
+  assertResponse($codes)
+  
+  # Совпадает MIME-type с одним из значений в списке?
+  assertMime($types)
+  
+  # Pass if the current challenge is this protocol
+  assertAuthentication($protocol)
+  
+  # Pass if there is no current challenge
+  assertNoAuthentication()
+  
+  # Pass if the current challenge realm matches
+  assertRealm($name)
+  
+  # Содержит ли заголовок это содержимое?
+  assertHeader($header, $content)
+  
+  # Не содержит ли заголовок это содержимое?
+  assertNoHeader($header)
+  
+  # Есть ли куки с таким значением?
+  assertCookie($name, $value)
+  
+  # Нет ли куков с таким значением? 
+  assertNoCookie($name)

@@ -1,0 +1,5 @@
+link: http://www.yiiframework.com/
+code: |
+  <?php
+  // Объявление константы, если она не объявлена 
+  defined('YII_BEGIN_TIME') or define('YII_BEGIN_TIME',microtime(true));

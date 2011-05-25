@@ -1,0 +1,5 @@
+link: http://xtips.ru/?act=tview&tid=115
+desc: Изменить разрешение видеофайла
+code: |
+  $ mencoder file.avi -ovc lavc -lavcopts vcodec=mpeg4 -vf  \
+    scale=720:432 -oac copy -o newfile.avi

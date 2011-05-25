@@ -1,0 +1,3 @@
+link: http://xtips.ru/?act=tview&tid=26
+desc: Заменить все вхождения 'old' на 'new'
+code: :%s/old/new/g

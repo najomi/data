@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=57
+desc: Что больше всего весит?
+code: |
+  $ du -sm ./* | sort -gr

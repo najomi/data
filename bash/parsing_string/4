@@ -1,0 +1,6 @@
+link: http://user.su/index.php/Bash:Основы
+desc: |
+  Подстановка строки $replacement вместо $substring,
+  если строка $string начинается найденым соответствием.
+code: |
+  ${string/#regsubstring/replacement}

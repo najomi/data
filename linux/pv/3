@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/linux/65384/
+code: |
+  $ tar -czf - . | pv -s $(du -sb | grep -o '[0-9]*') > out.tgz
+  44.3MB 0:00:27 [1.73MB/s] [>..........................] 0% ETA 13:36:22

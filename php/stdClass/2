@@ -1,0 +1,22 @@
+link: http://www.krisjordan.com/2008/11/27/dynamic-properties-in-php-with-stdclass/
+code: |
+  <?php
+  class DynamicProperties { }
+  $object = new DynamicProperties;
+  
+  print isset($object->foo) ? 't' : 'f'; // f
+  
+  // Set Dynamic Properties foo and fooz
+  $object->foo = 'bar';
+  $object->fooz = 'baz';
+  
+  // Isset and Unset work
+  isset($object->foo); // true
+  unset($object->foo); 
+  
+  // Iterate through Properties and Values
+  foreach($object as $property => $value)  {
+       print($property . ' = ' . $value . '<br />');
+  }
+  // Prints:
+  //   fooz = baz

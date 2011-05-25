@@ -1,0 +1,8 @@
+link: http://habrahabr.ru/blogs/mysql/105954/
+desc: |
+  -Q оборачивает имена обратными кавычками
+  -c делает полную вставку, включая имена колонок
+  -e делает расширенную вставку.
+     Итоговый файл получается меньше и делается он чуть быстрее
+code: |
+  mysqldump -Q -c -e -u USER -pPASSWORD DATABASE > /path/to/file/dump.sql

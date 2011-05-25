@@ -1,0 +1,15 @@
+link: http://juick.com/skobkin-ru/872787
+desc: |
+  Использование тернарного оператора в sql запросе для подстановки значений в
+  зависимости от условий 
+code: |
+  $iquery = "INSERT INTO $wp_table VALUES(
+             '',
+             '".$post_author."',
+             '".date("Y-m-d G:i:s", $row['Stamp'])."',
+             '".date("Y-m-d G:i:s", $row['Stamp'])."',
+             '".$post_text."',
+             '".$post_title."',
+             '',
+             '".$post_status."',
+             '".($row['IsCommentable']=="1" ? "open" : "closed")."', 

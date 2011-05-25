@@ -1,0 +1,3 @@
+desc: Вырезаем звук из видео
+code: |
+  mplayer -vo null -ao pcm:file=output.wav video.avi

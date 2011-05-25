@@ -1,0 +1,4 @@
+desc: Проверить ссылки в файле
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ wget -nv --spider --force-html -i bookmarks.html

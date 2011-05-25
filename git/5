@@ -1,0 +1,7 @@
+link: http://cheat.errtheblog.com/s/git
+desc: |
+  Редактировать конфиг в редакторе по умолчанию.
+  Если не задан параметр --global, то редактируется
+  .git/config, иначе ~/.gitconfig
+code: |
+  $ git config -e [--global]

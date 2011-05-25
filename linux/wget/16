@@ -1,0 +1,4 @@
+desc: Скачать url в 01:00 в текущую директорию
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ echo 'wget url' | at 01:00

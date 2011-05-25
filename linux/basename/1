@@ -1,0 +1,5 @@
+link: http://en.wikipedia.org/wiki/Basename
+desc: Выбрать только название файла из пути
+code: |
+  $ basename /home/jsmith/base.wiki
+  base.wiki

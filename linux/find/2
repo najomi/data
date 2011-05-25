@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=103
+desc: Замена слов в скриптах
+code: |
+  $ find -name '*.php' -exec sed -i -e s/было/стало/g {} \;

@@ -1,0 +1,3 @@
+code: |
+  User-Agent: *
+  Disallow: /subdir/

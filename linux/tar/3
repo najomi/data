@@ -1,0 +1,3 @@
+desc: Разархивировать архив
+code: |
+  $ tar xfz arch.tgz

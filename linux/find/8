@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Найти файлы, которые не являются видимыми для всех
+code: |
+  $ find -type f ! -perm -444

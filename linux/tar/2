@@ -1,0 +1,3 @@
+desc: Заархивировать пару файлов в архив
+code: |
+  $ tar cfz arch.tgz foo.txt bar.txt baz.txt

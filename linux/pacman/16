@@ -1,0 +1,4 @@
+link: http://wiki.archlinux.org/index.php/Pacman
+desc: Отчистить кэш от пакетов которые не установленны
+code: |
+  # pacman -Sc

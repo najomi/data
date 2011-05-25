@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Chmod
+desc: Найти все директории и убрать у всех право на их просмотр
+code: |
+  $ find path/ -type d -exec chmod a-x {} \;

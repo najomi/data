@@ -1,0 +1,6 @@
+link: http://xtips.ru/?act=tview&tid=21
+desc: |
+  Способ просмотра объема ОЗУ в Linux
+  Вывести в мегабайтах:
+code: |
+  $ echo `cat /proc/meminfo | grep MemTotal | awk -F" " '{ print $2 }'`/1024 | bc

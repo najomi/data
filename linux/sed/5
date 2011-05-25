@@ -1,0 +1,4 @@
+link: http://ru.wikibooks.org/wiki/Linux-hand-book 
+desc: После 14ой строки добавить "echo "graph_category logger"".
+code: |
+  $ sed '14a\ echo \"graph_category logger\"' /etc/munin/plugins/command 

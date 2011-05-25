@@ -1,0 +1,10 @@
+link: http://www.thegeekstuff.com/2009/07/linux-ls-command-examples/
+desc: Показывть по файлу на строку
+code: |
+  $ ls -1 /
+  bin
+  boot
+  dev
+  etc
+  home
+  ...

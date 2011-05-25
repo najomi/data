@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=39
+desc: Конвертация nrg в iso
+code: |
+  $ dd bs=1k if=imagefile.nrg of=imagefile.iso skip=300

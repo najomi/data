@@ -1,0 +1,4 @@
+desc: Перейти в директорию, выполнить комманду (command) и вернуться в текущую директорию
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ (cd dir && command)

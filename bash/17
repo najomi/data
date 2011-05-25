@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Подсчёт времени потраченного на выполнение
+code: |
+  $ SECONDS=0; sleep 5 ; echo "that took approximately $SECONDS seconds"

@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Зеркальный веб сайт (используется шифрование и дешифрование)
+code: |
+  $ rsync -az -e ssh --delete ~/public_html/ remote.com:'~/public_html'

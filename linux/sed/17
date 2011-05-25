@@ -1,0 +1,4 @@
+desc: Напечатать строки с 10 по 20-ую
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed -n '10,20p;20q'

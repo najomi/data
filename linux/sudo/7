@@ -1,0 +1,4 @@
+link: http://sysadminblog.ru/blog/bash/292.html
+desc: Дописать строку в файл
+code: |
+  $ sudo sed -i '$a\строка' файл

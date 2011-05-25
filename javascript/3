@@ -1,0 +1,4 @@
+desc: Итерация по объектам
+code: |
+  for (var k in window.document)
+      document.write(k + " - " + window.document[k] + "<br>")

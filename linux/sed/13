@@ -1,0 +1,4 @@
+desc: Удалить предшествующие пробелы с строк
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed 's/[ \t]*$//'

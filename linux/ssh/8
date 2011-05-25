@@ -1,0 +1,6 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: |
+  Создать зашифрованный архив директории (папки) dir/ 
+  на удаленном компьютере
+code: |
+  $ tar -c dir/ | gzip | gpg -c | ssh user@remote 'dd of=dir.tar.gz.gpg'

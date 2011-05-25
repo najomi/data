@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=1
+desc: Выбор DM в ubuntu
+code: |
+  # dpkg-reconfigure gdm

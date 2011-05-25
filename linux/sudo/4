@@ -1,0 +1,4 @@
+link: http://sysadminblog.ru/blog/bash/292.html
+desc: Записать файл из потока ввода
+code: |
+  $ sudo cp /dev/stdin /etc/something.conf <<<'Hello, World!'

@@ -1,0 +1,4 @@
+desc: Скопировать папку dir/ с правами доступа в домашнию папку пользователя $USER на хосте $HOST
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ scp -p -r $USER@$HOST: file dir/

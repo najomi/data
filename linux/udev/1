@@ -1,0 +1,6 @@
+link: http://xtips.ru/?act=tview&tid=31
+desc: Изменение имен сетевых интерфейсов
+code: |
+  # vim /etc/udev/rules.d/70-persistent-net.rules
+  Меняем значения полей NAME="eth0" на, к примеру, NAME="eth1"
+  или что-то иное.

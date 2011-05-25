@@ -1,0 +1,4 @@
+desc: Изменить строку anystring1 на anystring2
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+code: |
+  $ sed 's/\(.*\)1/\12/g'

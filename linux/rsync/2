@@ -1,0 +1,4 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+desc: Скопировать локально с предельной скоростью. Это приятно для I/O
+code: |
+  $ rsync --bwlimit=1000 fromfile tofile

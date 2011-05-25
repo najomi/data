@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=46
+desc: Проверка на бед-блоки:
+code: |
+  # dd if=/dev/hda of=/dev/null bs=1m

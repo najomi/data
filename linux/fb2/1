@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=7
+desc: Чтение FB2 в консоли
+code: |
+  $ zcat book.fb2.zip|xsltproc FB2_2_txt.xsl -|less -s

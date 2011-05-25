@@ -1,0 +1,7 @@
+link: http://user.su/index.php/Bash:Основы
+code: |
+  while [ condition ]
+  do
+     var0=`expr $var0 + 1` 
+     # можно var0=$(($var0+1))
+  done

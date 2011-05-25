@@ -1,0 +1,3 @@
+desc: Проиграть wav файл
+code: |
+  $ aplay file.wav

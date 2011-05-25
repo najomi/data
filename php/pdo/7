@@ -1,0 +1,5 @@
+code: |
+  <?php
+  // Заставить pdo выбрасывать исключения при ошибках
+  $dbh = new PDO($conn, $user, $pwd);
+  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

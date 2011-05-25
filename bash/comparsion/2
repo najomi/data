@@ -1,0 +1,10 @@
+link: http://user.su/index.php/Bash:Основы
+desc: Сравнения строк 
+code: |
+  [ A = B ]
+  [ A == B ]
+  [ A != B ]
+  [ A \< B ]
+  [ A \> B ]
+  [ -z A ]    # строка пустая?
+  [ -n A ]    # строка не пустая?

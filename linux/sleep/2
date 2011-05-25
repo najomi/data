@@ -1,0 +1,4 @@
+link: http://en.wikipedia.org/wiki/Sleep_(Unix)
+desc: Спать 2 с половиной часа
+code: |
+  $ sleep 2h; sleep 30m;

@@ -1,0 +1,4 @@
+link: http://xtips.ru/?act=tview&tid=49
+desc: Выход из bash без сохранения истории
+code: |
+  $ kill -9 $$

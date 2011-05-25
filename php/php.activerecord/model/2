@@ -1,0 +1,19 @@
+desc: Создание сеттеров с тем же именем 
+link: http://www.phpactiverecord.org/docs/ActiveRecord/Model
+code: |
+  class User extends ActiveRecord\Model {
+  	static $setters = array('name');
+  
+  	# INCORRECT way to do it
+  	# function set_name($name) {
+  	#   $this->name = strtoupper($name);
+  	# }
+  
+  	function set_name($name) {
+  		$this->assign_attribute('name',strtoupper($name));
+  	}
+  }
+  
+  $user = new User();
+  $user->name = 'bob';
+  echo $user->name; # => BOB
