@@ -1,0 +1,6 @@
+ft: bash
+desc: Определить тип файла
+code: |
+  $ file file.dat
+out: |
+  file.dat: MPEG ADTS, layer III, v1, 320 kbps, 44.1 kHz, JntStereo

@@ -1,0 +1,13 @@
+ft: bash
+desc: Разбить вывод по колонкам равной ширины
+code: |
+  $ mount | column -t
+out: |
+  proc       on  /proc     type  proc      (rw,nosuid,nodev,noexec,relatime)
+  sys        on  /sys      type  sysfs     (rw,nosuid,nodev,noexec,relatime)
+  udev       on  /dev      type  devtmpfs  (rw,nosuid,relatime,size=10240k,nr_inodes=218751,mode=755)
+  /dev/sda3  on  /         type  ext3      (rw,relatime,errors=continue,barrier=0,data=ordered)
+  devpts     on  /dev/pts  type  devpts    (rw)
+  shm        on  /dev/shm  type  tmpfs     (rw,nosuid,nodev)
+  /dev/sda1  on  /boot     type  ext2      (rw)
+  /dev/sda4  on  /home     type  ext3      (rw)

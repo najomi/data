@@ -1,0 +1,18 @@
+ft: bash
+desc: Получить exif информацию по снимку
+code: |
+  $ exiftool ~/.db/photo/2011/03/01/IMG_5249.JPG 
+out: |
+  ExifTool Version Number         : 8.15
+  File Name                       : IMG_5249.JPG
+  Directory                       : /home/waserd/.db/photo/2011/03/01
+  File Size                       : 2.3 MB
+  File Modification Date/Time     : 2011:03:01 21:33:24+03:00
+  File Permissions                : rw-------
+  File Type                       : JPEG
+  MIME Type                       : image/jpeg
+  Exif Byte Order                 : Little-endian (Intel, II)
+  Make                            : Canon
+  Camera Model Name               : Canon EOS 10D
+  Orientation                     : Rotate 270 CW
+  <...>

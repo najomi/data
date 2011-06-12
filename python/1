@@ -1,0 +1,5 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+ft: bash
+desc: Отобразить дерево текущего каталога по адресу http://$HOSTNAME:8000/
+code: |
+  $ python -m SimpleHTTPServer

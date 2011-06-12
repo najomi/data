@@ -1,0 +1,42 @@
+link: http://www.phpmaniac.net/wiki/index.php/Pear_Mail
+ft: php
+desc: Отправить письмо с txt/html содержимым и 2 вложениями
+code: |
+  <?
+    include('Mail.php');
+    include('Mail/mime.php');
+
+    $sender = "Leigh <leigh@no_spam.net>";                              
+    $recipient = "Leigh <leigh@no_spam.net>";                           
+    $subject = "Test Email";                                            
+    $text = 'This is a text message.';                                  
+    $html = '<html><body><p>This is a html message</p></body></html>';  
+    $crlf = "\n";
+    $headers = array(
+                    'From'          => $sender,
+                    'Return-Path'   => $sender,
+                    'Subject'       => $subject
+                    );
+    
+    $mime = new Mail_mime($crlf);
+    
+    $mime->setTXTBody($text);
+    $mime->setHTMLBody($html);
+    
+    $file = "Hello World!";                                      
+    $file_name = "Hello text.txt";                               
+    $content_type = "text/plain";                                
+    $mime->addAttachment ($file, $content_type, $file_name, 0);  
+
+    // Этот файл мы берём из файловой системы
+    $file = "example.pdf";                                       
+    $file_name = "example.pdf";                                  
+    $content_type = "Application/pdf";                           
+    $mime->addAttachment ($file, $content_type, $file_name, 1);  
+
+    $body = $mime->get();
+    $headers = $mime->headers($headers);
+    
+    $mail =& Mail::factory('mail');
+    $mail->send($recipient, $headers, $body);
+  ?>

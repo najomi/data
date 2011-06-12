@@ -1,0 +1,5 @@
+link: http://www.pixelbeat.org/cmdline_ru_RU.html
+ft: bash
+desc: обновлять вывод каждые 100 милесекунд
+code: |
+  $ watch -n,1 'cat /proc/interrupts'
