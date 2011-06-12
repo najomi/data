@@ -1,0 +1,3 @@
+desc: Добавить пользователю группу
+code: |
+  $ usermod -a -G www-data waserd
