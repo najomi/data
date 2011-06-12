@@ -1,0 +1,15 @@
+link: http://www.netadmintools.com/part594.html
+ft: bash
+desc: Переименовать группу файлов по порядку
+code: |
+  $ ls
+  IMG_0918.JPG	IMG_0925.JPG	IMG_0931.JPG	IMG_0940.JPG
+  IMG_0922.JPG	IMG_0926.JPG	IMG_0932.JPG	IMG_0945.JPG
+  IMG_0923.JPG	IMG_0927.JPG	IMG_0938.JPG	IMG_0946.JPG
+  IMG_0924.JPG	IMG_0930.JPG	IMG_0939.JPG	IMG_0947.JPG
+  $ for i in *.JPG; do let j+=1 ; mv $i img_$j.jpg ; done
+  $ ls
+  img_1.jpg	img_13.jpg	img_2.jpg img_6.jpg
+  img_10.jpg	img_14.jpg	img_3.jpg img_7.jpg
+  img_11.jpg	img_15.jpg	img_4.jpg img_8.jpg
+  img_12.jpg	img_16.jpg	img_5.jpg img_9.jpg

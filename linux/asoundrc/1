@@ -1,0 +1,12 @@
+link: http://wiki.audacityteam.org/index.php?title=Recording_audio_playing_on_the_computer
+ft: bash
+desc: Записать звук из флэша 
+code: |
+  $ cat ~/.asoundrc 
+    pcm.teemp3 {
+        type file
+        format "raw"
+        slave.pcm "default"
+        file '|/usr/local/bin/lame -S -r -s %r --bitwidth %b -m j - /tmp/asound-$$.mp3'
+    }
+  $ FLASH_ALSA_DEVICE=teemp3 firefox

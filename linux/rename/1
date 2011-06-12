@@ -1,0 +1,5 @@
+link: http://www.cyberciti.biz/tips/renaming-multiple-files-at-a-shell-prompt.html
+ft: bash
+desc: Удалить пробелы из имён файлов в директории
+code: |
+  $ rename "s/ *//g" *.mp3

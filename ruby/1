@@ -1,0 +1,10 @@
+ft: ruby
+desc: Вывести список методов объекта
+code: |
+  require 'pp'
+  pp String.methods
+out: |
+  ["private_class_method", "inspect", "name", "tap",
+  "clone", "public_methods", "__send__", "object_id",
+  "method_defined?", "instance_variable_defined?",
+  ...

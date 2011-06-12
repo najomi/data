@@ -1,0 +1,4 @@
+ft: bash
+desc: Создаём превью для всех картинок в каталоге
+code: |
+  $ for file in *.jpg;  do convert -scale 100 $file tn_$file ; done

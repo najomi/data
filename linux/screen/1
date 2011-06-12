@@ -1,0 +1,4 @@
+ft: bash
+desc: Запускаем в screen команду и отключаемся от него
+code: |
+  $ screen -m -d make update

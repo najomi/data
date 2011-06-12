@@ -1,0 +1,5 @@
+link: http://www.cyberciti.biz/tips/renaming-multiple-files-at-a-shell-prompt.html
+ft: bash
+desc: Переименовать все файлы  из текущей директории в нижней регистр
+code: |
+  $ rename 'y/A-Z/a-z/' *

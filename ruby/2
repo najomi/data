@@ -1,0 +1,11 @@
+link: http://blog.bogojoker.com/2008/11/data-and-argf-in-ruby/
+ft: ruby
+desc: Храним данные вместе с исходным кодом
+code: |
+  puts DATA.read
+  
+  __END__
+  I can put anything I want
+  after the __END__ symbol
+  and access it with the
+  DATA global.  Whoa!

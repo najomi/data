@@ -1,0 +1,20 @@
+link: http://blog.bogojoker.com/2008/11/data-and-argf-in-ruby/
+ft: ruby
+desc: |
+  ARGF преобразует переданные в виде аргументов имена файлов 
+  в единый поток, с которого можно читать данные
+code: |
+  # shell> echo "inside a.txt" > a.txt
+  # shell> echo "inside b.txt" > b.txt
+  # shell> cat a.txt b.txt
+  # inside a.txt
+  # inside b.txt
+
+  # linenum.rb
+  ARGF.each do |line|
+    puts "%3d: %s" % [ARGF.lineno, line]
+  end
+out: |
+  shell> ruby linenum.rb a.txt b.txt
+    1: inside a.txt
+    2: inside b.txt
