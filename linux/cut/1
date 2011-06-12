@@ -1,0 +1,4 @@
+desc: Разбить строку по пробелу и взять 4 элемент
+code: |
+  waserd@lili ~/data (master) $ date | cut -f4 -d' '
+  05:31:41

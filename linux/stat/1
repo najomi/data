@@ -1,0 +1,10 @@
+desc: Вывести подробную информацию по файлу
+code: |
+  waserd@lili ~ $ stat /etc/passwd
+    File: «/etc/passwd»
+    Size: 1592            Blocks: 8          IO Block: 4096   обычный файл
+  Device: 801h/2049d      Inode: 320151      Links: 1
+  Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+  Access: 2011-06-11 18:16:14.000000000 +0400
+  Modify: 2011-06-06 15:45:02.000000000 +0400
+  Change: 2011-06-06 15:45:02.000000000 +0400
