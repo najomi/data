@@ -1,0 +1,23 @@
+link: http://www.misuse.org/science/2008/01/30/passing-multiple-arguments-in-ruby-is-your-friend/ 
+desc: Собираем аргументы в массив и передаём их другой функции
+code: |
+  def my_method(*args)
+    sub_method(*args)
+    puts "---"
+    sub_method(args)
+  end
+  
+  def sub_method(*args)
+    args.each do |arg_item|
+      puts arg_item.inspect
+    end
+  end
+out: |
+  my_method('1','2',3,[4,5,6])
+  
+  "1"
+  "2"
+  3
+  [4, 5, 6]
+  ---
+  ["1", "2", 3, [4, 5, 6]]
