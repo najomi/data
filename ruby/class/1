@@ -1,0 +1,15 @@
+ft: ruby
+desc: Расширить методом экземпляр класса
+code: |
+  foo = "Hello"
+  class << foo 
+    def add wtf 
+      self << wtf 
+    end 
+  end
+  
+  foo.add ", "
+  foo.add "World!"
+  puts foo 
+out: |
+  Hello, World!
