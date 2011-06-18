@@ -1,0 +1,6 @@
+link: http://php.net/manual/en/function.header.php
+ft: php
+desc: Перенаправить пользователя на другую страницу
+code: |
+  <?php
+    header("Location: http://www.example.com/");

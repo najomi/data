@@ -1,0 +1,6 @@
+link: http://www.jasny.net/?p=84
+ft: bash
+desc: Получить расширение файла
+code: |
+  ext=${file_name##*.}
+  name=${file_name%.*}

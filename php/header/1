@@ -1,0 +1,8 @@
+link: http://php.net/manual/en/function.header.php
+ft: php
+desc: Заставить браузер скачивать файл
+code: |
+  <?php
+    header('Content-type: application/pdf');
+    header('Content-Disposition: attachment; filename="downloaded.pdf"');
+    readfile('original.pdf');

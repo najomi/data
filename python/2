@@ -1,0 +1,6 @@
+link: http://www.jasny.net/?p=84
+ft: python
+desc: Получить расширение файла
+code: |
+  import os
+  ext = os.path.splitext(file_name)[1]
