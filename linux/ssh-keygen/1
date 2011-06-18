@@ -1,0 +1,5 @@
+ft: bash
+desc: Сгенерировать ключ для ssh ни о чём не спрашивая
+code: |
+   $ ssh-keygen -q -b 4096 -t rsa -N '' -f bubujka
+

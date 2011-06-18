@@ -1,0 +1,4 @@
+ft: ruby
+desc: Проставить права файлу
+code: |
+  File.chmod(0744, 'file.sh')
