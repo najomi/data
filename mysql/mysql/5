@@ -1,0 +1,12 @@
+ft: bash
+desc: Вывести результаты запроса в более человечном формате
+code: |
+  $ mysql --vertical  lifer -e 'select id, name from books limit 2' 
+  $ mysql -E  lifer -e 'select id, name from books limit 2' 
+out: |
+  *************************** 1. row ***************************
+    id: 1
+  name: Атлант расправил плечи
+  *************************** 2. row ***************************
+    id: 2
+  name: Rework

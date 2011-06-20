@@ -1,0 +1,5 @@
+ft: bash
+desc: Сохранить результаты в xml формате
+code: |
+  $ mysql --xml lifer -e 'select * from money' > money.xml
+

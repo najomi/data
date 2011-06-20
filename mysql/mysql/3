@@ -1,0 +1,4 @@
+ft: bash
+desc: Выполнит запрос и сохранить его результаты в html формате в файл
+code: |
+  $ mysql --html lifer -e 'select * from money' > money.html
