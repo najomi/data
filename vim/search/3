@@ -1,0 +1,4 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: Устанавливать при поиске курсор за 2 символа от начала вхождения
+code: |
+  /joe/s-2   

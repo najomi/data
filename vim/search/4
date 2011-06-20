@@ -1,0 +1,4 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: Устанавливать при поиске курсор на 3 строки ниже
+code: |
+  /joe/+3

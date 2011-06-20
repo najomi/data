@@ -1,0 +1,4 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: Искать строку, которая содержит все слова, и начинается с 'joe'
+code: |
+  /^joe.*fred.*bill/  

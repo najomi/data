@@ -1,0 +1,4 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: При поиске устанавливать курсор в конец искомого слова
+code: |
+  /joe/e

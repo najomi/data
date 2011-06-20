@@ -1,0 +1,5 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: найти третье вхождение и установить курсор правее на 1 символ
+code: |
+  3/joe/e+1
+

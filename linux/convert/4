@@ -1,0 +1,6 @@
+link: http://www.ioncannon.net/linux/81/5-imagemagick-command-line-examples-part-1/
+ft: bash
+desc: Добавить текст 'Flower' на картинку
+code: |
+  $ convert flower.jpg -font courier -fill white -pointsize 20 \ 
+     -annotate +50+50 'Flower' flower_annotate1.jpg

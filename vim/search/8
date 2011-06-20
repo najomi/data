@@ -1,0 +1,4 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: Искать точное вхождение 'fred'
+code: |
+  /\<fred\>/

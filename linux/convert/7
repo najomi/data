@@ -1,0 +1,10 @@
+link: http://www.ioncannon.net/linux/81/5-imagemagick-command-line-examples-part-1/
+ft: bash
+desc: Создать анимацию
+code: |
+  $ convert -delay 100 -size 100×100 \
+     -page +0+0 flower_frame1.gif \
+     -page +0+0 flower_frame2.gif \
+     -page +0+0 flower_frame3.gif \
+     -page +0+0 flower_frame4.gif \
+     -loop 0 flower_animation.gif

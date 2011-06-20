@@ -1,0 +1,4 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: Искать строку, в начале которой символы от 'A' до 'J'
+code: |
+  /^[A-J]/ 

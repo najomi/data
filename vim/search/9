@@ -1,0 +1,6 @@
+link: http://www.rayninfo.co.uk/vimtips.html
+desc: Искать четыре цифры подряд
+code: |
+  /\<\d\d\d\d\>
+  /\D\d\d\d\d\D
+  /\<\d\{4}\> 

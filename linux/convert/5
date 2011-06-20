@@ -1,0 +1,6 @@
+link: http://www.ioncannon.net/linux/81/5-imagemagick-command-line-examples-part-1/
+ft: bash
+desc: Разместить текст 'Flower' внизу, по центру, добавив прозрачный фон
+code: |
+  $ convert flower.jpg -fill white -box '#00770080' -gravity South \
+     -pointsize 20 -annotate +0+5 '   Flower   ' flower_annotate2.jpg

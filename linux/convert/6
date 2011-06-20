@@ -1,0 +1,5 @@
+link: http://www.ioncannon.net/linux/81/5-imagemagick-command-line-examples-part-1/
+ft: bash 
+desc: Обрезать картинку
+code: |
+  $ convert flower.jpg -crop 128×128+50+50 flower_crop.jpg
