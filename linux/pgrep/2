@@ -1,0 +1,5 @@
+link: man pgrep
+ft: bash
+desc: Показать pid процессов пользователей root и daemon
+code: |
+  $ pgrep -u root,daemon

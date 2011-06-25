@@ -1,0 +1,5 @@
+link: man pgrep
+ft: bash
+desc: Показать pid всех процессов sshd пользователя root
+code: |
+   $ pgrep -u root sshd
