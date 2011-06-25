@@ -1,0 +1,5 @@
+ft: bash
+desc: Открыть файл, но предопределить синтаксис редактора
+code: |
+   $ vim "+set filetype=lisp" file.rb
+
