@@ -1,0 +1,8 @@
+ft: bash
+desc: посмотреть pid процессов по части имени
+code: |
+  $ pgrep -l dbus
+out: |
+  1597 dbus-daemon
+  31778 dbus-launch
+  31779 dbus-daemon
