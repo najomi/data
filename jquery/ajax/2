@@ -1,0 +1,7 @@
+link: http://stackoverflow.com/questions/4341933/wrap-jquerys-ajax-method-to-define-global-error-handling
+ft: javascript
+desc: Повесить обработчик на все ajax ошибки
+code: |
+  $.ajaxError(function myErrorHandler(event, xhr, ajaxOptions, thrownError) {
+    alert("There was an ajax error!");
+  });

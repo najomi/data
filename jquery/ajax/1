@@ -1,0 +1,7 @@
+link: http://stackoverflow.com/questions/4341933/wrap-jquerys-ajax-method-to-define-global-error-handling
+ft: javascript
+desc: Повесить обработчик всех ajax запросов
+code: |
+  $.ajaxComplete(function myErrorHandler(event, xhr, ajaxOptions, thrownError) {
+    alert("Ajax request completed with response code " + xhr.status);
+  });
