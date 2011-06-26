@@ -1,4 +1,5 @@
-link: povitter@povitter.net
+link: mailto:povitter@povitter.net
+ft: bash
 desc: |
   Подменить сорс-адрес в пакетах приходящих на определенный адрес 
 
@@ -8,7 +9,7 @@ desc: |
   Второе правило  меняет сорс адрес для таких пакетов и заварачивает пакет 
   на нужный адрес.
 code: |
-  iptables -t mangle -I PREROUTING -d 10.113.18.13 -p tcp \
-    --dport 80 -j MARK --set-mark 1980
-  iptables -t nat -A POSTROUTING -d 192.168.155.19 -m mark \
-    --mark 1980 -p tcp --dport 80 -j SNAT --to-source 192.168.155.253
+  # iptables -t mangle -I PREROUTING -d 10.113.18.13 -p tcp \
+      --dport 80 -j MARK --set-mark 1980
+  # iptables -t nat -A POSTROUTING -d 192.168.155.19 -m mark \
+      --mark 1980 -p tcp --dport 80 -j SNAT --to-source 192.168.155.253

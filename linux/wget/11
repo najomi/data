@@ -1,4 +1,4 @@
-link: poVitter
+link: mailto:povitter@povitter.net
 desc: Скачивание галереи картинок с превьюшками.
 code: |
   $ wget -r -k -p -l1 -I /images/ -I /thumb/ \
