@@ -1,0 +1,18 @@
+link: git help rebase
+ft: bash
+desc: | 
+  Перенести ветку в другое место
+  o---o---o---o---o  master
+       \
+        o---o---o---o---o  next
+                         \
+                          o---o---o  topic
+
+  Превратится в:
+  o---o---o---o---o  master
+      |            \
+      |             o'--o'--o'  topic
+       \
+        o---o---o---o---o  next
+code: |
+   $ git rebase --onto master next topic
