@@ -1,0 +1,8 @@
+Mogrify принимает те же <a href='http://www.imagemagick.org/script/convert.php'>опции</a>
+ что и <a href='/linux/convert'>convert</a>, но обрабатывает сам файл.
+<br><br>
+Эти примеры аналогичны друг-другу:
+
+<code><pre>$ mogrify img.jpg -resize 100x100
+$ convert img.jpg -resize 100x100 img.jpg
+</pre></code>
