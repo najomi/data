@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/crazydev/123163/
+ft: vim
+desc: Отправить весь буфер вима в grep
+code: |
+  :%!grep data
