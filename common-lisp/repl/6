@@ -1,0 +1,12 @@
+link: http://vmathew.in/lisp-repl.html
+ft: lisp
+desc: Посмотреть состояние памяти лиспа
+lisp: clisp
+code: |
+  (room)
+out: |
+  Bytes permanently allocated: 90624
+  Bytes currently in use: 3258228
+  Bytes available until next GC: 180536
+  3258228
+  180536

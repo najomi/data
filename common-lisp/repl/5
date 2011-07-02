@@ -1,0 +1,20 @@
+link: http://vmathew.in/lisp-repl.html
+ft: lisp
+desc: Замерить время выполнения участка кода
+lisp: sbcl
+code: |
+  (defun add-n-squares (n)
+    (do ((i 0 (+ i 1))
+         (sum 0 (+ sum (* i i))))
+      ((> i n) sum)))
+
+  (time (add-n-squares 10000))
+out: |
+  Evaluation took:
+    0.001 seconds of real time
+    0.004000 seconds of total run time (0.004000 user, 0.000000 system)
+    400.00% CPU
+    3,090,464 processor cycles
+    212,792 bytes consed
+  
+  333383335000

@@ -1,0 +1,9 @@
+link: http://www.aiai.ed.ac.uk/~jeff/clos-guide.html
+ft: lisp
+desc: Получить класс объекта
+code: |
+  (class-of 'a)         #<Built-In-Class SYMBOL>
+  (class-of "a")        #<Built-In-Class STRING>
+  (class-of 12)         #<Built-In-Class INTEGER>
+  (class-of '(a b))     #<Built-In-Class CONS>
+  (class-of '#(a b c))  #<Built-In-Class VECTOR>

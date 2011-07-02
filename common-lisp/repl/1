@@ -1,0 +1,15 @@
+link: http://vmathew.in/lisp-repl.html
+ft: lisp
+desc: Дать подробное описание объекту
+lisp: clisp
+code: |
+  (defun fact (n)
+    (if (zerop n)
+        1
+        (* n (fact (- n 1)))))
+  (describe #'fact)
+out: |
+  #<FUNCTION FACT (N) (DECLARE (SYSTEM::IN-DEFUN FACT)) (BLOCK FACT (IF # 1 #))>
+  is an interpreted function.
+
+  Argument list: (N)

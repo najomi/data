@@ -1,0 +1,16 @@
+link: http://vmathew.in/lisp-repl.html
+ft: lisp
+desc: Вызвать дебаггер в определённом месте
+code: |
+  (break "You have entered the debugger with arguments: ~s" '(1 2 3))
+out: |
+  You have entered the debugger with arguments: (1 2 3)
+
+  [Condition of type SIMPLE-CONDITION]
+
+  Restarts:
+  0: [CONTINUE] Return from BREAK loop
+  1: [ABORT-REQUEST] Abort handling SLIME request.
+  2: [ABORT] Return to SLIME top-level.
+  3: [ABORT] ABORT
+
