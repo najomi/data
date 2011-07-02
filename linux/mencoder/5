@@ -1,0 +1,8 @@
+link: http://bro1.centras.info/mencoder_editing.html 
+ft: bash
+desc: |
+  Вырезать фрагмент видео с определённого момента и сохранить его в файл
+  cut.avi. Параметр endpos указывает продолжительность фрагмента.
+  Видео будет вырезано с 722 секунды по 1007 (722 + 285).
+code: |
+  $ mencoder video.avi -ss 722 -endpos 285 -oac copy -ovc copy -o cut.avi

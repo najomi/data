@@ -1,0 +1,16 @@
+ft: sql
+desc: Вывести список всех пользователей в базе данных
+code: |
+  select distinct(user) from mysql.user;
+out: |
+  +------------------+
+  | user             |
+  +------------------+
+  | root             |
+  | bishon           |
+  | dogs             |
+  | mbs              |
+  | test             |
+  | whoop            |
+  +------------------+
+  6 rows in set (0.06 sec)
