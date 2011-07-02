@@ -1,0 +1,10 @@
+link: http://habrahabr.ru/blogs/javascript/117868/ 
+ft: javascript
+desc: Получить колличество аргументов переданных функции
+code: |
+  var count = function () {
+	console.log(arguments.length);
+  };
+
+  count(); // 0
+  count(first, second); // 2

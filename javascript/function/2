@@ -1,0 +1,9 @@
+link: http://habrahabr.ru/blogs/javascript/117868/
+ft: javascript
+desc: Получить колличество аргументов, которые объявлены в описании функции
+code: |
+  function one   (foo) {};
+  function three (foo, bar, qux) {};
+
+  console.log(  one.length); // 1
+  console.log(three.length); // 3

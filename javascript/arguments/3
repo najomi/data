@@ -1,0 +1,12 @@
+ft: javascript
+desc: Итерация по всем аргументам в функции
+code: |
+  function foo(){
+    for(var i in arguments)
+      console.log(arguments[i])
+  }
+  foo('one', 'two', 'three');
+out: |
+  one
+  two
+  three

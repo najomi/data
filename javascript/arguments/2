@@ -1,0 +1,10 @@
+link: http://habrahabr.ru/blogs/javascript/117868/
+ft: javascript
+desc: Проверить - все ли аргументы переданы функции
+code: |
+  function test (foo, bar, qux) {
+	  return arguments.callee.length === arguments.length;
+  }
+
+  test(1); // false
+  test(1,2,3); // true
