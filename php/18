@@ -1,0 +1,6 @@
+ft: php
+desc: Получить ip пользователя
+code: |
+  echo $_SERVER['REMOTE_ADDR'];
+out: |
+  62.109.1.100

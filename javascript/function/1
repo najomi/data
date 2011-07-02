@@ -1,0 +1,18 @@
+link: http://vingrad.ru/blogs/selavy/2009/01/06/javascript-ispolzuyte-argumentscallee-vmesto-nazvaniya-funktsii/
+ft: javascript
+desc: Корректный рекурсивный вызов функции, с защитой от изменения её имени
+code: |
+  function factorial(x) {
+      return x == 1 ? 1 : x + arguments.callee(x - 1);
+  }
+  var fac = factorial;
+  factorial = 27;
+  alert(fac(factorial)); // Возвращает “378″.
+
+  // ---------------------------------------------------
+
+  var factorial = function f(x) {
+      return x == 1 ? 1 : x + f(x - 1);
+  };
+
+  alert(f); // Ошибка: “f is not defined”
