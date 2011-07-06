@@ -1,0 +1,4 @@
+ft: bash
+desc: Проиграть только звук из файла
+code: |
+  $ mplayer -vo none clip.avi

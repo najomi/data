@@ -1,0 +1,4 @@
+ft: bash
+desc: Играть один и тот же файл на повторе
+code: |
+  $ mplayer -loop 0 clip.avi

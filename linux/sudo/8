@@ -1,0 +1,10 @@
+ft: bash
+desc: Список команд, которые может выполнять пользователь через sudo
+code: |
+  waserd@lili ~ $ sudo -l
+  Matching Defaults entries for waserd on this host:
+      env_reset
+
+  User waserd may run the following commands on this host:
+      (ALL) ALL
+      (root) NOPASSWD: /bin/umount /home/waserd/mnt
