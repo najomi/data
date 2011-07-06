@@ -1,4 +1,0 @@
-link: http://xtips.ru/?act=tview&tid=23
-desc: статистика по ядрам процессора
-code: |
-  # sysctl kern.smp
