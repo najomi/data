@@ -1,0 +1,8 @@
+link: http://stackoverflow.com/questions/1600526/how-do-i-encode-decode-html-entities-in-ruby
+ft: ruby
+desc: Декодировать строку, содержащую символы в html представлении
+code: |
+  require 'cgi'
+  puts CGI.unescapeHTML("test &quot;unescaping&quot; &lt;characters&gt;")
+out: |
+  test "unescaping" <characters>

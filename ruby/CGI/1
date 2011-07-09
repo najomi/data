@@ -1,0 +1,8 @@
+link: http://stackoverflow.com/questions/1600526/how-do-i-encode-decode-html-entities-in-ruby
+ft: ruby
+desc: Экранировать зарезервированные html символы
+code: |
+  require 'cgi'
+  puts CGI.escapeHTML "<h1>Hello, <i>World</i>!"
+out: |
+  &lt;h1&gt;Hello, &lt;i&gt;World&lt;/i&gt;!
