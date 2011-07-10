@@ -1,0 +1,20 @@
+link: http://coding.derkeiler.com/Archive/Lisp/comp.lang.lisp/2006-04/msg00787.html
+desc: Объявить класс, который будет связан с таблицей в базе данных
+code: |
+  (def-view-class user ()
+    ((id
+      :accessor id
+      :initarg :id
+      :type integer
+      :db-type "serial"
+      :db-kind :key)
+     (username
+      :accessor username
+      :initarg :username
+      :type string)
+     (password-hash
+      :accessor password-hash
+      :initarg :password-hash
+      :type string
+      :column password_hash))
+    (:base-table users))

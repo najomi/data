@@ -1,0 +1,8 @@
+link: http://coding.derkeiler.com/Archive/Lisp/comp.lang.lisp/2006-04/msg00787.html
+desc: Добавить запись в базу данных
+code: |
+  (update-records-from-instance
+   (make-instance 'user
+                  :id 1
+                  :username "foo"
+                  :password-hash (hash-login-information "foo" "foobar"))))

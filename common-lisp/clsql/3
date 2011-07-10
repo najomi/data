@@ -1,0 +1,6 @@
+link: http://coding.derkeiler.com/Archive/Lisp/comp.lang.lisp/2006-04/msg00787.html
+desc: Найти пользователя с id=2 и установить ему поле username в значение joe
+code: |
+  (let ((user (first (select 'user :where [= [id] 1] :flatp t :refresh t))))
+    (setf (username user) "joe")
+    (update-records-from-instance user))

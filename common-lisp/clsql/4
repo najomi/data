@@ -1,0 +1,5 @@
+link: http://coding.derkeiler.com/Archive/Lisp/comp.lang.lisp/2006-04/msg00787.html
+desc: Удалить таблицу, привязанную к классу и пересоздать её.
+code: |
+  (drop-view-from-class 'user)
+  (create-view-from-class 'user)
