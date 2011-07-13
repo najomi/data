@@ -1,0 +1,7 @@
+ft: bash
+desc: Выполнить команду от другого пользователя
+code: |
+  $ sudo -u www-data id
+out: |
+  uid=33(www-data) gid=33(www-data) группы=33(www-data),1000(waserd)
+
