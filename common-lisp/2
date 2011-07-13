@@ -3,4 +3,4 @@ desc: Все буквы в заглавный регистр
 code: |
   (string-upcase "How about that!")
 out: |
-  HOW ABOUT THAT!"
+  "HOW ABOUT THAT!"
