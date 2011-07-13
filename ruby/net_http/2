@@ -1,0 +1,7 @@
+link: http://ruby-doc.org/stdlib/libdoc/net/http/rdoc/classes/Net/HTTP.html
+ft: ruby
+desc: Сделать get запрос и распечатать его результат
+code: |
+  require 'net/http'
+  require 'uri'
+  Net::HTTP.get_print URI.parse('http://www.example.com/index.html')

@@ -1,7 +1,6 @@
 ft: ruby
 desc: Получить код ответа http сервера 
 code: |
-  #!/usr/bin/env ruby
   require 'net/http'
   puts Net::HTTP.get_response('najomi.org', '/404.html').code
 out: |
