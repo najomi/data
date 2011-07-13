@@ -1,0 +1,10 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Именованные параметры у функции
+code: |
+  (defun first-n-chars (string n 
+                  &key reverse-first  nil by default
+                       (capitalize-first t) )
+          ;...
+         )
+  (first-n-chars "hello world" 5 :reverse-first t) 
+

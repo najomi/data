@@ -1,0 +1,8 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Получить часть строки
+code: |
+  (subseq "Four score and seven years ago" 9)
+  (subseq "Four score and seven years ago" 9 23)
+out: |
+  "e and seven years ago"
+  "e and seven ye"

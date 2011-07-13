@@ -1,0 +1,6 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Определить длину строки
+code: |
+  (length "Four score and seven years ago")
+out: |
+  30

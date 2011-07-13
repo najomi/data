@@ -1,0 +1,8 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Управляющие символы
+code: |
+  #\tab
+  #\newline
+  #\space
+  #\backspace
+  #\escape

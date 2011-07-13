@@ -1,0 +1,12 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Итерация по списку
+code: |
+  (dolist (x '(a b c d e))
+          (print x))
+out: |
+  A 
+  B 
+  C 
+  D 
+  E 
+  NIL

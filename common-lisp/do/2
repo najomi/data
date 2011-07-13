@@ -1,0 +1,11 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: |
+  Опционально dotimes можно передать возвращаемое значение (в данном случае "yo")
+code: |
+  (dotimes (x 4 "yo") (print "hello"))
+out: |
+  "hello"
+  "hello"
+  "hello"
+  "hello"
+  "yo"

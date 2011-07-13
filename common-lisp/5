@@ -1,0 +1,6 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Проверить является ли аргумент числом
+code: |
+  (numberp "hello")
+out: |
+  NIL

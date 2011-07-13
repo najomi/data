@@ -1,0 +1,8 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Экранировать передаваемый аргумент и вернуть его как данные
+code: |
+  (quote (+ 1 2))
+  '(+ 1 2)
+out: |
+  (+ 1 2)
+  (+ 1 2)

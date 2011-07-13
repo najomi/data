@@ -1,0 +1,5 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Опциональный параметр у функции с значением по умолчанию
+code: |
+  (defun multiply-then-maybe-add (x y &optional (z 0) )
+    (+ (* x y) z))

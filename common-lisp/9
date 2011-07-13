@@ -1,0 +1,13 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: Параметры передаются по значению
+code: |
+  [44]> (defun weird-function (n)
+            (setf n 4)
+            n)
+  WEIRD-FUNCTION
+  [45]> (setf abc 17) 
+  17
+  [46]> (weird-function abc)
+  4
+  [47]> abc
+  17

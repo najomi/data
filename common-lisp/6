@@ -1,0 +1,10 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: |
+  Print печатает аргумент и возвращает его, так что можно безопасно
+  встраивать его в свои выражения.
+code: |
+  (+ (print (* 2 3)) (print (/ 3 2)) 9)
+out: |
+  6 
+  3/2 
+  33/2

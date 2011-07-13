@@ -1,0 +1,9 @@
+link: http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+desc: |
+  setf вернёт значение переменной, после присваивания, так что можно
+  использовать его в дальнейшем
+code: |
+  (setf x 6)
+  (+ x (setf x 4) x)
+out: |
+  12
