@@ -1,0 +1,5 @@
+desc: Раскрыт тильду в пути
+code: |
+  puts File.expand_path('~waserd/data')
+out: |
+  /home/waserd/data
