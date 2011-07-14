@@ -1,0 +1,9 @@
+link: http://php.net/manual/en/function.filegroup.php
+ft: php
+desc: Получить группу файла
+code: |
+  <?php
+  $t = posix_getgrgid(filegroup('/etc/passwd'));
+  echo $t['name'];
+out: |
+  root

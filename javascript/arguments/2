@@ -3,7 +3,7 @@ ft: javascript
 desc: Проверить - все ли аргументы переданы функции
 code: |
   function test (foo, bar, qux) {
-	  return arguments.callee.length === arguments.length;
+      return arguments.callee.length === arguments.length;
   }
 
   test(1); // false

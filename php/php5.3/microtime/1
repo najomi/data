@@ -1,0 +1,13 @@
+ft: php
+desc: Замерить время исполнения участка кода
+code: |
+  function benchmark($fn){
+      $start = microtime(true);
+      $fn();
+      return microtime(true) - $start; 
+  }
+  echo benchmark(function(){
+      sleep(1);
+  });
+out: |
+  1.0355257987976

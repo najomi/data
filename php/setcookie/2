@@ -1,0 +1,4 @@
+link: http://php.net/setcookie
+desc: Удалить куки
+code: |
+  setcookie("user-id", '', time() - 3600);

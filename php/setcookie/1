@@ -1,0 +1,4 @@
+link: http://php.net/setcookie
+desc: Установить куки на 24 часа на весь сайт
+code: |
+  setcookie("user-id", $id, time() + (3600 * 24), '/');
