@@ -1,0 +1,8 @@
+link: http://en.wikipedia.org/wiki/Format_(Common_Lisp)
+ft: lisp
+desc: Пример форматирования текста 
+code: |
+  (format t "Color ~a, number1 ~d, number2 ~5,'0d, hex ~x, float ~5,2f, unsigned value ~d.~%"
+            "red" 123456 89 255 3.14 250)
+out: |
+  Color red, number1 123456, number2 00089, hex FF, float  3.14, unsigned value 250.
