@@ -1,0 +1,12 @@
+ft: php
+desc: |
+  Функции в php определяются при чтении файла, так что в данном случае exit не
+  влияет на работу
+code: |
+  foo();
+  exit;
+  function foo(){
+      echo "work";
+  }
+out: |
+  work
