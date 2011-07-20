@@ -1,0 +1,11 @@
+ft: bash
+desc: Рекурсивно сравнить содержимое двух каталогов
+code: |
+  $ diff -q -r ~/dogs/static ~/bishon/static
+out: |
+  Только в bishon/static/css: comment-style.css
+  Только в bishon/static/css: ie6.css
+  Файлы dogs/static/css/main.css и bishon/static/css/main.css различаются
+  Только в dogs/static/css: .main.css.swp
+  Только в dogs/static/ico: main.css
+  ...
