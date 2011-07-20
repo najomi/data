@@ -1,0 +1,18 @@
+link: https://gist.github.com/1010865
+ft: ruby 
+desc: Красиво заполняем хэш данными
+code: |
+  require 'pp'
+  DIRS = Hash[*%w{
+          ~/Local\ Storage/TV                 TV
+          /media/Odeon/Cartoons               Cartoons
+          /media/Odeon/TV                     TV
+          /media/Lightning/G/TV\ Storage      TV
+      }]
+  
+  pp DIRS
+out: |
+  {"/media/Lightning/G/TV Storage"=>"TV",
+   "/media/Odeon/TV"=>"TV",
+   "~/Local Storage/TV"=>"TV",
+   "/media/Odeon/Cartoons"=>"Cartoons"}

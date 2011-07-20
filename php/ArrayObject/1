@@ -1,0 +1,19 @@
+ft: php
+desc: Превращаем массив в объект.
+code: |
+  <?php
+  class MyArray extends ArrayObject{
+          function __toString(){
+                  $r = array();
+                  foreach($this as $k=>$v)
+                          $r[] = $k."-".$v;
+                  return implode("\n", $r);
+          }   
+  }
+  
+  $t = new MyArray(array('foo'=>'bar', 
+                         'one'=>'two'));
+  echo $t; 
+out: |
+  foo-bar
+  one-two

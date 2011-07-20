@@ -1,0 +1,14 @@
+link: http://love5an.livejournal.com/356336.html 
+ft: lisp
+code: |
+  (defun foo (a b
+              &optional (c 'c) d
+              &rest keys
+              &key (e 'e) ((:x f) 0 f-present-p) g
+              &allow-other-keys)
+    (list a b c d e (list f f-present-p) g keys))
+  
+  (foo 0 1 2 3 :g 4 :x 5 :z 123)
+out: |
+  (0 1 2 3 E (5 T) 4 (:G 4 :X 5 :Z 123))
+
