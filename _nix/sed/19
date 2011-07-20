@@ -1,0 +1,4 @@
+link: http://www.cyberciti.biz/faq/howto-linux-unix-command-remove-all-blank-lines/
+desc: Убрать пустые строки из файла
+code: |
+  $ sed '/^$/d' input.txt > output.txt

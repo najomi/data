@@ -1,4 +1,6 @@
 link: http://xtips.ru/?act=tview&tid=32
-desc: Смотрим фильм прямо из оперативы (до 1,37ГБ) 
+desc: |
+  Заставляем mplayer закэшировать часть данных в оперативной памяти.
+  Размер указывается в килобайтах.
 code: |
-  $ mplayer -cache 1400000 movie.avi
+  $ mplayer -cache 104857 movie.avi

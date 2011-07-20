@@ -1,0 +1,5 @@
+link: http://www.cyberciti.biz/faq/howto-linux-unix-command-remove-all-blank-lines/
+ft: bash
+desc: Убрать пустые строки в файле
+code: |
+  $ grep -v '^$' input.txt > output.txt

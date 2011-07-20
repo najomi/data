@@ -1,0 +1,9 @@
+link: http://www.debian.org/doc/manuals/apt-howto/ch-basico.en.html
+ft: bash
+desc: Создаём локальный репозиторий для пакетов
+code: |
+  # cd /root
+  # mkdir debs
+  ... копируем в папку debs нужные пакеты ...
+  # dpkg-scanpackages debs /dev/null | gzip > debs/Packages.gz
+  # echo 'deb file:/root debs/' >> /etc/apt/sources.list
