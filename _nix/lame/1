@@ -1,0 +1,7 @@
+link: man lame
+ft: bash
+desc: |
+  Сконвертировать wav в mp3
+  3 - качество. Оно может быть от 0 до 9, где 0 - максимальное
+code: |
+  $ lame -V3 output.wav output.mp3

@@ -1,0 +1,11 @@
+link: http://rubygems.org/gems/colored
+ft: ruby
+desc: Используем цвета в консоли
+code: |
+  require 'rubygems'
+  require 'colored'
+  
+  puts "this is red".red 
+  puts "this is red with a blue background (read: ugly)".red_on_blue 
+  puts "this is red with an underline".red.underline
+  puts "this is really bold and really blue".bold.blue
