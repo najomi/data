@@ -1,0 +1,4 @@
+ft: bash
+desc: Список установленных пакетов в дебиане
+code: |
+  $ aptitude search '~i'

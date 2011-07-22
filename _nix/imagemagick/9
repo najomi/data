@@ -1,0 +1,4 @@
+ft: bash
+desc: Сконвертировать ai(tiff, eps, pdf) в jpg
+code: |
+  $ convert file.ai file.jpg

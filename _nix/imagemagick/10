@@ -1,0 +1,7 @@
+link: http://www.imagemagick.org/discourse-server/viewtopic.php?f=1&t=10928
+ft: bash
+desc: |
+  Разбить pdf на jpg файлы, при этом увеличив разрешение (по сравнению
+  с дефолтным)
+code: |
+  $ convert -density 400 Next_700.pdf  -scale 2000x1000  file.jpg
