@@ -1,0 +1,4 @@
+ft: bash
+desc: Распечатать текстовый файл из консоли на принтере
+code: |
+  $ cat /home/www/nginx/dogs.conf | lpr
