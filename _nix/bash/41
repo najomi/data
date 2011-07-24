@@ -1,0 +1,12 @@
+link: http://stackoverflow.com/questions/369758/how-to-trim-whitespace-from-bash-variable
+desc: Обрезать пробелы в начале и конце строки
+code: |
+  trim() { echo $1; }
+
+  echo ">>$(trim 'right side    ')<<"
+  echo ">>$(trim '    left side')<<"
+  echo ">>$(trim '    both sides    ')<<"
+out: |
+  >>right side<<
+  >>left side<<
+  >>both sides<<
