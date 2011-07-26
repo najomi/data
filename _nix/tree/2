@@ -1,0 +1,18 @@
+ft: bash
+desc: Вывести список директорий в древовидном формате
+code: |
+  $ cd ~/data/common-lisp 
+  $ tree -d
+out: |
+  .
+  |-- clos
+  |   `-- class-of
+  |-- clsql
+  |-- defun
+  |-- do
+  |-- equality
+  |-- format
+  |-- prog
+  `-- repl
+  
+  9 directories

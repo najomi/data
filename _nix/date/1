@@ -1,4 +1,6 @@
 link: http://xtips.ru/?act=tview&tid=16
+desc: Привести время в unix-time
 code: |
   $ date --date="Tue Oct 9 14:14:14 UTC 2007" +%s
+out: |
   1191939254

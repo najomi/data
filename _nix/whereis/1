@@ -1,0 +1,6 @@
+ft: bash
+desc: Показать где лежит программа, конфиги и мануал по ней
+code: |
+  $ whereis nginx
+out: |
+  nginx: /usr/sbin/nginx /etc/nginx /usr/share/man/man1/nginx.1.gz

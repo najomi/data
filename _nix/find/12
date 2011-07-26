@@ -1,0 +1,4 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c4_en.html#JUMP
+desc: Показать файлы которые менялись за последние 10 дней
+code: |
+  $ find /usr/bin -type f -mtime -10

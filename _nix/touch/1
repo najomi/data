@@ -1,0 +1,5 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c3_en.html#JUMP
+ft: bash
+desc: Установить время модификации файла (YYMMDDhhmm) 
+code: |
+  $ touch -t 0712250000 file1

@@ -1,0 +1,4 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c3_en.html#JUMP
+desc: Добавлять индикатор при просмотре файлов ('/' - директория, '@' - ссылка)
+code: |
+  $ ls -F

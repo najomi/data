@@ -1,0 +1,11 @@
+desc: Искать файлы определённого пользователя
+code: |
+  $ find . -user www-data
+out: |
+  ./tmp/user-13-invite.png
+  ./tmp/user-17-invite.png
+  ./tmp/user-14-invite.png
+  ./tmp/user-16-invite.png
+  ./log/mail
+  ./log/exception
+  ./log/404

@@ -1,0 +1,21 @@
+ft: bash
+desc: Вывести список файлов в древовидном формате
+code: |
+  $ tree
+out: |
+  .
+  |-- 1
+  |-- 10
+  |-- 11
+  ...
+  |-- stdClass
+  |   |-- 1
+  |   |-- 2
+  |   `-- 3
+  |-- syntax
+  |-- xml_xslt
+  |   `-- 1
+  `-- zip
+      `-- 1
+  
+  28 directories, 77 files

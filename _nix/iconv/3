@@ -1,0 +1,4 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c3_en.html#JUMP
+desc: Список известных кодировок
+code: |
+  $ iconv -l

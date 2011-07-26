@@ -1,0 +1,4 @@
+ft: bash
+desc: Перезайти пользователем, так что группа будет www-data
+code: |
+  $ newgrp www-data

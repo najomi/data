@@ -1,4 +1,6 @@
 link: http://xtips.ru/?act=tview&tid=16
+desc: Unix-time привести к человекопонятному формату
 code: |
   $ date -d @1191939254
+out: |
   Втр Окт 9 18:14:14 MSD 2007

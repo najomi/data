@@ -1,0 +1,4 @@
+ft: bash
+desc: Удалить каталог и всё его содержимое
+code: |
+  $ rm -rf directory

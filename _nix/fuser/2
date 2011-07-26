@@ -1,0 +1,7 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c5_en.html#JUMP
+ft: bash
+desc: |
+  Убить все процессы, которые используют примонтированную 
+  файловую систему.
+code: |
+  $ fuser -km /mnt/hda2
