@@ -1,0 +1,5 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c8_en.html#JUMP
+ft: bash
+desc: Установить владельца и группу для файла
+code: |
+  # chown user1:group1 file1

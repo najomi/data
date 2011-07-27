@@ -1,0 +1,6 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c7_en.html#JUMP
+ft: bash
+desc: Изменить параметры пользователя
+code: |
+  # usermod -c "User FTP" -g system -d /ftp/user1 -s /bin/nologin user1
+

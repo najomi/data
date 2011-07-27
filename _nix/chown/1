@@ -1,0 +1,5 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c8_en.html#JUMP
+ft: bash
+desc: Рекурсивно установить владельца для директории 
+code: |
+  $ chown -R user1 directory1

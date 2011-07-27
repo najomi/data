@@ -1,0 +1,4 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c9_en.html#JUMP
+desc: Разрешить ядру автоматически сжимать-разжимать файл
+code: |
+  # chattr +c file1

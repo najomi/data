@@ -1,0 +1,4 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c9_en.html#JUMP
+desc: Игнорировать данный файл при использовании команды dump
+code: |
+  # chattr +d file1

@@ -1,0 +1,12 @@
+link: man chattr
+desc: Ограничение при использовании ключей
+code: |
+  BUGS AND LIMITATIONS
+  The `c', 's', and `u' attributes are not honored by the ext2 and ext3
+  filesystems as implemented in the current mainline Linux kernels. These
+  attributes may be implemented in future versions of the ext2 and ext3
+  filesystems.
+   
+  The `j' option is only useful if the filesystem is mounted as ext3.
+   
+  The `D' option is only useful on Linux kernel 2.5.19 and later.

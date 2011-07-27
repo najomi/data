@@ -1,0 +1,4 @@
+link: http://www.opennet.ru/tips/info/694.shtml
+desc: Запретить изменение бинарников
+code: |
+  # chattr -R +i /bin /sbin /usr/bin /usr/sbin

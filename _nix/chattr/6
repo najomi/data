@@ -1,0 +1,6 @@
+link: http://www.linuxguide.it/command_line/linux_command_line-c9_en.html#JUMP
+desc: |
+  При удалении файла с атрибутом 's' он будет заполнен нулями и перезаписан на
+  диск. 
+code: |
+  # chattr +s file1

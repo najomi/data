@@ -1,0 +1,8 @@
+<p>
+  Атрибуты можно посмотреть с помощью команды <a href='/_nix/lsattr'>lsattr</a>
+</p>
+
+<p>
+  Для FreeBSD см. man chflags и man security
+  (<a href='http://www.opennet.ru/tips/info/694.shtml'>www.opennet.ru</a>)
+</p>
