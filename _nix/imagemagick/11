@@ -1,0 +1,4 @@
+link: http://www.imagemagick.org/script/command-line-processing.php
+desc: Собрать из jpg-файлов gif анимацию
+code: |
+  $ convert *.jpg images.gif

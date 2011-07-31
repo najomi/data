@@ -1,0 +1,5 @@
+link: http://www.imagemagick.org/Usage/anim_basics/
+desc: |
+  Собрать из jpg-файлов gif-анимацию с задержкой между кадрами в 1.5 секунды
+code: |
+  $ convert -delay 150 *.jpg images.gif
