@@ -1,5 +1,4 @@
 link: mailto:buldezir@gmail.com
-ft: javascript
 code: |
   var a = [function(sep){
       return 'a_b_c'.split(sep);

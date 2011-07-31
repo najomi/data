@@ -1,0 +1,14 @@
+desc: Получить список директорий
+code: |
+  <?php
+  foreach(glob('/etc/*', GLOB_ONLYDIR) as $v) 
+      echo $v."\n";
+out: |
+  /etc/acpi
+  /etc/alternatives
+  /etc/anthy
+  /etc/apache2
+  /etc/apm
+  /etc/apt
+  /etc/avahi
+  ...
