@@ -1,14 +1,14 @@
 link: http://php.net/manual/en/function.preg-match.php
+desc: Распарсить ссылку на составные части
 code: |
   <?php
   $url  = 'http://name:pass@';
   $url .= 'example.com:10000';
   $url .= '/path/to/file.php?a=1&amp;b=2#anchor';
-  
-  $url_data = parse_url ( $url );
-  
-  print_r ( $url_data );
-  
+
+  $url_data = parse_url($url);
+
+  print_r($url_data);
   ?>
   ------------------------------
   Array

@@ -1,0 +1,6 @@
+desc: Получить домен из ссылки
+code: |
+  <?php
+  echo parse_url('http://ru.najomi.org/_nix/bash/2', PHP_URL_HOST);
+out: |
+  ru.najomi.org
