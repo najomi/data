@@ -1,0 +1,17 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Преобразование символа в код (и наоборот)
+code: |
+  (stream-external-format *standard-output*)
+  ; :UTF-8
+
+  (code-char 200)
+  ; #\LATIN_CAPITAL_LETTER_E_WITH_GRAVE
+
+  (char-code #\LATIN_CAPITAL_LETTER_E_WITH_GRAVE)
+  ; 200
+
+  (code-char 1488)
+  ; #\HEBREW_LETTER_ALEF
+  
+  (char-code #\HEBREW_LETTER_ALEF)
+  ; 1488

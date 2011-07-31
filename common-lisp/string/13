@@ -1,0 +1,6 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Другой вариант обойти посимвольно строку
+code: | 
+  (loop for char across "Zeppo"
+          collect char)
+  ; (#\Z #\e #\p #\p #\o)

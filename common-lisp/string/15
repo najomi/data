@@ -1,0 +1,7 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Строку в нижний регистр
+code: |
+  (string-downcase "COOL")
+  ; "cool"
+  (string-downcase "Cool")
+  ; "cool"

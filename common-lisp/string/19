@@ -1,0 +1,26 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Преобразование между символом и строкой
+code: |
+  (coerce "a" 'character)
+  ; #\a
+  (coerce (subseq "cool" 2 3) 'character)
+  ; #\o
+  (coerce "cool" 'list)
+  ; (#\c #\o #\o #\l)
+  (coerce '(#\h #\e #\y) 'string)
+  ; "hey"
+  (coerce (nth 2 '(#\h #\e #\y)) 'character)
+  ; #\y
+  (defparameter *my-array* (make-array 5 :initial-element #\x))
+  ; *MY-ARRAY*
+  *my-array*
+  ; #(#\x #\x #\x #\x #\x)
+  (coerce *my-array* 'string)
+  ; "xxxxx"
+  (string 'howdy)
+  ; "HOWDY"
+  (string #\y)
+  ; "y"
+  (coerce #\y 'string)
+  ; #\y can't be converted to type STRING.
+  ; [Condition of type SIMPLE-TYPE-ERROR]

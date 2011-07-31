@@ -1,0 +1,7 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Перевернуть строку задом наперёд
+code: |
+  (defparameter *my-string* (string "DSL"))
+  ; *MY-STRING*
+  (reverse *my-string*)
+  ; "LSD"

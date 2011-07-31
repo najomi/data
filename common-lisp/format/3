@@ -1,0 +1,6 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Печатаем список в цикле
+code: |
+  (format nil "The Marx brothers are:~{ ~A~}."
+          '("Groucho" "Harpo" "Chico" "Zeppo" "Karl"))
+  ; "The Marx brothers are: Groucho Harpo Chico Zeppo Karl."

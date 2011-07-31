@@ -1,0 +1,21 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Удаление и замена символов в строке
+code: |
+  (remove #\o "Harpo Marx")
+  ; "Harp Marx"
+  (remove #\a "Harpo Marx")
+  ; "Hrpo Mrx"
+  (remove #\a "Harpo Marx" :start 2)
+  ; "Harpo Mrx"
+  (remove-if #'upper-case-p "Harpo Marx")
+  ; "arpo arx"
+  (substitute #\u #\o "Groucho Marx")
+  ; "Gruuchu Marx"
+  (substitute-if #\_ #'upper-case-p "Groucho Marx")
+  ; "_roucho _arx"
+  (defparameter *my-string* (string "Zeppo Marx"))
+  ; *MY-STRING*
+  (replace *my-string* "Harpo" :end1 5)
+  ; "Harpo Marx"
+  *my-string*
+  ; "Harpo Marx"

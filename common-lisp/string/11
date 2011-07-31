@@ -1,0 +1,8 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Собираем строку из различных объектов
+code: |
+  (with-output-to-string (stream)
+      (dolist (char '(#\Z #\a #\p #\p #\a #\, #\Space))
+        (princ char stream))
+      (format stream "~S - ~S" 1940 1993))
+  ; "Zappa, 1940 - 1993"

@@ -1,0 +1,11 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Заменить подстроку в строке
+code: |
+  (defparameter *my-string* (string "Harpo Marx"))
+  ; *MY-STRING*
+  (subseq *my-string* 0 5)
+  ; "Harpo"
+  (setf (subseq *my-string* 0 5) "Chico")
+  ; "Chico"
+  *my-string*
+  ; "Chico Marx"

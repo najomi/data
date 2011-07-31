@@ -1,0 +1,18 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Собрать строку из списка символов
+code: |
+  (defparameter *my-string* (make-array 0
+                                        :element-type 'character
+                                        :fill-pointer 0
+                                        :adjustable t))
+  ; *MY-STRING*
+  
+  *my-string*
+  ; ""
+  
+  (dolist (char '(#\Z #\a #\p #\p #\a))
+      (vector-push-extend char *my-string*))
+  ; NIL
+  
+  *my-string*
+  ; "Zappa"
