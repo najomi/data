@@ -1,6 +1,6 @@
+desc: Получение названия свойств объектов в рантайме
 code: |
   <?php
-  # Получение названия свойств объектов в рантайме
   function var_name(){
   	return "name";
   }
@@ -10,10 +10,9 @@ code: |
   $f->{"e-mail"} = "zendzirou@gmail.com!";
   
   print_r($f);
-  /*
+out: |
   stdClass Object
   (
       [name] => Bubujka!
       [e-mail] => zendzirou@gmail.com!
   )
-  */

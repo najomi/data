@@ -1,5 +1,5 @@
+desc: Рекурсивно пройтись по всем файлам в директории
 code: |
   <?php
-  // Рекурсивно пройтись по всем файлам в директории
   foreach(new RecursiveIteratorIterator(new RecursiveDirectoryIterator('/tmp')) as $file)
   	print_r($file);
