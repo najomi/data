@@ -1,3 +1,3 @@
 desc: Смотрим видео с вебкамеры и делаем скриншоты по нажатию 's'
 code: |
-  mplayer -fps 15 tv:// -vf screenshot,mirror -tv driver=v4l2:device=/dev/video0
+  $ mplayer -fps 15 tv:// -vf screenshot,mirror -tv driver=v4l2:device=/dev/video0

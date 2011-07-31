@@ -1,0 +1,15 @@
+link: http://docs.jquery.com/Frequently_Asked_Questions
+ft: javascript
+desc: Устанавливаем и убираем значение у чекбоксов
+code: |
+  <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+  <input type='checkbox'>
+  
+  <script>
+    var i = $('input')
+    i.attr('checked', true) //check
+    i.attr('checked', false) //uncheck
+  
+    i.attr('checked', 'checked') //check
+    i.removeAttr('checked') //uncheck
+  </script>

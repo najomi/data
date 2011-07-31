@@ -1,0 +1,21 @@
+link: http://jquery-howto.blogspot.com/2008/12/how-to-check-if-checkbox-is-checked.html
+ft: javascript
+desc: Проверяем - отмечены ли чекбоксы
+code: |
+  <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+  <input type='checkbox' id='checkbox-1' checked>
+  <input type='checkbox' id='checkbox-2' checked>
+  <input type='checkbox' id='checkbox-3'>
+  <input type='checkbox' id='checkbox-4'>
+  
+  <script>
+    console.log($('#checkbox-1').attr('checked'))
+    console.log($('#checkbox-2').is(':checked'))
+    console.log($('#checkbox-3').attr('checked'))
+    console.log($('#checkbox-4').is(':checked'))
+  </script>
+out: |
+  checked
+  true
+  undefined
+  false

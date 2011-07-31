@@ -1,3 +1,4 @@
 desc: Создать новый элемент и задать ему параметров 
+ft: javascript
 code: |
-  $('<a></a>').html(obj).attr('href',obj) ;
+  $('<a></a>').html(obj).attr('href', obj)

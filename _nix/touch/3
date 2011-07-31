@@ -1,0 +1,3 @@
+desc: Создать пустой файл
+code: |
+  $ touch file.txt 

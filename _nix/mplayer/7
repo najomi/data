@@ -1,4 +1,3 @@
-ft: bash
 desc: составить и проиграть плэйлист
 code: |
   $ ls *.avi > playlist.txt

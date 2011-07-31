@@ -1,4 +1,3 @@
-ft: bash
 desc: Проиграть несколько файлов по порядку
 code: |
   $ ls *.avi | mplayer -playlist -
