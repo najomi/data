@@ -1,0 +1,5 @@
+link: http://bash.org.ru/quote/401594
+ft: bash
+desc: Потискать gentoo
+code: |
+  $ for file in /*; do touch $file; done
