@@ -1,1 +1,5 @@
+name: Common Lisp
 ft: lisp
+links:
+  - [http://www.lispmachine.net/, 'сборник ссылок на интересные материалы по Common Lisp']
+  - [http://lisper.ru/, 'наверное единственный сайт по Common Lisp в рунете']
