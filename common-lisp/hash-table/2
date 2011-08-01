@@ -1,0 +1,16 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Проверка на существование ключей в таблице
+code: |
+  (defparameter *my-hash* (make-hash-table))
+  ; *MY-HASH*
+  (setf (gethash 'entry *my-hash*) nil)
+  
+  (if (nth-value 1 (gethash 'entry *my-hash*))
+      "Key exists"
+      "Key does not exist")
+  ; "Key exists"
+  
+  (if (nth-value 1 (gethash 'no-entry *my-hash*))
+      "Key exists"
+      "Key does not exist")
+  ; "Key does not exist"

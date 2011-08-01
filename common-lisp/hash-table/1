@@ -1,0 +1,15 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Доступ и изменение элементов хэш-таблицы
+code: |
+  (defparameter *my-hash* (make-hash-table))
+  ; *MY-HASH*
+  (setf (gethash 'one-entry *my-hash*) "one")
+  ; "one"
+  (setf (gethash 'another-entry *my-hash*) 2/4)
+  ; 1/2
+  (gethash 'one-entry *my-hash*)
+  ; "one"
+  ; T
+  (gethash 'another-entry *my-hash*)
+  ; 1/2
+  ; T
