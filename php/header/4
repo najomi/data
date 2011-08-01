@@ -1,0 +1,7 @@
+link: http://www.php.net/manual/en/function.header.php
+desc: Отправить 404 заголовок
+code: |
+  <?php
+  header("HTTP/1.0 404 Not Found");
+  // для FastCGI:
+  header("Status: 404 Not Found");
