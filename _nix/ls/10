@@ -1,0 +1,8 @@
+link: mailto:merkulov.vlad@gmail.com
+ft: bash
+desc: Вывести список файлов через запятую
+code: |
+  $ touch one two three four
+  $ ls -m
+out: |
+  four, one, three, two
