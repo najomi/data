@@ -2,17 +2,17 @@ link: http://cl-cookbook.sourceforge.net/strings.html
 desc: Сравнение двух строк
 todo: Непонятна запись mismatch - надо подобрать описание
 code: |
-(string= "Marx" "Marx")
-; T
-(string= "Marx" "marx")
-; NIL
-(string-equal "Marx" "marx")
-; T
-(string< "Groucho" "Zeppo")
-; 0
-(string< "groucho" "Zeppo")
-; NIL
-(string-lessp "groucho" "Zeppo")
-; 0
-(mismatch "Harpo Marx" "Zeppo Marx" :from-end t :test #'char=)
-; 3
+  (string= "Marx" "Marx")
+  ; T
+  (string= "Marx" "marx")
+  ; NIL
+  (string-equal "Marx" "marx")
+  ; T
+  (string< "Groucho" "Zeppo")
+  ; 0
+  (string< "groucho" "Zeppo")
+  ; NIL
+  (string-lessp "groucho" "Zeppo")
+  ; 0
+  (mismatch "Harpo Marx" "Zeppo Marx" :from-end t :test #'char=)
+  ; 3
