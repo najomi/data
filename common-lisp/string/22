@@ -1,0 +1,15 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Поиск подстроки в строке
+code: |
+  (search "we" "If we can't be free we can at least be cheap")
+  ; 3
+  (search "we" "If we can't be free we can at least be cheap" :from-end t)
+  ; 20
+  (search "we" "If we can't be free we can at least be cheap" :start2 4)
+  ; 20
+  (search "we" "If we can't be free we can at least be cheap" :end2 5 :from-end t)
+  ; 3
+  (search "FREE" "If we can't be free we can at least be cheap")
+  ; NIL
+  (search "FREE" "If we can't be free we can at least be cheap" :test #'char-equal)
+  ; 15

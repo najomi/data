@@ -1,0 +1,31 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: |
+  Чтобы получить строку из числа в более сложных случаях - можно
+  воспользоваться read-from-string. Но надо быть осторожным - так как при этом
+  читается и исполняется строка. 
+code: | 
+  (read-from-string "#X23")
+  ; 35
+  ; 4
+  (read-from-string "4.5")
+  ; 4.5
+  ; 3
+  (read-from-string "6/8")
+  ; 3/4
+  ; 3
+  (read-from-string "#C(6/8 1)")
+  ; #C(3/4 1)
+  ; 9
+  (read-from-string "1.2e2")
+  ; 120.00001
+  ; 5
+  (read-from-string "symbol")
+  ; SYMBOL
+  ; 6
+  (defparameter *foo* 42)
+  ; *FOO*
+  (read-from-string "#.(setq *foo* \"gotcha\")")
+  ; "gotcha"
+  ; 23
+  *foo*
+  ; "gotcha"

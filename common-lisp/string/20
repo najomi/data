@@ -1,0 +1,21 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Поиск символа в строке 
+code: |
+  (find #\t "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equal)
+  ; #\t
+  (find #\t "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equalp)
+  ; #\T
+  (find #\z "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equalp)
+  ; NIL
+  (find-if #'digit-char-p "The Hyperspec contains approximately 110,000 hyperlinks.")
+  ; #\1
+  (find-if #'digit-char-p "The Hyperspec contains approximately 110,000 hyperlinks." :from-end t)
+  ; #\0
+  (position #\t "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equal)
+  ; 17
+  (position #\t "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equalp)
+  ; 0
+  (position-if #'digit-char-p "The Hyperspec contains approximately 110,000 hyperlinks.")
+  ; 37
+  (position-if #'digit-char-p "The Hyperspec contains approximately 110,000 hyperlinks." :from-end t)
+  ; 43

@@ -1,0 +1,11 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Посчитать колличество символов в строке
+code: |
+  (count #\t "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equal)
+  ; 2
+  (count #\t "The Hyperspec contains approximately 110,000 hyperlinks." :test #'equalp)
+  ; 3
+  (count-if #'digit-char-p "The Hyperspec contains approximately 110,000 hyperlinks.")
+  ; 6
+  (count-if #'digit-char-p "The Hyperspec contains approximately 110,000 hyperlinks." :start 38)
+  ; 5

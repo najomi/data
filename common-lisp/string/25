@@ -1,0 +1,11 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: Преобразовать число в строку
+code: |
+  (write-to-string 250)
+  ; "250"
+  (write-to-string 250.02)
+  ; "200.02"
+  (write-to-string 250 :base 5)
+  ; "2000"
+  (write-to-string (/ 1 3))
+  ; "1/3"

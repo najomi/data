@@ -1,0 +1,26 @@
+link: http://cl-cookbook.sourceforge.net/strings.html
+desc: |
+  Перевести строку в число.
+  Второе возвращаемое значение - место где остановился разбор
+code: |
+  (parse-integer "42")
+  ; 42
+  ; 2
+  (parse-integer "42" :start 1)
+  ; 2
+  ; 2
+  (parse-integer "42" :end 1)
+  ; 4
+  ; 1
+  (parse-integer "42" :radix 8)
+  ; 34
+  ; 2
+  (parse-integer " 42 ")
+  ; 42
+  ; 3
+  (parse-integer " 42 is forty-two" :junk-allowed t)
+  ; 42
+  ; 3
+  (parse-integer " 42 is forty-two")
+  ; Error in function PARSE-INTEGER:
+  ;   There's junk in this string: " 42 is forty-two".
