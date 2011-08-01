@@ -1,0 +1,6 @@
+link: http://xtips.ru/?act=tview&tid=184
+desc: Определить кодировку файла
+code: |
+  $ file -i common-lisp/meta.yaml 
+out: |
+  common-lisp/meta.yaml: text/plain; charset=utf-8
