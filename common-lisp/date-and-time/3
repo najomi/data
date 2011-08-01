@@ -1,0 +1,7 @@
+link: http://cl-cookbook.sourceforge.net/dates_and_times.html
+desc: |
+  Получить текущие параметры времени
+code: |
+  (get-decoded-time)
+  ; то-же самое
+  (decode-universal-time (get-universal-time))

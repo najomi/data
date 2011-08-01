@@ -1,0 +1,5 @@
+link: http://cl-cookbook.sourceforge.net/dates_and_times.html
+desc: Собрать universal-time из значений
+code: |
+  (encode-universal-time 6 22 19 25 1 2002)
+  ; 3220993326

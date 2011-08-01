@@ -1,0 +1,18 @@
+link: http://cl-cookbook.sourceforge.net/dates_and_times.html
+desc: | 
+  Отпарсить universal-time к понятному формату. Вернёт значения:
+  секунда, минута, час, число, месяц, год, день недели, daylight-p, часовой пояс
+
+  День недели считается от 0 до 6
+  daylight-p - флаг отвечающий за летнее/зимнее время
+code: |
+  (decode-universal-time 3220993326)
+  ; 6
+  ; 22
+  ; 19
+  ; 25
+  ; 1
+  ; 2002
+  ; 4
+  ; NIL
+  ; 5

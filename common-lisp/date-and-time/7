@@ -1,0 +1,30 @@
+link: http://cl-cookbook.sourceforge.net/dates_and_times.html
+author: Gerald Doussot 
+desc: Получить день недели. Отсчёт от воскресенья: 0..6.
+code: |
+  (defun day-of-week (day month year)
+    "Returns the day of the week as an integer.
+     Sunday is 0. Works for years after 1752."
+    (let ((offset '(0 3 2 5 0 3 5 1 4 6 2 4)))
+      (when (< month 3)
+        (decf year 1))
+      (mod
+       (truncate (+ year
+                    (/ year 4)
+                    (/ (- year)
+                       100)
+                    (/ year 400)
+                    (nth (1- month) offset)
+                    day
+                    -1))
+       7)))
+  ; DAY-OF-WEEK
+  
+  (day-of-week 23 12 1965)
+  ; 3
+  
+  (day-of-week 1 1 1900)
+  ; 0
+  
+  (day-of-week 31 12 1899)
+  ; 6

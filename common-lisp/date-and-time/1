@@ -1,0 +1,5 @@
+link: http://cl-cookbook.sourceforge.net/dates_and_times.html
+desc: Получить время в секундах (от 1 января 1900 года по гринвичу)
+code: |
+  (get-universal-time)
+  ; 3220993326
