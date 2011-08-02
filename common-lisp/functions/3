@@ -1,0 +1,24 @@
+link: http://cl-cookbook.sourceforge.net/functions.html
+desc: |
+  В качестве аргумента для funcall и apply можно использовать не только
+  функцию, но и символ, по имени которого существует функция.
+code: |
+  (defun doubler (f)
+      (lambda (x) (funcall f x x)))
+  ; DOUBLER
+  (doubler #'+)
+  ; #<Interpreted Function "LAMBDA (F)" {48675791}>
+  (doubler '+)
+  ; #<Interpreted Function "LAMBDA (F)" {486761B1}>
+  (funcall (doubler #'+) 4)
+  ; 8
+  (funcall (doubler '+) 4)
+  ; 8
+  (defparameter *my-plus* '+)
+  ; *MY-PLUS*
+  (funcall (doubler *my-plus*) 4)
+  ; 8
+  (defparameter *my-fun* (doubler '+))
+  ; *MY-FUN*
+  (funcall *my-fun* 4)
+  ; 8

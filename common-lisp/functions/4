@@ -1,0 +1,20 @@
+link: http://cl-cookbook.sourceforge.net/functions.html
+desc: |
+  Каринг функции в CL. Declaim - подсказка для компилятора, чтобы он
+  оптимизировал данный код.
+code: |
+  (declaim (ftype (function (function &rest t) function) curry)
+             (inline curry))
+  ; NIL
+  (defun curry (function &rest args)
+      (lambda (&rest more-args)
+        (apply function (append args more-args))))
+  ; CURRY
+  (funcall (curry #'+ 3) 5)
+  ; 8
+  (funcall (curry #'+ 3) 6)
+  ; 9
+  (setf (symbol-function 'power-of-ten) (curry #'expt 10))
+  ; #
+  (power-of-ten 3)
+  ; 1000

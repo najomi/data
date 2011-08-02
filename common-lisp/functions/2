@@ -1,0 +1,34 @@
+link: http://cl-cookbook.sourceforge.net/functions.html
+desc: Создание и работа с анонимными функциями
+code: |
+  ; Объявляем функцию, которая возвращает анонимную функцию:
+  (defun adder (n) (lambda (x) (+ x n))) 
+  ; ADDER
+  
+  ; Вызываем анонимные функции:
+  (funcall (adder 3) 5)
+  ; 8
+  (apply (adder 3) '(5))
+  ; 8
+  
+  ; Присваиваем переменной:
+  (defparameter *my-fun* (adder 3))
+  ; *MY-FUN*
+  *my-fun*
+  ; #<Interpreted Function "LAMBDA (N)" {486468C9}>
+  
+  ; Вызываем из переменной:
+  (funcall *my-fun* 5)
+  ; 8
+  (*my-fun* 5)
+  ; Warning: This function is undefined:
+  ;  *MY-FUN*
+  
+  (fboundp '*my-fun*)
+  ; NIL
+  (setf (symbol-function '*my-fun*) (adder 3))
+  ; #<Interpreted Function "LAMBDA (N)" {4869FA19}>
+  (fboundp '*my-fun*)
+  ; T
+  (*my-fun* 5)
+  ; 8
