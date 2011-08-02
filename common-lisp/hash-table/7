@@ -1,0 +1,24 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Посчитать колличество элементов
+code: |
+  (defparameter *my-hash* (make-hash-table))
+  ; *MY-HASH*
+  (hash-table-count *my-hash*)
+  ; 0
+  (setf (gethash 'first *my-hash*) 1)
+  ; 1
+  (setf (gethash 'second *my-hash*) 2)
+  ; 2
+  (setf (gethash 'third *my-hash*) 3)
+  ; 3
+  (hash-table-count *my-hash*)
+  ; 3
+  (setf (gethash 'second *my-hash*) 'two)
+  ; TWO
+  (hash-table-count *my-hash*)
+  ; 3
+
+  (clrhash *my-hash*) ; отчистить от данных
+  ; #
+  (hash-table-count *my-hash*)
+  ; 0

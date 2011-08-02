@@ -1,0 +1,15 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Ещё один вариант итерации по хэш-таблице
+code: |
+  (with-hash-table-iterator (my-iterator *my-hash*)
+      (loop
+        (multiple-value-bind (entry-p key value)
+            (my-iterator)
+          (if entry-p
+              (print-hash-entry key value)
+              (return)))))
+  ; The value associated with the key FIRST-KEY is ONE
+  ; The value associated with the key SECOND-KEY is TWO
+  ; The value associated with the key THIRD-KEY is NIL
+  ; The value associated with the key NIL is NIL-VALUE
+  ; NIL

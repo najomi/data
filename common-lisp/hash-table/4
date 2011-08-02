@@ -1,0 +1,21 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Итерация по элементам хэш-таблицы
+code: |
+  (defparameter *my-hash* (make-hash-table))
+  ; *MY-HASH*
+  (setf (gethash 'first-key *my-hash*) 'one)
+  ; ONE
+  (setf (gethash 'second-key *my-hash*) 'two)
+  ; TWO
+  (setf (gethash 'third-key *my-hash*) nil)
+  ; NIL
+  (setf (gethash nil *my-hash*) 'nil-value)
+  ; NIL-VALUE
+  (defun print-hash-entry (key value)
+      (format t "The value associated with the key ~S is ~S~%" key value))
+  ; PRINT-HASH-ENTRY
+  (maphash #'print-hash-entry *my-hash*)
+  ; The value associated with the key FIRST-KEY is ONE
+  ; The value associated with the key SECOND-KEY is TWO
+  ; The value associated with the key THIRD-KEY is NIL
+  ; The value associated with the key NIL is NIL-VALUE

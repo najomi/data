@@ -1,0 +1,18 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Создать хэш-таблицу изначально большого размера.
+code: | 
+  (defparameter *my-hash* (make-hash-table :size 100000))
+  ; *MY-HASH*
+  (hash-table-size *my-hash*)
+  ; 100000
+  (time (dotimes (n 100000) (setf (gethash n *my-hash*) n)))
+  ; Compiling LAMBDA NIL: 
+  ; Compiling Top-Level Form: 
+  ; 
+  ; Evaluation took:
+  ;   0.04 seconds of real time
+  ;   0.04 seconds of user run time
+  ;   0.0 seconds of system run time
+  ;   0 page faults and
+  ;   0 bytes consed.
+  ; NIL

@@ -1,0 +1,25 @@
+link: http://cl-cookbook.sourceforge.net/hashes.html
+desc: Удаление элементов из хэш-таблицы
+code: |
+  (defparameter *my-hash* (make-hash-table))
+  ; *MY-HASH*
+  (setf (gethash 'first-key *my-hash*) 'one)
+  ; ONE
+
+  (gethash 'first-key *my-hash*)
+  ; ONE
+  ; T
+  (remhash 'first-key *my-hash*)
+  ; T
+  (gethash 'first-key *my-hash*)
+  ; NIL
+  ; NIL
+
+  (gethash 'no-entry *my-hash*)
+  ; NIL
+  ; NIL
+  (remhash 'no-entry *my-hash*)
+  ; NIL
+  (gethash 'no-entry *my-hash*)
+  ; NIL
+  ; NIL
