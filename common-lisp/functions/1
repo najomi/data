@@ -1,0 +1,35 @@
+link: http://cl-cookbook.sourceforge.net/functions.html
+desc: |
+  В CL разные пространства имён для функций и переменных. Одно имя может
+  ссылаться на разные вещи в зависимости от того - где оно используется.
+  Проверяем на существование переменные и функции:
+code: |
+  (boundp 'foo)
+  ; NIL
+  (fboundp 'foo)
+  ; NIL
+  (defparameter foo 42)
+  ; FOO
+  foo
+  ; 42
+  (boundp 'foo)
+  ; T
+  (fboundp 'foo)
+  ; NIL
+  (defun foo (x) (* x x))
+  ; FOO
+  (fboundp 'foo)
+  ; T
+  foo            ;;; ***
+  ; 42
+  (foo 3)        ;;; +++
+  ; 9
+  (foo foo)
+  ; 1764
+  (function foo)
+  ; #<Interpreted Function FOO {48523CC1}>
+  #'foo
+  ; #<Interpreted Function FOO {48523CC1}>
+  (let ((+ 3))
+      (+ + +))
+  ; 6
