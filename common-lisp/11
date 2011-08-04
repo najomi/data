@@ -1,0 +1,11 @@
+desc: Разница между defvar и defparameter. 
+code: |
+  (defvar *one* :a)
+  (defparameter *two* :a)
+  (defvar *one* :b)
+  (defparameter *two* :b)
+  
+  *one*
+  ; :A
+  *two*
+  ; :B
