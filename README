@@ -38,3 +38,43 @@ code: сам пример
 out: вывод примера (показывается отдельно, без подсветки синтаксиса)
 todo: что необходимо сделать (на сайте не показывается)
 
+------------------------------
+
+=Абстрактные примеры в вакуме=
+
+==meta.yaml==
+
+ft: bash
+name: '*nix'
+title: Примеры различные *nix утилит и программ
+info: |
+  Передаваемые опции можно записать в файл <b>~/.mplayer/config</b>, тогда они
+  будут использоваться постоянно.<br><br>
+  
+  При этом есть отличие. Если из консоли мы пишем:<br>
+  <b>mplayer -af volume=10.1:0 video.avi</b><br>
+  то в конфиге:<br>
+  <b>af=volume=10.1:0</b>
+keywords: 
+  - unix
+  - linux
+  - bsd
+links: 
+  - [http://www.opennet.ru/tips/sml/, 'много интересных заметок на разные темы']
+
+------------------------------
+==Пример примера==
+
+link: http://stackoverflow.com/questions/369758/how-to-trim-whitespace-from-bash-variable
+author: Francis Litterio
+desc: Обрезать пробелы в начале и конце строки
+code: |
+  trim() { echo $1; }
+
+  echo ">>$(trim 'right side    ')<<"
+  echo ">>$(trim '    left side')<<"
+  echo ">>$(trim '    both sides    ')<<"
+out: |
+  >>right side<<
+  >>left side<<
+  >>both sides<<
