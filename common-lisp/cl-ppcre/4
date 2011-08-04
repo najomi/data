@@ -1,0 +1,14 @@
+link: http://weitz.de/cl-ppcre/
+desc: Получить строку по регулярному выражению
+code: |
+  (scan-to-strings "[^b]*b" "aaabd")
+  ; "aaab"
+  ; #()
+  
+  (scan-to-strings "([^b])*b" "aaabd")
+  ; "aaab"
+  ; #("a")
+  
+  (scan-to-strings "(([^b])*)b" "aaabd")
+  ; "aaab"
+  ; #("aaa" "a")

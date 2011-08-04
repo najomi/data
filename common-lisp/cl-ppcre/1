@@ -1,0 +1,39 @@
+link: http://weitz.de/cl-ppcre/
+desc: Разбить строку по регулярному выражению
+code: | 
+  (split "\\s+" "foo   bar baz
+  frob")
+  ; ("foo" "bar" "baz" "frob")
+  
+  (split "\\s*" "foo bar   baz")
+  ; ("f" "o" "o" "b" "a" "r" "b" "a" "z")
+  
+  (split "(\\s+)" "foo bar   baz")
+  ; ("foo" "bar" "baz")
+  
+  (split "(\\s+)" "foo bar   baz" :with-registers-p t)
+  ; ("foo" " " "bar" "   " "baz")
+  
+  (split "(\\s)(\\s*)" "foo bar   baz" :with-registers-p t)
+  ; ("foo" " " "" "bar" " " "  " "baz")
+  
+  (split "(,)|(;)" "foo,bar;baz" :with-registers-p t)
+  ; ("foo" "," NIL "bar" NIL ";" "baz")
+  
+  (split "(,)|(;)" "foo,bar;baz" :with-registers-p t :omit-unmatched-p t)
+  ; ("foo" "," "bar" ";" "baz")
+  
+  (split ":" "a:b:c:d:e:f:g::")
+  ; ("a" "b" "c" "d" "e" "f" "g")
+  
+  (split ":" "a:b:c:d:e:f:g::" :limit 1)
+  ; ("a:b:c:d:e:f:g::")
+  
+  (split ":" "a:b:c:d:e:f:g::" :limit 2)
+  ; ("a" "b:c:d:e:f:g::")
+  
+  (split ":" "a:b:c:d:e:f:g::" :limit 3)
+  ; ("a" "b" "c:d:e:f:g::")
+  
+  (split ":" "a:b:c:d:e:f:g::" :limit 1000)
+  ; ("a" "b" "c" "d" "e" "f" "g" "" "")

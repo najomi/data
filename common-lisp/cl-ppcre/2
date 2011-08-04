@@ -1,0 +1,40 @@
+link: http://weitz.de/cl-ppcre/
+desc: Замена по регулярному выражению
+code: |
+  (regex-replace "fo+" "foo bar" "frob")
+  ; "frob bar"
+  ; T
+  
+  (regex-replace "fo+" "FOO bar" "frob")
+  ; "FOO bar"
+  ; NIL
+  
+  (regex-replace "(?i)fo+" "FOO bar" "frob")
+  ; "frob bar"
+  ; T
+  
+  (regex-replace "(?i)fo+" "FOO bar" "frob" :preserve-case t)
+  ; "FROB bar"
+  ; T
+  
+  (regex-replace "(?i)fo+" "Foo bar" "frob" :preserve-case t)
+  ; "Frob bar"
+  ; T
+  
+  (regex-replace "bar" "foo bar baz" "[frob (was '\\&' between '\\`' and '\\'')]")
+  ; "foo [frob (was 'bar' between 'foo ' and ' baz')] baz"
+  ; T
+  
+  (regex-replace "bar" "foo bar baz"
+                 '("[frob (was '" :match "' between '" 
+                                  :before-match "' and '" :after-match "')]"))
+  ; "foo [frob (was 'bar' between 'foo ' and ' baz')] baz"
+  ; T
+  
+  (regex-replace "(be)(nev)(o)(lent)"
+                            "benevolent: adj. generous, kind"
+                            #'(lambda (match &rest registers)
+                                (format nil "~A [~{~A~^.~}]" match registers))
+                            :simple-calls t)
+  ; "benevolent [be.nev.o.lent]: adj. generous, kind"
+  ; T

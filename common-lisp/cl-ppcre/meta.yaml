@@ -1,0 +1,5 @@
+name: CL-PPCRE
+info: |
+  CL-PPCRE - библиотека для работы с регулярными выражениями в CL
+links: 
+  - [http://weitz.de/cl-ppcre/, 'домашняя страница библиотеки']

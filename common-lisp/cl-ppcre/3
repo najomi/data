@@ -1,0 +1,10 @@
+link: http://weitz.de/cl-ppcre/
+desc: Замена всех вхождений по регулярному выражению
+code: |
+  (regex-replace-all "(?i)fo+" "foo Fooo FOOOO bar" "frob" :preserve-case t)
+  ; "frob Frob FROB bar"
+  ; T
+  
+  (regex-replace-all "(?i)f(o+)" "foo Fooo FOOOO bar" "fr\\1b" :preserve-case t)
+  ; "froob Frooob FROOOOB bar"
+  ; T
