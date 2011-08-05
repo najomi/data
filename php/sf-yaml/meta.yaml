@@ -1,0 +1,6 @@
+name: Symfony YAML
+info: |
+  sf-YAML - библиотека для работы с yaml-форматом на php. 
+  В отличии от php-yaml, syck, spyc - она поддерживает 1.2 версию yaml.
+  <br><br>
+  <a href='http://components.symfony-project.org/yaml/'>components.symfony-project.org/yaml/</a>

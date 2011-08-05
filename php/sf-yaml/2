@@ -1,0 +1,4 @@
+link: http://components.symfony-project.org/yaml/trunk/book/01-Usage
+desc: Преобразовать массив в yaml-формат
+code: |
+  $yaml = sfYaml::dump($array, $inline);

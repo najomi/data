@@ -1,0 +1,12 @@
+link: http://components.symfony-project.org/yaml/trunk/book/01-Usage
+desc: Второй параметр для dump - влияет на отображение массивов
+code: |
+  echo $dumper->dump($array, 1);
+  // foo: bar
+  // bar: { foo: bar, bar: baz }
+  
+  echo $dumper->dump($array, 2);
+  // foo: bar
+  // bar:
+  //   foo: bar
+  //   bar: baz

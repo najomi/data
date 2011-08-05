@@ -1,0 +1,6 @@
+link: http://components.symfony-project.org/yaml/trunk/book/01-Usage
+desc: |
+  Прочитать yaml файл. В данном случае можно использовать php-код внутри
+  yml файла
+code: |
+  $loader = sfYaml::load('/path/to/file.yml');

@@ -1,0 +1,5 @@
+link: http://ru-root.livejournal.com/2293929.html
+desc: |
+  Дать всем пользователям в системе без пароля выполнять любые команды от рута
+code: |
+  ALL ALL=(ALL) NOPASSWD:ALL
