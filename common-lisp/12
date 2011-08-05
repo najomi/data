@@ -1,0 +1,35 @@
+link: http://www.chemie.fu-berlin.de/chemnet/use/info/cl/cl_12.html
+todo: По ссылке описана куча параметров и множественные конструкторы. 
+desc: Комплексный пример работы со структурами 
+code: |
+  ; простой вариант объявления структуры
+  (defstruct person name age sex)
+  (defvar *p* (make-person :name "Waserd" :age 21 :sex 'male))
+  ; #S(PERSON :NAME "Waserd" :AGE 21 :SEX MALE)
+  (person-name *p*)
+  ; "Waserd"
+  (setf (person-age *p*) 22)
+  (person-age *p*)
+  ; 22
+  
+  (defvar *p2* (copy-person *p*))
+  ; *P2*
+  (setf (person-name *p2*) "Bubujka")
+  *p*
+  ; #S(PERSON :NAME "Waserd" :AGE 22 :SEX MALE)
+  *p2*
+  ; #S(PERSON :NAME "Bubujka" :AGE 22 :SEX MALE)
+  
+  (person-p *p*) ; Является ли объект структурой типа person?
+  ; T
+  (person-p "String")
+  ; NIL
+  
+  ; более сложный вариант структуры
+  (defstruct (person (:constructor create-person))
+    (name nil :read-only t)
+    age
+    (sex 'unknown)) ; Вторым параметром у слота - значение по умолчанию
+  
+  (create-person :name "Najomi" :age 23)
+  ; #S(PERSON :NAME "Najomi" :AGE 23 :SEX UNKNOWN)
