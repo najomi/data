@@ -1,0 +1,7 @@
+link: http://www.lispworks.com/documentation/HyperSpec/Body/f_eq_sle.htm
+desc: Проверить что 2 числа не равны друг другу
+code: |
+  (/= 5 3)
+  ; T
+  (/= 5 (+ 2 3))
+  ; NIL
