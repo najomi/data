@@ -1,0 +1,12 @@
+link: http://cl-cookbook.sourceforge.net/dates_and_times.html
+desc: |
+  Получить время в миллисекундах
+  Абсолютное значение возвращаемое get-internal-real-time не имеет значения -
+  важно только относительное изменение.
+code: |
+  internal-time-units-per-second
+  ; 1000
+  (let ((start (get-internal-real-time)))
+    (sleep 3.5)
+    (print (- (get-internal-real-time) start)))
+  ; 3500
