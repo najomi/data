@@ -1,0 +1,6 @@
+link: http://www.imagemagick.org/Usage/text/
+desc: Сделать картинку с текстом 'Anthony'
+code: |
+  $ convert -background lightblue -fill blue \
+            -font URW-Palladio-Bold-Italic \
+            -pointsize 72 label:Anthony label.gif

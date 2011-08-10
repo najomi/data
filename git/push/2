@@ -1,0 +1,4 @@
+link: http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html
+desc: Добавить ветку в удаленный репозиторий
+code: |
+  $ git push origin newfeature

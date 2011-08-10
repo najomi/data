@@ -1,0 +1,3 @@
+desc: Расширить картинку до 200х200
+code: |
+  $ mogrify -extent 200x200 label.gif

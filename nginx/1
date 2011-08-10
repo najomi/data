@@ -1,0 +1,6 @@
+link: http://wiki.nginx.org/HttpAutoindexModule
+desc: Включить отображение списка файлов в директории
+code: |
+  location  /  {
+    autoindex  on;
+  }

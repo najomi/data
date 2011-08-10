@@ -1,0 +1,4 @@
+link: http://book.git-scm.com/3_distributed_workflows.html
+desc: Добавить удаленный репозиторий
+code: |
+  $ git remote add bob /home/bob/myrepo

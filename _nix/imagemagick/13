@@ -1,0 +1,18 @@
+desc: Просмотреть список шрифтов, с которыми может работать imagemagick
+code: |
+  $ convert -list font
+out: |
+  Path: /usr/lib/ImageMagick-6.6.0/config/type-ghostscript.xml
+    Font: AvantGarde-Book
+      family: AvantGarde
+      style: Normal
+      stretch: Normal
+      weight: 400
+      glyphs: /usr/share/fonts/type1/gsfonts/a010013l.pfb
+    Font: AvantGarde-BookOblique
+      family: AvantGarde
+      style: Oblique
+      stretch: Normal
+      weight: 400
+      glyphs: /usr/share/fonts/type1/gsfonts/a010033l.pfb
+  ...

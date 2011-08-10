@@ -1,0 +1,4 @@
+ft: bash
+desc: Клонируем удалённую базу данных в нашу локальную 
+code: |
+  $ ssh moskva 'mysqldump mbs | gzip' | gunzip | mysql mbs

@@ -1,0 +1,21 @@
+link: http://forum.woweb.ru/topic28561.html
+desc: Склонение числительных в русском языке
+code: |
+  <?php
+  function decl_int($number, $titles){
+      $cases = array(2, 0, 1, 1, 1, 2);
+      return sprintf($titles[($number%100>4 && $number%100<20) ? 
+                             2 : 
+                             $cases[min($number%10, 5)]],
+                     $number);
+  }
+  
+  foreach(array(0, 1, 2, 5) as $v)
+          echo decl_int($v, array('%s пользователь',
+                                  '%s пользователя',
+                                  '%s пользователей'))."\n";
+out: |
+  0 пользователей
+  1 пользователь
+  2 пользователя
+  5 пользователей

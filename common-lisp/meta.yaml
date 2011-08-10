@@ -10,3 +10,6 @@ links:
   - [http://cl-cookbook.sourceforge.net/, 'сборник рецептов по Common Lisp']
   - [http://www.gigamonkeys.com/book/, 'Practical Common Lisp - великолепная книга с реальными примерами использования CL']
   - [http://pcl.catap.ru/doku.php, русский перевод PCL]
+  - [http://www.clisp.org/resources.html, 'ещё один сборник ссылок на различные ресурсы']
+  - [http://www.paulgraham.com/lisp.html, 'и ещё ссылки на ресурсы']
+  - [http://www.paulgraham.com/onlisp.html, 'хорошая книга по макросам в лиспе']

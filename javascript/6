@@ -1,0 +1,3 @@
+desc: Перезагрузить страницу 
+code: | 
+  window.location.reload()
