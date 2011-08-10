@@ -1,0 +1,5 @@
+desc: Content-Type для основных типов картинок
+code: |
+  header("Content-Type: image/gif"); 
+  header("Content-Type: image/png"); 
+  header("Content-Type: image/jpg"); 

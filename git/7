@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/215718/how-do-i-reset-revert-a-specific-file-to-a-specific-revision-using-git
+desc: Восстановить файл из определённого коммита
+code: |
+  $ git checkout abcde file/to/restore

@@ -1,0 +1,3 @@
+desc: Восстановить файл из предыдущего коммита
+code: |
+  $ git checkout HEAD^ foo

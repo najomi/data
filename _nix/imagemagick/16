@@ -1,0 +1,3 @@
+desc: Увеличить картинку в 10 раз
+code: |
+  $ convert -sample 1000% in.jpg out.jpg
