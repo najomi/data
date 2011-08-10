@@ -1,0 +1,4 @@
+link: http://juick.com/archimag/1408427
+desc: Определить каталог в котором располагается проект
+code: |
+  (asdf:system-source-directory '#:my-asdf-systems)

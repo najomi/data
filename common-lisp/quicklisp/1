@@ -1,0 +1,4 @@
+link: http://juick.com/archimag/1407195
+desc: Установить все пакеты разом
+code: |
+  (map 'nil #'ql-dist:install (ql:system-list))
