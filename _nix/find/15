@@ -1,0 +1,25 @@
+link: http://ru.wikipedia.org/wiki/Find
+desc: |
+  Для каждого результата поиска задать вопрос: выполнять ли указанную
+  команду
+code: |
+  $ mkdir a b c 
+  $ touch {a,b,c}/{1,2,3}
+  $ find * -type f -ok rm {} \;
+  < rm ... a/3 > ? 
+  < rm ... a/2 > ? y
+  < rm ... a/1 > ? 
+  < rm ... b/3 > ? 
+  < rm ... b/2 > ? y
+  < rm ... b/1 > ? 
+  < rm ... c/3 > ? 
+  < rm ... c/2 > ? y
+  < rm ... c/1 > ? 
+  $ find * -type f
+out: |
+  a/3
+  a/1
+  b/3
+  b/1
+  c/3
+  c/1
