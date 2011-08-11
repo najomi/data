@@ -1,0 +1,8 @@
+link: http://www.phptoruby.com/in_array
+desc: Проверить есть ли элемент в массиве
+code: |
+  if ["a", "b", "c", "d"].include?('a') 
+      puts 'Found it in the array'
+  end
+out: |
+  Found it in the array

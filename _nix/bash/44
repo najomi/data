@@ -1,0 +1,7 @@
+link: http://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-bash-script
+desc: Итерация по переданным аргументам 
+code: |
+  for var in "$@"
+  do
+      echo "$var"
+  done

@@ -1,0 +1,3 @@
+desc: Напечатать сообщение и оборвать выполнение
+code: |
+  abort("Segmentation fault")

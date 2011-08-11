@@ -1,0 +1,3 @@
+desc: Получить колличество переданых аргументов
+code: |
+  $ echo 'puts ARGV.length' | ruby - one two three

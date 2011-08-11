@@ -1,0 +1,16 @@
+link: http://stackoverflow.com/questions/216995/how-can-i-use-negative-wildcards-in-a-unix-linux-shell 
+desc: Выбрать все файлы кроме тех что подходят под шаблон
+code: |
+  $ shopt extglob
+  extglob         off
+  $ ls
+  abar  afoo  bbar  bfoo
+  $ ls !(b*)
+  -bash: !: event not found
+  $ shopt -s extglob  #Enables extglob
+  $ ls !(b*)
+  abar  afoo
+  $ ls !(a*)
+  bbar  bfoo
+  $ ls !(*foo)
+  abar  bbar
