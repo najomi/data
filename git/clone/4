@@ -1,0 +1,4 @@
+link: http://www.calculate-linux.ru/main/ru/git
+desc: Клонировать репозитарий, используя протокол git:
+code: |
+  $ git clone git://user@somehost:port/~user/repository/project.git/
