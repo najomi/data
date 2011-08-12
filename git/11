@@ -1,0 +1,4 @@
+link: http://blog.nsws.ru/rabota-s-git-dlya-nachinayushhix.html
+desc: Cоздать ветку изменений от основного дерева:
+code: |
+  $ git checkout --track -b name_of_newbranch origin/master

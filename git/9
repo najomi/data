@@ -1,4 +1,4 @@
-link: http://www.calculate-linux.ru/main/ru/git
-desc: Импортировать svn репозитарий, используя протокол http::
+link: http://blog.nsws.ru/rabota-s-git-dlya-nachinayushhix.html
+desc: Удалить файл из commit и с жесткого диска:
 code: |
-  $ git svn clone -s http://repo/location
+  $ git rm -f file1 file2 ... fileN
