@@ -1,0 +1,4 @@
+link: http://www.calculate-linux.ru/main/ru/git
+desc: Отправить метки в удаленную ветку master репозитария origin
+code: |
+  $ git push origin master --tags

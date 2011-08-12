@@ -1,0 +1,4 @@
+link: http://www.calculate-linux.ru/main/ru/git
+desc: Отправить изменения из ветки master в ветку experimental удаленного репозитария
+code: |
+  $ git push ssh://yourserver.com/~you/proj.git master:experimental
