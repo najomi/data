@@ -1,4 +1,4 @@
 link: http://www.calculate-linux.ru/main/ru/git
-desc: Клонировать репозитарий, используя безопасный протокол ssh:
+desc: Клонировать svn репозиторий
 code: |
-  $ git clone ssh://user@somehost:port/~user/repository
+  $ git svn clone -s http://repo/location

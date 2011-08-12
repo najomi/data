@@ -1,4 +1,0 @@
-link: http://blog.nsws.ru/rabota-s-git-dlya-nachinayushhix.html
-desc: Cоздать ветку изменений от другой ветви изменений:
-code: |
-  $ git checkout --track -b name_of_newbranch origin/remote_branch_name

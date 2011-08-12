@@ -1,4 +1,0 @@
-link: http://www.calculate-linux.ru/main/ru/git
-desc: Клонировать репозитарий с той же машины в директорию myrepo:
-code: |
-  $ git clone /home/username/project myrepo

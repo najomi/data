@@ -1,4 +1,0 @@
-link: http://www.calculate-linux.ru/main/ru/git
-desc: Импортировать svn репозитарий, используя протокол http::
-code: |
-  $ git svn clone -s http://repo/location

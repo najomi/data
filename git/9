@@ -1,4 +1,4 @@
 link: http://blog.nsws.ru/rabota-s-git-dlya-nachinayushhix.html
-desc: Удалить файл из commit и с жесткого диска:
+desc: Удалить файл из комита и с жесткого диска
 code: |
   $ git rm -f file1 file2 ... fileN
