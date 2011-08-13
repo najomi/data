@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Навсегда удалить три последних коммита
+code: |
+  $ git reset --hard HEAD~3

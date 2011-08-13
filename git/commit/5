@@ -1,0 +1,7 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Вернуться к последнему коммиту, будет
+  предложено редактировать его сообщение
+code: |
+  $ git commit -c ORIG_HEAD
+  $ git commit -C ORIG_HEAD

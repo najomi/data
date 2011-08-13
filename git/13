@@ -1,0 +1,6 @@
+link: http://blog.nsws.ru/rabota-s-git-dlya-nachinayushhix.html
+desc: Получить версию с конкретного тега 
+code: |
+  $ git fetch origin tag 
+  $ git branch  
+  $ git checkout

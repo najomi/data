@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Вызвать статистику изменения файлов
+code: |
+  $ git log --stat

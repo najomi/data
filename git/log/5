@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Исследовать историю отдельной папки,
+  начиная с определенного момента
+code: |
+  $ git log --since=«2 hours» dir/

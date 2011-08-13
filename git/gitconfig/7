@@ -1,6 +1,0 @@
-link: http://blog.nsws.ru/rabota-s-git-dlya-nachinayushhix.html
-desc: |
-  Отменить ограничение на количество потоков упаковки
-  при push
-code: |
-  $ git config --global pack.threads "0"

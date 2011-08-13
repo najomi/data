@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Вывести информацию о коммитах с указанием имени автора,
+  комментарием, датой создания и внесения коммита
+code: |
+  $ git log --pretty=full/fuller

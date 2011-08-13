@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Отменить коммит
+code: |
+  $ git revert config-modify-tag
+  $ git revert cgsjd2h

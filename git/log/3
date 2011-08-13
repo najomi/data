@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Получить информацию по созданиям, переименованиями
+  и правам доступа файлов
+code: |
+  $ git log --summary

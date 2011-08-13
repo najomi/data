@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Внести в индекс и создать коммит на основе
+  изменений единственного файла
+code: |
+  $ git commit FILENAME

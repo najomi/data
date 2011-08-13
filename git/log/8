@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Вывести информацию о коммитах с указанием автора
+  и комметария
+code: |
+  $ git log --pretty=short

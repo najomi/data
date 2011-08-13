@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Исследовать историю отдельного файла
+code: |
+  $ git log README
+  $ git log - README

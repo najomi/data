@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Вывести ASCII-граф коммитов
+code: |
+  $ git log --graph

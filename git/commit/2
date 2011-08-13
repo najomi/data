@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Комментировать коммит из командной строки
+  вместо текстового редактора
+code: |
+  $ git commit -m "commit comment"
