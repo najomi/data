@@ -4,3 +4,14 @@ desc: |
   и комметария
 code: |
   $ git log --pretty=short
+out: |
+  commit 0b387cae7e3a0b59e42fd3f4544b01187782b9eb
+  Author: Kien La <la.kien@gmail.com>
+  
+      updating changelog and bumping version to 1.0
+  
+  commit 46a121936540102c94ef6d07ab9385e573731f54
+  Author: Kien La <la.kien@gmail.com>
+  
+      fixed a memory leak when using validations
+  ...

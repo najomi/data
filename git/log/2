@@ -2,3 +2,22 @@ link: http://habrahabr.ru/blogs/Git/60347/
 desc: Вызвать статистику изменения файлов
 code: |
   $ git log --stat
+out: |
+  commit 1e4dd2881803a8d67396047664a3223e8e734a22
+  Author: Kien La <la.kien@gmail.com>
+  Date:   Sun Apr 24 23:47:57 2011 -0400
+  
+      only check directory exists if something was supplied
+  
+   lib/Config.php |    2 +-
+   1 files changed, 1 insertions(+), 1 deletions(-)
+  
+  commit 490f119acda09a32be93a4515ce7add4d97689a7
+  Author: Jacques Fuentes <jpfuentes2@gmail.com>
+  Date:   Tue Mar 22 22:15:01 2011 -0400
+  
+      GH-134: Expressions parsing was using field = null instead of IS
+  
+   lib/Expressions.php     |    2 ++
+   test/SQLBuilderTest.php |    7 +++++++
+   2 files changed, 9 insertions(+), 0 deletions(-)

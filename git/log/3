@@ -1,6 +1,21 @@
 link: http://habrahabr.ru/blogs/Git/60347/
 desc: |
-  Получить информацию по созданиям, переименованиями
-  и правам доступа файлов
+  Получить информацию по созданию, переименованию и изменению прав доступа 
+  y файлов
 code: |
   $ git log --summary
+out: |
+  commit a7ade9db64ac8901341f487ca1feabaf1834e5d5
+  Author: Lena Omega <itzamna@.(none)>
+  Date:   Sat Aug 13 17:33:53 2011 +0300
+  
+      Added data - 58m
+  
+   create mode 100644 git/13
+   create mode 100644 git/14
+   create mode 100644 git/15
+   create mode 100644 git/16
+   create mode 100644 git/17
+   create mode 100644 git/commit/1
+   create mode 100644 git/commit/2
+  ...

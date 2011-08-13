@@ -3,3 +3,21 @@ desc: Исследовать историю отдельного файла
 code: |
   $ git log README
   $ git log - README
+out: |
+  commit 9c2b410f6f51a11759182544629cebf5be91677c
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Thu Aug 4 15:04:47 2011 +0400
+  
+      Added code to README
+  
+  commit 59246055980a283967383c91a265f8067d76b126
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Thu Aug 4 15:00:12 2011 +0400
+  
+      Fixed link in readme
+  
+  commit 3426e293c4481dcfc8405b85cccd3ec4e28c48e1
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Thu Aug 4 14:59:20 2011 +0400
+  
+      Fixed bash example, added readme

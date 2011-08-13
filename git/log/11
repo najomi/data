@@ -1,0 +1,14 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Вывести информацию о коммитах с указанием имени автора,
+  комментарием, датой создания и внесения коммита
+code: |
+  $ git log --pretty=fuller
+out: |
+  commit 0b387cae7e3a0b59e42fd3f4544b01187782b9eb
+  Author:     Kien La <la.kien@gmail.com>
+  AuthorDate: Sun Jun 27 19:21:19 2010 -0400
+  Commit:     Kien La <la.kien@gmail.com>
+  CommitDate: Sun Jun 27 19:21:19 2010 -0400
+  
+     updating changelog and bumping version to 1.0

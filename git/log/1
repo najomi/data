@@ -1,6 +1,25 @@
 link: http://habrahabr.ru/blogs/Git/60347/
 desc: |
-  Получить подробную информацию о каждом
-  коммите в виде патчей по файлам из коммитов
+  Получить подробную информацию о каждом коммите, отображая что изменилось
 code: |
   $ git log -p
+out: |
+  commit 0b387cae7e3a0b59e42fd3f4544b01187782b9eb
+  Author: Kien La <la.kien@gmail.com>
+  Date:   Sun Jun 27 19:21:19 2010 -0400
+  
+      updating changelog and bumping version to 1.0
+  
+  diff --git a/ActiveRecord.php b/ActiveRecord.php
+  index 9e9cdb6..b785036 100644
+  --- a/ActiveRecord.php
+  +++ b/ActiveRecord.php
+  @@ -2,7 +2,7 @@
+   if (!defined('PHP_VERSION_ID') || PHP_VERSION_ID < 50300)
+          die('PHP ActiveRecord requires PHP 5.3 or higher');
+   
+  -define('PHP_ACTIVERECORD_VERSION_ID','1.0rc1');
+  +define('PHP_ACTIVERECORD_VERSION_ID','1.0');^M
+   
+   require 'lib/Singleton.php';
+   require 'lib/Config.php';
