@@ -1,2 +1,3 @@
 ft: ruby
-todo: Названия категорий downcase
+links:
+  - [http://hyperpolyglot.org/scripting, 'сравнение между php-perl-python-ruby']
