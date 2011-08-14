@@ -1,0 +1,6 @@
+desc: Убрать все строки, что содержат 'ba'
+code: |
+  $ touch foo bar baz
+  $ ls | grep -v ba
+out: |
+  foo
