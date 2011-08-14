@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Получить изменения в проекте по сравнению с предпоследним коммитом:
+code: |
+  $ git diff HEAD^

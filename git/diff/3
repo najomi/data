@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Сравнить "головы" веток:
+code: |
+  $ git diff master..experimental
