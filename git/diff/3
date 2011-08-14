@@ -1,4 +1,4 @@
 link: http://habrahabr.ru/blogs/Git/60347/
-desc: Сравнить "головы" веток:
+desc: Сравнить две ветки
 code: |
   $ git diff master..experimental

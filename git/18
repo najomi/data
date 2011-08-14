@@ -1,9 +1,20 @@
 link: http://habrahabr.ru/blogs/Git/60347/
-desc: Просмотреть изменения, внесенные коммитом COMMIT_TAG
+desc: Просмотреть содержимое определённого коммита
 code: |
-  $ git show COMMIT_TAG
+  $ git show d028769
 out: |
-  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 1) link: http://stackoverflow.com/questions/160608/how-to-do-a-git-export-like-svn-export
-  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 2) desc: Сделать экспорт (аля svn export) ветки мастер в другую папку:
-  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 3) code: |
-  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 4)   $ git archive master | tar -x -C /somewhere/else
+  commit d028769abbdcfa3e6cdba76cb1d6b569e5afe88e
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Sun Aug 14 22:17:19 2011 +0400
+  
+      Adde link to _nix category
+  
+  diff --git a/_nix/meta.yaml b/_nix/meta.yaml
+  index bdb05a9..b107d80 100644
+  --- a/_nix/meta.yaml
+  +++ b/_nix/meta.yaml
+  @@ -14,3 +14,4 @@ keywords:
+     - примеры bsd
+   links: 
+     - [http://www.opennet.ru/tips/sml/, 'много интересных заметок на разные темы']
+  +  - [http://www.linuxselfhelp.com/, 'большой сборник документаций']
