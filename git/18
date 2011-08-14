@@ -1,0 +1,9 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Просмотреть изменения, внесенные коммитом COMMIT_TAG
+code: |
+  $ git show COMMIT_TAG
+out: |
+  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 1) link: http://stackoverflow.com/questions/160608/how-to-do-a-git-export-like-svn-export
+  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 2) desc: Сделать экспорт (аля svn export) ветки мастер в другую папку:
+  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 3) code: |
+  ^6e8a412 (Ivan Ivanov 2011-05-25 22:52:39 +0400 4)   $ git archive master | tar -x -C /somewhere/else
