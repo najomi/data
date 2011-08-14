@@ -1,4 +1,6 @@
 link: http://www.pixelbeat.org/cmdline_ru_RU.html
-desc: Список файлов отсортированных по дате
+desc: |
+  Список файлов отсортированных по дате
+  Новые файлы будут снизу
 code: |
-  $ ls -lrt
+  $ ls -rt

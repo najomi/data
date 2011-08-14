@@ -1,0 +1,11 @@
+link: http://stackoverflow.com/questions/3096259/bash-command-to-sum-a-column-of-numbers
+desc: Посчитать сумму чисел в файле
+code: |
+  $ cat file 
+  # 1
+  # 20
+  # 300
+  # 4000
+  # 50000
+  $ cat file  |  paste -sd+  | bc
+  # 54321

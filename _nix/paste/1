@@ -1,0 +1,6 @@
+desc: Объединить строки с помощью символа
+code: |
+  $ touch one two three
+  $ ls | paste -sd,
+out: |
+  one,three,two

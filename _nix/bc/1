@@ -1,5 +1,6 @@
 link: http://stackoverflow.com/questions/211378/hidden-features-of-bash
+desc: Дробные числа при делении
 code: |
-  $ FP=`echo "scale=4; 10 / 3" | bc` # FP="3.3333"
-  $ echo $FP
+  $ echo "scale=4; 10 / 3" | bc
+out: |
   3.3333

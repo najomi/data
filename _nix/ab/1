@@ -1,0 +1,6 @@
+link: http://www.cyberciti.biz/tips/howto-performance-benchmarks-a-web-server.html
+desc: |
+  Оценить производительность сайта.
+  Будет отправлено 1000 запросов в 5 потоков.
+code: |
+  $ ab -n 1000 -c 5 http://202.54.200.1/snkpage.html

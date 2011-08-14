@@ -1,0 +1,8 @@
+desc: Вывести номер коммита, имя автора и сообщение
+code: |
+  $ git log --pretty=format:'%h | %an | %s'
+out: |
+  ff08277 | Aleksei Kaminin | Fixed data
+  58847c5 | Aleksei Kaminin | Merge branch 'master' of ...
+  17d3487 | Alesenko Elena | Merge branch 'master' of g...
+  19e85c7 | Alesenko Elena | Added data -77m

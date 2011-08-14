@@ -1,0 +1,8 @@
+desc: Получить имя файла из пути
+code: |
+  <?php
+  echo basename("~/prj/lib/bu.defun/load.php")."\n";
+  echo basename("~/prj/lib/bu.defun/load.php", '.php')."\n";
+out: |
+  load.php
+  load
