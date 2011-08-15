@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Удалить тег stable-2
+code: |
+  $ git tag -d stable-2
+out: |
+  Deleted tag 'stable-2' (was 3cf1ab2)

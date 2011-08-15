@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Переименовать текущую ветку в new_name_branch
+code: |
+  $ git branch -m new_name_branch

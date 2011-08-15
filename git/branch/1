@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Создать новую ветку new_branch
+code: |
+  $ git branch new_branch

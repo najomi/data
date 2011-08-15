@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Показать те ветки, среди предков которых есть коммит v1.2
+code: |
+  $ git branch --contains v1.2

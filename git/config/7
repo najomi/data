@@ -1,0 +1,14 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Пример файла .gitignore
+code: |
+  >>>>>>>Начало файла
+ #комментарий к файлу .gitignore
+ #игнорируем сам .gitignore
+ .gitignore
+ #все html-файлы…
+ *.html
+ #… кроме определенного
+ !special.html
+ #не нужны объектники и архивы
+ *.[ao]
+ >>>>>>>>Конец файла

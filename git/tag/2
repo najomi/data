@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Пометить тегом stable-2 коммит с хэшем f292ef5
+code: |
+  $ git tag stable-2 f292ef5

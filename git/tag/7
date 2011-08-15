@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Создать обычный тег, сразу указав в качестве аргумента
+  комментарий "production version"
+code: |
+  $ git tag -a stable -m "production version"

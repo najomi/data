@@ -1,0 +1,7 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Перечислить теги
+code: |
+  $ git tag -l
+out: |
+  stable-1
+  stable-2

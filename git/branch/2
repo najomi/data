@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Удалить ветку new_branch, если та была залита с разрешением
+  возможных конфликтов в текущую
+code: |
+  $ git branch -d new_branch

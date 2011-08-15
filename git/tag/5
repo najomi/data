@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Создать тег stable-1.1 для последнего коммита, 
+  заменить существующий, если такой уже был
+code: |
+  $ git tag -f stable-1.1
