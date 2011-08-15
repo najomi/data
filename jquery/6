@@ -1,0 +1,16 @@
+desc: Найти родительский блок с определённым классом. 
+code: |
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script>
+  function find_block(){
+    alert($(this).parents('.block').html())
+  }
+  </script>
+  
+  <div class='block'>
+    <p>
+      <span>
+        <a href='#' onclick='find_block.call(this)'>click!</a>
+      </span>
+    </p>
+  </div>

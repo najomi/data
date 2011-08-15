@@ -1,0 +1,7 @@
+link: http://www.ruby-doc.org/core/classes/Integer.html#M000188
+desc: Инкремент/декремент в руби. Само значение правда не изменяется.
+code: |
+  1.pred      #=> 0
+  (-1).pred   #=> -2
+  1.next      #=> 2
+  (-1).next   #=> 0
