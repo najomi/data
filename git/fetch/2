@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Забрать изменения из репозитория /home/username/project 
+code: |
+  $ git fetch /home/username/project 

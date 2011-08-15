@@ -1,0 +1,17 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch02.html#__12
+desc: Создать список изменений Changelog
+code: |
+  $ git log > Changelog
+out: |
+  # В файл Changelog будет записано:
+  commit 81edfc0e2999c2bec6cdaa09b96da80e72c45237
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Mon Aug 15 21:19:53 2011 +0400
+
+    Fixed data
+
+  commit 0495b8184842d7f3413c93a6ea1b1bb43eb1ea1c
+  Author: Alesenko Elena <omegka@gmail.com>
+  Date:   Mon Aug 15 16:42:57 2011 +0300
+
+    Added data -48m

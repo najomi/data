@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Найти строки, где упоминаются и слово first,
+  и слово another.
+code: |
+  $ git grep -e 'first' --and -e 'another' 

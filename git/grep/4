@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+  Найти строки, где встречается, хотя бы одно
+  из слов: first или second.
+code: |
+  $ git grep --all-match -e 'first' -e 'second'  

@@ -1,0 +1,6 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch02.html#__12
+desc: |
+  Получить изменения между версией с хешем 1b6d
+  и версией, сделанной 2 коммита назад
+code: |
+  $ git diff 1b6d "master~2"

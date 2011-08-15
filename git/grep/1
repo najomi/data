@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: Поиск слова text в проекте
+code: |
+  $ git grep text
