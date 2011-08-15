@@ -1,0 +1,10 @@
+desc: Проверить: является ли файл картинкой
+code: |
+  <?php
+  function is_image($pth){
+          return (bool)@getimagesize($pth);
+  }
+  echo (int)is_image('test.rb');
+  echo (int)is_image('test.jpg');
+out: |
+  01
