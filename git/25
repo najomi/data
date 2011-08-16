@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/Git/60347/
+desc: |
+   Автоматически применить изменения, внесенные коммитом BUG_FIX_TAG 
+code: |
+   $ git cherry-pick BUG_FIX_TAG -n
