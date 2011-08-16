@@ -1,0 +1,4 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch05.html
+desc: Добавить изменения в последний коммит и запустить их
+code: |
+   $ git commit --amend -a
