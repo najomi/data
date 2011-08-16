@@ -1,0 +1,4 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch07.html
+desc: Отобразить текущие алиасы
+code: |
+ $ git config --global --get-regexp alias

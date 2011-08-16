@@ -1,0 +1,8 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch06.html
+desc: Показать список удаленных веток
+code: |
+  $ git branch -r
+out: |
+  origin/HEAD
+  origin/master
+  origin/experimental

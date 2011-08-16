@@ -1,0 +1,4 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch07.html
+desc: Cоздать архив (с расширением tar.gz) с файлами проекта
+code: |
+   $ git archive --format=tar --prefix=proj-1.2.3/HEAD

@@ -1,0 +1,6 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch07.html
+desc: |
+   Для каждой сделанной правки без коммита показать измененный участок кода 
+   и спросить, должно ли это изменение попасть в следующий коммит.
+code: |
+   $ git add -p
