@@ -1,0 +1,6 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch02.html#__12
+desc: |
+  Cоздать новую ветку ancient, отражающую состояние на десять коммитов назад 
+  от второго родителя первого родителя коммита, начинающегося с 1b6d.
+code: |
+  $ git checkout 1b6d^^2~10 -b ancient

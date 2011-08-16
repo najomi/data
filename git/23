@@ -1,0 +1,6 @@
+link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch02.html#__12
+desc: |
+   Cохранить текущее состояние во временном месте («тайнике», stash)
+   и востановить предыдущее состояние. 
+code: |
+   $ git stash
