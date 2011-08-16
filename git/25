@@ -1,5 +1,6 @@
 link: http://habrahabr.ru/blogs/Git/60347/
 desc: |
-   Автоматически применить изменения, внесенные коммитом BUG_FIX_TAG 
+   Взять правки из коммита 7496f529, применить их к
+   текущей ветке, но сам коммит не совершать
 code: |
-   $ git cherry-pick BUG_FIX_TAG -n
+   $ git cherry-pick -n 7496f529 
