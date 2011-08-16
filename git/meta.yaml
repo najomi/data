@@ -1,5 +1,6 @@
 info: |
-  Статистику по многим параметрам можно сформировать с помощью 
+  Статистику по многим параметрам можно сформировать с помощью
   <a href='http://gitstats.sourceforge.net/'>gitstats</a>
-links: 
+ft: bash
+links:
   - ['http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/', 'Мануал по гиту']
