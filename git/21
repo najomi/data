@@ -1,17 +1,4 @@
-<<<<<<< HEAD
 link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch02.html#__12
 desc: Переименовать файл bug.c в файл feature.c
 code: |
   $ git mv bug.c feature.c
-=======
-link: http://stackoverflow.com/questions/1828874/generating-statistics-from-git-repository 
-desc: Посмотреть статистику коммитов по автору
-code: |
-   $ git shortlog -s -n
-out: |
-   118  Aleksei Kaminin
-     3  Alesenko Elena
-     3  Lena Omega
-     3  unknown
-
->>>>>>> b7844ef3757ce5e2909b59df6271143afdc80006

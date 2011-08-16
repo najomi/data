@@ -1,0 +1,9 @@
+link: http://stackoverflow.com/questions/1828874/generating-statistics-from-git-repository 
+desc: Посмотреть статистику коммитов по автору
+code: |
+   $ git shortlog -s -n
+out: |
+   118  Aleksei Kaminin
+     3  Alesenko Elena
+     3  Lena Omega
+     3  unknown
