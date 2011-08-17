@@ -1,6 +1,6 @@
 link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch07.html
 desc: |
-   Cоздать tar-архив ветки мастер и записать его в файл ~/prj.tar.
-   Внутри него файлы будут находится в папке proj-1.2.3/HEAD/
+   Cоздать tar-архив проекта и записать его в файл ~/prj.tar.
+   Внутри него файлы будут находится в папке proj-1.2.3/
 code: |
-   $ git archive --format=tar --prefix=proj-1.2.3/HEAD/ master > ~/prj.tar
+   $ git archive --format=tar --prefix=proj-1.2.3/ HEAD > ~/prj.tar
