@@ -1,0 +1,16 @@
+desc: Показать список всех веток
+code: |
+  $ git branch -a
+out: |
+  * master
+    news
+    partners
+    popup
+    remotes/artem-mbs/master
+    remotes/artem-mbs/ribbon
+    remotes/origin/HEAD -> origin/master
+    remotes/origin/master
+    remotes/origin/partners
+    remotes/origin/verstka
+    remotes/sher/master
+    remotes/sher/partners

@@ -1,4 +1,6 @@
 link: http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch07.html
-desc: Cоздать архив (с расширением tar.gz) с файлами проекта
+desc: |
+   Cоздать tar-архив ветки мастер и записать его в файл ~/prj.tar.
+   Внутри него файлы будут находится в папке proj-1.2.3/HEAD/
 code: |
-   $ git archive --format=tar --prefix=proj-1.2.3/HEAD
+   $ git archive --format=tar --prefix=proj-1.2.3/HEAD/ master > ~/prj.tar

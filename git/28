@@ -35,3 +35,4 @@ data:
       Changed but not updated:
         modified:   b
         deleted:    c
+        modified:   d
