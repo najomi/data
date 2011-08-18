@@ -1,0 +1,16 @@
+ft: bash
+desc: Проверить синтаксис php файла
+data:
+  -
+    code: |
+      $ cat syntax.php 
+    out: |
+      <?php
+      echo "Hello, world!';
+  -
+    code: |
+      $ php -l syntax.php 
+    out: |
+      PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE \
+        or T_DOLLAR_OPEN_CURLY_BRACES or T_CURLY_OPEN in syntax.php on line 3
+      Errors parsing syntax.php
