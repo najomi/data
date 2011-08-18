@@ -1,0 +1,20 @@
+link: http://www.php.net/manual/en/function.sprintf.php
+desc: Дополнение символами в printf/sprintf
+code: |
+  <?php
+  $s = 'monkey';
+  $t = 'many monkeys';
+  
+  printf("[%s]\n",      $s); // просто распечатать
+  printf("[%10s]\n",    $s); // дополнить пробелами слева
+  printf("[%-10s]\n",   $s); // дополнить пробелами справа
+  printf("[%010s]\n",   $s); // дополнить слева нулями
+  printf("[%'#10s]\n",  $s); // дополнить символом решетки
+  printf("[%10.10s]\n", $t); // обрезать до 10 символов 
+out: |
+  [monkey]
+  [    monkey]
+  [monkey    ]
+  [0000monkey]
+  [####monkey]
+  [many monke]
