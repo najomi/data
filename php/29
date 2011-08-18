@@ -3,24 +3,24 @@ desc: |
 code: |
   <?php
   function map($fn, $array){
-	  return array_map($fn, $array);
+      return array_map($fn, $array);
   }
   
   function kmap($fn, $array){
-	  $return = array();
-	  foreach($array as $k=>$v)
-		  $return[$k] = $fn($k, $v);
-	  return $return;
+      $return = array();
+      foreach($array as $k=>$v)
+          $return[$k] = $fn($k, $v);
+      return $return;
   }
   
   function filter($fn, $array){
-	  return array_filter($array, $fn);
+      return array_filter($array, $fn);
   }
   
   function kfilter($fn, $array){
-	  $return = array();
-	  foreach($array as $k=>$v)
-		  if($fn($k, $v))
-			  $return[$k] = $v;
-	  return $return;
+      $return = array();
+      foreach($array as $k=>$v)
+          if($fn($k, $v))
+              $return[$k] = $v;
+      return $return;
   }
