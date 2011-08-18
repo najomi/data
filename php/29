@@ -1,0 +1,26 @@
+desc: |
+  Заменяем array_map, array_filter более лаконичными функциями
+code: |
+  <?php
+  function map($fn, $array){
+	  return array_map($fn, $array);
+  }
+  
+  function kmap($fn, $array){
+	  $return = array();
+	  foreach($array as $k=>$v)
+		  $return[$k] = $fn($k, $v);
+	  return $return;
+  }
+  
+  function filter($fn, $array){
+	  return array_filter($array, $fn);
+  }
+  
+  function kfilter($fn, $array){
+	  $return = array();
+	  foreach($array as $k=>$v)
+		  if($fn($k, $v))
+			  $return[$k] = $v;
+	  return $return;
+  }
