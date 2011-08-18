@@ -1,0 +1,6 @@
+ft: bash
+desc: |
+  Изменить метод перевода строки в файле
+code: |
+  $ toms syntax.php # формат windows
+  $ toix syntax.php # формат unix
