@@ -1,0 +1,22 @@
+link: http://www.kernel.org/pub/software/scm/git/docs/git-log.html
+desc: Показать историю последних трех коммитов
+code: |
+  $ git log -3
+out: |
+  commit b2ec961f2689fbd73e7c789b7762971d55ca1344
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Wed Aug 17 08:27:13 2011 +0400
+
+    Fixed data
+
+  commit 2863564b8212c35e56f47f5feb9e368d64727a70
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Wed Aug 17 08:20:49 2011 +0400
+
+    Added and fixed data
+
+  commit aecb33de4ed4c94652688408a8f5226ee32ad715
+  Author: Alesenko Elena <omegka@gmail.com>
+  Date:   Tue Aug 16 23:05:11 2011 +0300
+
+    Added data - 40m
