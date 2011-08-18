@@ -1,0 +1,19 @@
+desc: Враппер для удобного использования ob_* функций
+code: |
+  <?php
+  function ob($fn){
+      ob_start();
+      $fn();
+      $r = ob_get_contents();
+      ob_end_clean();
+      return $r;
+  }
+  
+  $v = ob(function(){
+          echo "Hello, world!";
+      });
+  
+  echo ">$v<";
+out: |
+  >Hello, world!<
+
