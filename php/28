@@ -1,0 +1,31 @@
+desc: Выбрать из массива только положительные значения
+code: |
+  <?php
+  function to_bool($v){
+      return (bool)$v;
+  }
+
+  $array = array(# Попадут в результирующий массив:
+                 'foo', 1, array(2, 3), (object)'bar', true,
+                 # будут исключены:
+                 '', array(), 0, false, null);
+
+  print_r(array_filter($array, 'to_bool'));
+out: |
+  Array
+  (
+      [0] => foo
+      [1] => 1
+      [2] => Array
+          (
+              [0] => 2
+              [1] => 3
+          )
+  
+      [3] => stdClass Object
+          (
+              [scalar] => bar
+          )
+  
+      [4] => 1
+  )

@@ -1,0 +1,13 @@
+link: http://learn.github.com/p/log.html 
+desc: Указываем временные промежутки при просмотре истории
+code: |
+  $ git log --before="2 weeks ago" --after="2009-01-26" --pretty=oneline
+out: |
+  dfb047b9e4f7f66c5322ef642f21fd92b0a975e3 Mention "local convention" rule in t
+  25655221745fd27d5da3bda7ad0fe49f2005d776 Windows: Revert to default paths and
+  35fb0e8633217f602360a9987af51c4b960e7850 Compute prefix at runtime if RUNTIME
+  8e3462837b0ace04357503a3f58802cc2231df29 Modify setup_path() to only add git_
+  2fb3f6db96492b680899f9e40f434eeb4c778a84 Add calls to git_extract_argv0_path(
+  2cd72b0b290e40fb4d6a925ce26603503f01aa09 git_extract_argv0_path(): Move check
+  4dd47c3b867f51211d0dc4474dab0fee5ca614da Refactor git_set_argv0_path() to git
+  026fa0d5ad9538ca76838070861531c037d7b9ba Move computation of absolute paths f

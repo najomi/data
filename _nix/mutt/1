@@ -1,0 +1,4 @@
+link: http://blog.pc-tony.com/2010/10/mutt-mark-all-messages-as-read/ 
+desc: Пометить все сообщения прочитанными
+code: |
+  macro index M "T.*\n;WN" "Mark all messages as read"

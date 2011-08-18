@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/520650/how-do-you-make-an-existing-git-branch-track-a-remote-branch
+desc: Заставить ветку foo следить за изменениями в upstream/foo
+code: |
+  $ git branch --set-upstream foo upstream/foo

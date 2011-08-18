@@ -1,0 +1,8 @@
+link: http://www.ruby-forum.com/topic/49197
+desc: Корректно обрабатывае нажатие CTRL-C от пользователя
+code: |
+  trap("INT") do
+    puts "Correct exit";
+    exit
+  end
+  while true do end
