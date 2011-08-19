@@ -1,7 +1,6 @@
 link: http://progit.org/book/ru/ch6-6.html
 desc: |
-  Клонировать внешний репозиторий в подкаталог
-  в качестве подмодуля
+  Клонировать внешний репозиторий в подкаталог в качестве субмодуля
 code: |
   $ git submodule add git://github.com/chneukirchen/rack.git rack
 out: |
