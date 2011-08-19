@@ -1,0 +1,15 @@
+link: http://progit.org/book/ru/ch6-6.html
+desc: |
+  Получить все данные из подмодуля и перейти
+  к соответствующему коммиту, указанному в 
+  вашем основном проекте
+code: |
+  $ git submodule update
+out: |
+  Initialized empty Git repository in /opt/myproject/rack/.git/
+  remote: Counting objects: 3181, done.
+  remote: Compressing objects: 100% (1534/1534), done.
+  remote: Total 3181 (delta 1951), reused 2623 (delta 1603)
+  Receiving objects: 100% (3181/3181), 675.42 KiB | 173 KiB/s, done.
+  Resolving deltas: 100% (1951/1951), done.
+  Submodule path 'rack': checked out '08d709f78b8c5b0fbeb7821e37fa53e69afcf433'

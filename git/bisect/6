@@ -1,0 +1,4 @@
+link: http://wiki.etersoft.ru/UsesGit
+desc: Сообщить, что есть ошибка в текущем коммите
+code: |
+  $ git bisect bad

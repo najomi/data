@@ -1,0 +1,4 @@
+link: http://progit.org/book/ru/ch6-5.html
+desc: Сообщить, что в версии wine-1.0 ошибки нет
+code: |
+  $ git bisect good wine-1.0

@@ -1,0 +1,4 @@
+link: http://wiki.etersoft.ru/UsesGit
+desc: Инициализация бинарного поиска
+code: |
+      $ git bisect start

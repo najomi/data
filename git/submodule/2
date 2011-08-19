@@ -1,0 +1,11 @@
+link: http://progit.org/book/ru/ch6-6.html
+desc: |
+  Посмотреть конфигурационный файл .gitmodules,
+  который содержит соответствие между URL и локальным
+  подкаталогом, в который был загружен подмодуль
+code: |
+  $ cat .gitmodules 
+out: |
+  [submodule "rack"]
+      path = rack
+      url = git://github.com/chneukirchen/rack.git

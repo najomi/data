@@ -1,0 +1,8 @@
+link: http://progit.org/book/ru/ch6-6.html
+desc: |
+  Инициализировать локальный файл конфигурации .gitmodules
+code: |
+  $ git submodule init
+out: |
+  Submodule 'rack' (git://github.com/chneukirchen/rack.git)
+  registered for path 'rack'

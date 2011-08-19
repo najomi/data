@@ -1,0 +1,6 @@
+link: http://progit.org/book/ru/ch6-5.html
+desc: |
+  Запустить бинарный поиск, указав плохой коммит HEAD,
+  и хороший коммит v1.0
+code: |
+  $ git bisect start HEAD v1.0

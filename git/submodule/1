@@ -1,0 +1,13 @@
+link: http://progit.org/book/ru/ch6-6.html
+desc: |
+  Клонировать внешний репозиторий в подкаталог
+  в качестве подмодуля
+code: |
+  $ git submodule add git://github.com/chneukirchen/rack.git rack
+out: |
+  Initialized empty Git repository in /opt/subtest/rack/.git/
+  remote: Counting objects: 3181, done.
+  remote: Compressing objects: 100% (1534/1534), done.
+  remote: Total 3181 (delta 1951), reused 2623 (delta 1603)
+  Receiving objects: 100% (3181/3181), 675.42 KiB | 422 KiB/s, done.
+  Resolving deltas: 100% (1951/1951), done.

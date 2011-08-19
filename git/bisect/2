@@ -1,0 +1,6 @@
+link: http://wiki.etersoft.ru/UsesGit
+desc: |
+  Графическое представление дерева
+  c помеченными коммитами
+code: |
+  $ git bisect visualize
