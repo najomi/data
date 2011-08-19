@@ -1,0 +1,8 @@
+ft: html
+desc: Отправить форму при нажатии на ссылку
+code: |
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  
+  <form onsubmit='alert("Catched!"); return false'>
+      <a href='#' onclick='$(this).parents("form").submit()'>Submit.</a>
+  </form>
