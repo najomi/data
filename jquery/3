@@ -2,7 +2,7 @@ link: http://jquery-howto.blogspot.com/2008/12/how-to-check-if-checkbox-is-check
 ft: javascript
 desc: Проверяем - отмечены ли чекбоксы
 code: |
-  <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
   <input type='checkbox' id='checkbox-1' checked>
   <input type='checkbox' id='checkbox-2' checked>
   <input type='checkbox' id='checkbox-3'>

@@ -2,7 +2,7 @@ link: http://api.jquery.com/val/
 ft: javascript
 desc: Работаем со значением полей у форм
 code: |
-  <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
   <input type='text' value='Def value'>
   <script>
     var i = $('input')
