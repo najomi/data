@@ -1,0 +1,11 @@
+link: http://chesser.ru/forum/viewtopic.php?p=969
+desc: |
+  Убрать символ переноса строки ^M в файле из windows
+data: 
+  - 
+    code: |
+      :set ff=unix
+	  :w
+  -
+    code: |
+      :%s/^M//g 
