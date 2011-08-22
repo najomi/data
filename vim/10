@@ -1,0 +1,5 @@
+link: http://chesser.ru/forum/viewtopic.php?p=969
+desc: |
+  Убрать символ переноса строки в windows ^M в файле
+code: |
+  $ vim `ls -t | head -n1`
