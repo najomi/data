@@ -1,0 +1,12 @@
+desc: Посмотреть список поддерживаемых форматов
+code: |
+  $ mogrify -list Format
+out: |
+   Format  Module    Mode  Description
+   -------------------------------------------------------------
+      3FR  DNG       r--   Hasselblad CFV/H3D39II
+        A* RAW       rw+   Raw alpha samples
+       AI  PDF       rw-   Adobe Illustrator CS2
+      ART* ART       rw-   PFS: 1st Publisher Clip Art
+      ARW  DNG       r--   Sony Alpha Raw Image Format
+   ...
