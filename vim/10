@@ -5,7 +5,7 @@ data:
   - 
     code: |
       :set ff=unix
-	  :w
+      :w
   -
     code: |
       :%s/^M//g 
