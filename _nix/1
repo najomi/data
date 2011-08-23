@@ -1,0 +1,11 @@
+link: http://www.debianadmin.com/how-to-change-root-password-in-debian.html
+ft: text
+desc: Сбрасываем пароль на рута в linux
+code: |
+  1. В grub жмём `e'
+  2. Находим строку, что начинается с `kernel' и опять жмём `e'
+  3. В конец добавляем `init=/bin/sh'
+  4. Жмём `b' и дожидаемся приглашения командной строки
+  5. Вбиваем `mount -o remount rw /'
+  6. Пишем `passwd' и вводим новый пароль
+  7. reboot.

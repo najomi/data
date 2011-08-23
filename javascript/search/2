@@ -1,0 +1,7 @@
+link: http://www.w3schools.com/jsref/jsref_search.asp
+desc: Поиск без учёта регистра
+code: |
+  var str="Visit W3Schools!";
+  document.write(str.search(/w3schools/i));
+out: |
+  6
