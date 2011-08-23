@@ -1,0 +1,11 @@
+desc: Замерить время выполнения участка кода
+code: |
+  <?php
+  function bench($fn){
+      $start = microtime(true);
+      $fn();
+      return microtime(true) - $start;
+  }
+  echo bench(function(){ sleep(1); });
+out: |
+  1.0001661777496
