@@ -1,0 +1,3 @@
+desc: Сделать скриншот экрана с задержкой в 2 секунды
+code: |
+  $ sleep 2 && import -window root img.jpg
