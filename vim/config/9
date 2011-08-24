@@ -1,0 +1,7 @@
+link: http://hlabs.spb.ru/vim/recipes.html
+desc: |
+  Установить 4 пробела для табуляции, 4 пробела для команд отступа,
+  и заменять табуляцию на соответствующее количество пробелов при 
+  вводе команды :SpaceIndent
+code: |
+  com SpaceIndent :set tabstop=4| set shiftwidth=4| set expandtab
