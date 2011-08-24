@@ -6,5 +6,5 @@ desc: |
 code: |
       :set ff=unix
       :w
-	  
+      
       :%s/^M//g 
