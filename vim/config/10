@@ -1,0 +1,6 @@
+link: http://hlabs.spb.ru/vim/recipes.html
+desc: |
+  Показывать доступные варианты над командной строкой при
+  использовании автодополнения
+code: |
+  set wildmenu

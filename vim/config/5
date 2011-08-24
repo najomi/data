@@ -1,0 +1,8 @@
+link: http://linux.vsevteme.ru/2009/08/20/blog/izmenyaem-vneshniy-vid-vim-chast-pervaya
+desc: |
+  Выводить в статусной строке имя редактируемого файла,
+  формат строк (DOS, UNIX), номер текущей строки и 
+  столбца, длину текущенр файла (в строках)  
+code: |
+  set statusline=%F%m%r%h%w\ 
+  [FORMAT=%{&ff}]\ [POS=%04l,%04v]\ [LEN=%L]

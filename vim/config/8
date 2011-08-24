@@ -1,0 +1,7 @@
+link: http://linux.vsevteme.ru/2009/08/20/blog/izmenyaem-vneshniy-vid-vim-chast-pervaya
+desc: |
+  Добавить иконку myicon.png на панель инструментов
+code: |
+  amenu icon=/path/to/myicon.png 
+  ToolBar.Bufferlist :buffers<CR>
+  menu Tabs.Previous <ESC>:tabprev<CR>
