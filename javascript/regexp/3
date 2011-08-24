@@ -1,0 +1,11 @@
+link: http://www.w3schools.com/jsref/jsref_replace.asp
+desc: Заменить все вхождения подстроки в строке, без учёта регистра
+code: |
+  var str="Welcome to Microsoft! ";
+  str = str + "We are proud to announce that Microsoft has ";
+  str = str + "one of the largest Web Developers sites in the world.";
+  
+  document.write(str.replace(/microsoft/gi, "W3Schools"));
+out: |
+  Welcome to W3Schools! We are proud to announce that W3Schools
+  has one of the largest Web Developers sites in the world.

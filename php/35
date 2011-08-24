@@ -1,0 +1,36 @@
+link: http://php.net/manual/en/function.var-dump.php
+desc: |
+  Распечатать информацию о переменной.
+
+  В отличии от print_r, echo - var_dump нормально печатает булевы значения
+data: |
+  - 
+    code: |
+      <?php
+      $a = array(1, 2, array("a", "b", "c"));
+      var_dump($a);
+    out: |
+      array(3) {
+        [0]=>
+        int(1)
+        [1]=>
+        int(2)
+        [2]=>
+        array(3) {
+          [0]=>
+          string(1) "a"
+          [1]=>
+          string(1) "b"
+          [2]=>
+          string(1) "c"
+        }
+      }
+  -
+    code: |
+      $b = 3.1;
+      $c = true;
+      var_dump($b, $c);
+    out: |
+      float(3.1)
+      bool(true)
+

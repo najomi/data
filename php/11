@@ -1,3 +1,4 @@
 desc: Разделить строку на символы
 code: |
+  <?php
   $chars = preg_split('//u', $string);

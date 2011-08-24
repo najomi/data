@@ -4,4 +4,3 @@ code: |
   public static function getInstance(){
       return (isset(self::$oInstance))?self::$oInstance:self::$oInstance = new self();
   }
-  ?>

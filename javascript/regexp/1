@@ -1,0 +1,5 @@
+link: http://javascript.ru/basic/regular-expression
+desc: Есть 2 способа записи регулярных выражений
+code: |
+  var reg = /ab+c/i
+  var reg = new RegExp("ab+c", "i")

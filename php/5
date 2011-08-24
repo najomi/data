@@ -4,4 +4,3 @@ code: |
   <?php
   $execStr =  "$php $script $params > /dev/null &";
   exec($execStr);
-  ?>

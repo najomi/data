@@ -3,7 +3,7 @@ desc: |
   floor - округляет в меньшую сторону, ceil - в большую,
   а round к ближайшему целому
 code: |
-  <?
+  <?php
   $numbers = array(-2.9, -2.5, -2.1, 2.1, 2.5, 2.9);
   
   printf("%-10s%-10s%-10s%-10s\n", '#', 'floor', 'ceil', 'round');

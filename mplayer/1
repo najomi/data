@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/497681/using-mplayer-to-determine-length-of-audio-video-file
+desc: Получить продолжительность файла
+code: |
+  $ mplayer -vo null -ao null -frames 0 -identify video.avi  2> /dev/null | grep ID_LENGTH
+out: |
+  ID_LENGTH=3539.96

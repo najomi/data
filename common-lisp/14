@@ -1,0 +1,13 @@
+desc: Работа с множественными значениями
+code: |
+  (defun return-some-values ()
+    (values :hello :world))
+  
+  (print (return-some-values))
+  ; :HELLO
+  
+  (multiple-value-bind (first second) (return-some-values)
+    (print first)
+    (print second))
+  ; :HELLO 
+  ; :WORLD 

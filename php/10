@@ -13,4 +13,3 @@ code: |
   function shutdown () {
   	echo substr(ob_get_clean(), 0, 2000);
   }
-  ?>

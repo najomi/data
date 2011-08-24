@@ -3,6 +3,7 @@ desc: |
   Использование тернарного оператора в sql запросе для подстановки значений в
   зависимости от условий 
 code: |
+  <?php
   $iquery = "INSERT INTO $wp_table VALUES(
              '',
              '".$post_author."',

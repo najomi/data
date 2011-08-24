@@ -1,0 +1,6 @@
+link: http://javascript.ru/basic/regular-expression
+desc: Сопоставить строку с регулярным выражением
+code: |
+  if(/\s/.test("строка")){
+      // В строке есть пробелы!
+  }

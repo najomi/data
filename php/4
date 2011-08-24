@@ -4,4 +4,3 @@ code: |
   <?php
   $execStr =  "start /b $php $script $params";
   pclose(popen($execStr, 'r'));
-  ?>
