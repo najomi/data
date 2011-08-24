@@ -2,6 +2,6 @@ link: http://linux.vsevteme.ru/2011/03/05/blog/vim-i-dlinnye-stroki
 desc: Настроить перемещение курсора по файлу с длинными строками
 code: |
   nmap j gj
-  nmap < DOWN > gj
+  nmap <down> gj
   nmap k gk
-  nmap < UP > gk
+  nmap <up> gk
