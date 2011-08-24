@@ -1,0 +1,4 @@
+desc: Разбить видео файл на кучу jpg/png картинок
+code: |
+  $ mplayer -vo png japan_drink.flv 
+  $ mplayer -vo jpeg japan_drink.flv 
