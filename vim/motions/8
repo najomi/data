@@ -1,4 +1,0 @@
-link: http://habrahabr.ru/blogs/vim/28108/
-desc: Передвинуть курсор на первый символ в текущей строке
-code: |
-  ^
