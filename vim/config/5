@@ -4,5 +4,4 @@ desc: |
   формат строк (DOS, UNIX), номер текущей строки и 
   столбца, длину текущенр файла (в строках)  
 code: |
-  set statusline=%F%m%r%h%w\ 
-  [FORMAT=%{&ff}]\ [POS=%04l,%04v]\ [LEN=%L]
+  set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [POS=%04l,%04v]\ [LEN=%L]

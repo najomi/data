@@ -1,6 +1,4 @@
 desc: |
-   Рекурсивно удалить все файлы в папке "vim/insert mode"
+   Рекурсивно удалить все файлы в папке "vim/insert mode"                   
 code: |
-   $ git rm -rf vim/insert\ mode/
-   
    $ git rm -rf 'vim/insert mode'
