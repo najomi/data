@@ -1,7 +1,5 @@
-link: http://linux.vsevteme.ru/2009/08/21/blog/izmenyaem-vneshniy-vid-vim-chast-vtoraya
+link: http://habrahabr.ru/blogs/vim/65518/
 desc: |
-  Добавить меню Tabs, в котором будет два пункта Next и Previous
-  для перемещения к следующей и предыдущей вкладкам соответственно
+  Отключить toolbar
 code: |
-  menu Tabs.Next <ESC>:tabnext<CR>
-  menu Tabs.Previous <ESC>:tabprev<CR>
+  set guioptions-=T

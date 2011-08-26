@@ -1,0 +1,11 @@
+link: http://habrahabr.ru/blogs/vim/65518/
+desc: |
+  Занять окном с vim максимально большое пространство на экране
+code: |
+  if has('gui')
+  if has('win32')
+  au GUIEnter * call libcallnr('maximize', 'Maximize', 1)
+  elseif has('gui_gtk2')
+  au GUIEnter * :set lines=99999 columns=99999
+  endif
+  endif
