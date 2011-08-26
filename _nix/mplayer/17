@@ -1,0 +1,3 @@
+desc: Проиграть файл в полтора раза быстрее
+code: |
+  $ mplayer -speed 1.5 video.flv 
