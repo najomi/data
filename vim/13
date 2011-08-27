@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: Заменить "foo" на "bar" в строках 127-215
+code: |
+  :127,215s/foo/bar

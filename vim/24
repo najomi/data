@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Отсортировать весь файл с помощью <a href='/_nix/sort'>sort</a>
+code: |
+  :%!sort

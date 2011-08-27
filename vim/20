@@ -1,0 +1,4 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: Во всех строках содержащих "foo", заменить "bar" на "zzz"
+code: |
+  :%g/foo/s/bar/zzz/g

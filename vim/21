@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Между метками 'a' и 'b', объединить строки, что содержат 'foo'
+  с теми что идут после них.
+code: |
+  :'a,'bg/foo/j

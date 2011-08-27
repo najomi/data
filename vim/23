@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Вставить вывод команды в место под курсором
+code: |
+  :r!uptime

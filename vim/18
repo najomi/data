@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Все строки, что содержат "foo" перенести в конец файла,
+  в том же порядке, в каком они встречаются по документу
+code: |
+  :%g/foo/m$

@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Начиная с текущего места и до конца файла удалить все строки
+  что НЕ содержат "bar"
+code: |
+  :.,$v/bar/d

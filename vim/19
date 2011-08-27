@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Все строки, что начинаются с пробела, объединить с предыдущими
+code: |
+  :%g/^ /-1j
