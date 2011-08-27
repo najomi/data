@@ -1,0 +1,8 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118
+desc: Удаление данных
+html: |
+  <ul>
+    <li><kbd>4</kbd><kbd>d</kbd><kbd>d</kbd> - удалить 4 строки</li>
+    <li><kbd>3</kbd><kbd>x</kbd> - удалить 3 символа</li>
+    <li><kbd>D</kbd> - удалить от текущей позиции до конца строки</li>
+  </ul>
