@@ -1,5 +1,5 @@
 desc:
   увеличить/уменьшить число под курсором на 1
-code: |
-  ctrl+a 
-  ctrl+x
+html: |
+  <kbd>Ctrl</kbd>+<kbd>a</kbd><br>
+  <kbd>Ctrl</kbd>+<kbd>x</kbd>

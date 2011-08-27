@@ -1,0 +1,12 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: Способы сложного выделения текста
+html: |
+  <ul>
+    <li><kbd>v</kbd><kbd>%</kbd> - когда курсор установлен на одной из скобок - выделит всё до её пары.</li>
+    <li><kbd>v</kbd><kbd>i</kbd><kbd>b</kbd> - выделить всё между двумя ближайшими к курсору <b>круглыми</b> скобками</li>
+    <li><kbd>v</kbd><kbd>i</kbd><kbd>B</kbd> - выделить всё между двумя ближайшими к курсору <b>фигурными</b> скобками</li>
+    <li><kbd>v</kbd><kbd>i</kbd><kbd>"</kbd> - выделить всё между двумя ближайшими <b>двойными</b> кавычками</li>
+    <li><kbd>v</kbd><kbd>i</kbd><kbd>'</kbd> - выделить всё между двумя ближайшими <b>одинарными</b> кавычками</li>
+    <li><kbd>g</kbd><kbd>g</kbd><kbd>V</kbd><kbd>G</kbd> - выделить весь файл</li>
+    <li><kbd>Ctrl</kbd>+<kbd>v</kbd> - выделять прямоугольником</li>
+  </ul>
