@@ -1,9 +1,10 @@
 name: Vi/Vim
 title: Как пользоваться vim
 ft: no-highlight
+order: [11, 12, 27, 26]
 info: |
   David Rayner (<a href='http://www.squidoo.com/zzapper'>zzapper</a>) 15
   Years of Vi + 7 years of Vim and still learning &copy; &larr; O_O
 links:
-- [http://www.rayninfo.co.uk/vimtips.html, 'лучшие подсказки по vim']
-- [http://vimdoc.sourceforge.net/htmldoc, документация по vim онлайн]
+  - [http://www.rayninfo.co.uk/vimtips.html, 'лучшие подсказки по vim']
+  - [http://vimdoc.sourceforge.net/htmldoc, документация по vim онлайн]
