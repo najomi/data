@@ -1,0 +1,15 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Работа со встроенным файловым менеджером.
+  Вызвать его можно командой <mark>:Explore</mark> или попытавшись открыть на 
+  редактирование каталог <mark>:sp ./</mark>
+html: |
+  <ul>
+    <li><kbd>-</kbd> - перейти на каталог выше</li>
+    <li><kbd>m</kbd><kbd>f</kbd> - пометить файл</li>
+    <li><kbd>D</kbd> - удалить помеченые файлы. Удалит файл под курсором, если помеченых нет</li>
+    <li><kbd>R</kbd> - переименовать файл под курсором</li>
+    <li><kbd>d</kbd> - создать новый каталог</li>
+    <li><kbd>%</kbd> - создать новый файл</li>
+  </ul>
+
