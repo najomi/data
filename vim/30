@@ -1,0 +1,15 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: | 
+    В режиме вставки, комбинация <kbd>Ctrl</kbd>+<kbd>R</kbd> позволяет вставлять некоторые полезные вещи:
+html: |
+  <ul>
+    <li><kbd>"</kbd> - последний удалённый/скопированный текст</li>
+    <li><kbd>%</kbd> - текущее имя файла</li>
+    <li><kbd>*</kbd> - содержимое буфера обмена (X11: primary selection)</li>
+    <li><kbd>+</kbd> - содержимое буфера обмена</li>
+    <li><kbd>/</kbd> - последний запрос поиска</li>
+    <li><kbd>:</kbd> - последняя команда</li>
+    <li><kbd>.</kbd> - последний вставленный текст</li>
+    <li><kbd>-</kbd> - последний маленький удалённый текст (меньше строки)</li>
+    <li><kbd>=5*5</kbd> - вставит 25. Мини калькулятор</li>
+  </ul> 

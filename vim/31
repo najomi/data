@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: | 
+  Дополнить слово в режиме вставки
+html: |
+  <kbd>Ctrl</kbd>+<kbd>p</kbd><br>
+  <kbd>Ctrl</kbd>+<kbd>n</kbd>

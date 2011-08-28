@@ -1,6 +1,6 @@
 link:
   - http://habrahabr.ru/blogs/vim/28108/
-  - http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
+  - http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
 desc: Способы перейти в режим вставки
 html: |
   <ul>
@@ -16,4 +16,5 @@ html: |
     <li><kbd>c</kbd><kbd>i</kbd><kbd>W</kbd> - заменить большое слово под курсором</li>
     <li><kbd>c</kbd><kbd>i</kbd><kbd>"</kbd> - заменить текст между кавычками</li>
     <li><kbd>c</kbd><kbd>i</kbd><kbd>(</kbd> - заменить текст между круглыми скобками</li>
+    <li><kbd>g</kbd><kbd>i</kbd> - перейти к последнему месту, где производилось редактирование</li>
   </ul>

@@ -1,0 +1,10 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: |
+  Путешествие по результатам поиска.<br>
+  Переход будет осуществляться по местам, которые были указаны явно:
+  - поиск с помощью <kbd>/</kbd>
+  - переход <kbd>g</kbd><kbd>g</kbd>, <kbd>G</kbd>, <kbd>[\d]</kbd><kbd>G</kbd> 
+  Так же будут открываться другие файлы, где осуществлялись подобные действия.
+html: |
+  <kbd>Ctrl</kbd>+<kbd>o</kbd><br>
+  <kbd>Ctrl</kbd>+<kbd>i</kbd>

@@ -1,0 +1,13 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: Работа с сессиями
+data: 
+  -
+    desc: Сохраняем 
+    code: |
+      :mks sessionname
+      " или принудительно:
+      :mks! sessionname
+  -
+    desc: Загружаем 
+    ft: bash
+    code: $ vim -S sessionname
