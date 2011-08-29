@@ -1,0 +1,15 @@
+link: http://stackoverflow.com/questions/587881/how-to-iterate-over-every-property-of-an-object-in-javascript-using-prototype
+desc: Обходим только собственные свойства объекта
+code: |
+  <script>
+  obj = {foo: 1, bar: 2, barobj: {75: true, 76: false, 85: true}}
+  for(var prop in obj) {
+      if(obj.hasOwnProperty(prop)){
+          document.write(prop + ': ' +obj[prop] + '<br>')
+      }
+  }
+  </script>
+out: |
+  foo: 1
+  bar: 2
+  barobj: [object Object]
