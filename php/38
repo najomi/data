@@ -1,0 +1,24 @@
+link: http://ru.php.net/explode
+desc: |
+  У explode имеется ещё и третий аргумент. 
+
+  В зависимости от того - положительный он или отрицательный - поведение 
+  основательно изменяется. Отрицательный аргумент - отбрасывает результаты
+  с конца возвращаемого массива.
+code: |
+  <?php
+  $str = 'one|two|three|four';
+  print_r(explode('|', $str, 2));
+  print_r(explode('|', $str, -1));
+out: |
+  Array
+  (
+      [0] => one
+      [1] => two|three|four
+  )
+  Array
+  (
+      [0] => one
+      [1] => two
+      [2] => three
+  )

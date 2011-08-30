@@ -1,0 +1,12 @@
+desc: Просматриваем и отчищаем то, что хранит git stash
+data: 
+  -
+    code: |
+      $ git stash list
+    out: |
+      stash@{0}: WIP on new-menu: 0c26593 Fixed link at header
+      stash@{1}: WIP on master: 604670f ...
+  -
+    code: |
+      $ git stash clear
+      $ git stash list

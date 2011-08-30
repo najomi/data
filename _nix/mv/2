@@ -1,0 +1,6 @@
+desc: |
+  Переименовать файл foo/bar/baz/old.txt в foo/bar/baz/new.txt
+
+  В данном случае мы не переходим в папку и набираем путь лишь единожды
+code: |
+  $ mv foo/bar/baz/{old,new}.txt
