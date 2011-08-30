@@ -1,0 +1,14 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: работа с несколькими окнами
+html: |
+  <ul>
+    <li>
+      <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>v</kbd> - разбить окно по вертикали
+    </li>
+    <li>
+      <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>w</kbd> - переключиться между окнами
+    </li>
+    <li>
+      <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>{h,j,k,l}</kbd> - перейти к окну левее, ниже, выше, правее
+    </li>
+  </ul>

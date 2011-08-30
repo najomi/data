@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+desc: Проставить отступы для всего документа
+html: |
+  <kbd>g</kbd><kbd>g</kbd><kbd>=</kbd><kbd>G</kbd><br><br>
+  Для того чтобы это работало - надо добавить в .vimrc следующую строку:<br>
+  <i>filetype plugin indent on</i>
