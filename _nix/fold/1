@@ -1,0 +1,23 @@
+desc: Разбить строки строго по числу символов
+data:
+  -
+    code: |
+      $ fold -w 40 text.txt
+    out: |
+      Yesterday Fred Wilson published a remark
+      able post about missing Airbnb. VCs miss
+       good startups all the time, but it's ex
+      traordinarily rare for one to talk about
+       it publicly till long afterward. So tha
+      t post is further evidence what a rare b
+      ird Fred is. He's probably the nicest VC
+       I know.
+  -
+    code: |
+      $ fold -w 80 text.txt
+    out: |
+      Yesterday Fred Wilson published a remarkable post about missing Airbnb. VCs miss
+       good startups all the time, but it's extraordinarily rare for one to talk about
+       it publicly till long afterward. So that post is further evidence what a rare b
+      ird Fred is. He's probably the nicest VC I know.
+

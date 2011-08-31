@@ -1,0 +1,12 @@
+link: http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
+desc: Подсвечивать все результаты поиска на странице
+data:
+  -
+    code: |
+      set hlsearch
+  -
+    code: |
+      Временно это можно отключить, введя
+      :nohlsearch
+      или короче:
+      :noh
