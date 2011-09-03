@@ -1,0 +1,3 @@
+desc: Запустить программу в 5 потоков
+code: |
+  $ cat links.txt | xargs -P 5 wget {}

@@ -1,7 +1,12 @@
 link: http://www.calculate-linux.ru/main/ru/git
 desc: Клонировать репозиторий
 code: |
-  $ git clone /home/username/project myrepo
   $ git clone ssh://user@somehost:port/~user/repository
   $ git clone git://user@somehost:port/~user/repository/project.git
   $ git clone http://user@somehost:port/~user/repository/project.git
+  $ git clone file:///home/username/project myrepo
+
+  # Этот вариант отличается от того, что начинается с file://
+  # Он работает быстрее, но утягивает заметно больше информации.
+  $ git clone /home/username/project myrepo
+
