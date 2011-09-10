@@ -1,0 +1,22 @@
+link: 
+  - http://chris-lamb.co.uk/2008/12/30/kicking-vim-cursor-key-habit/
+  - http://habrahabr.ru/blogs/vim/65518/
+  - http://www.varesano.net/blog/fabio/disable%20vim%20automatic%20visual%20mode%20using%20mouse
+desc: |
+  Данные настройки очень помогают при попытке изучить вим. 
+  Их стоит добавить себе как можно раньше
+
+  Отключаем стрелки во всех режимах
+  Отключаем тулбар
+  Отключаем меню 
+  Отключаем поддержку мыши
+code: |
+  for prefix in ['i', 'n', 'v']
+    for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+      exe prefix . "noremap " . key . " <Nop>"
+    endfor
+  endfor
+  
+  set guioptions-=T
+  set guioptions-=m
+  set mouse=

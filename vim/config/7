@@ -1,5 +1,0 @@
-link: http://habrahabr.ru/blogs/vim/65518/
-desc: |
-  Отключить toolbar
-code: |
-  set guioptions-=T

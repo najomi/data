@@ -1,5 +1,30 @@
 link: http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
 desc: |
-  Прочитать и вставить содержимое файла 'file.txt' в место под курсором
-code: |
-  :r file.txt
+  Вставка содержимого из другого места
+html: |
+  <ul>
+    <li>
+      :r file.txt 
+      - <b>
+        прочитать и вставить содержимое файла 'file.txt' в место под курсором
+        </b>
+    </li>
+    <li>
+      :0r file.txt 
+      - <b>
+        вставить файл в начало документа
+        </b>
+    </li>
+    <li>
+      :$r file.txt 
+      - <b>
+        вставить файл в конец документа
+        </b>
+    </li>
+    <li>
+      :r !uptime
+      - <b>
+        вставить вывод команды в место под курсором
+        </b>
+    </li>
+  </ul>

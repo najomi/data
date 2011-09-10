@@ -1,4 +1,4 @@
 link: http://habrahabr.ru/blogs/mysql/105954/
 desc: Для просмотра списка баз данных можно использовать команду:
 code: |
-  mysqlshow -u USER -pPASSWORD
+  $ mysqlshow -u USER -pPASSWORD

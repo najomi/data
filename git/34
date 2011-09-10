@@ -1,0 +1,3 @@
+desc: Показать файл, как он выглядел коммит назад
+code: |
+  $ git show HEAD^:view/prj/one_example.php

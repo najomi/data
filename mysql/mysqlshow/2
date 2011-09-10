@@ -1,4 +1,4 @@
 link: http://habrahabr.ru/blogs/mysql/105954/
 desc: А так же можно посмотреть список таблиц базы:
 code: |
-  mysqlshow -u USER -pPASSWORD DATABASE
+  $ mysqlshow -u USER -pPASSWORD DATABASE
