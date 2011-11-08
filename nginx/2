@@ -1,0 +1,11 @@
+link: http://www.cyberciti.biz/faq/linux-unix-nginx-access-control-howto/
+desc: Управление доступом по ip-адресам
+code: |
+  location / { 
+    # Блокируем конкретный ip
+    deny    192.168.1.1;
+    # Разрешаем доступ нашей подсети
+    allow   192.168.1.0/24;
+    # Блокируем весь остальной мир
+    deny    all;
+  }

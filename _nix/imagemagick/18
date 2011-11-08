@@ -1,0 +1,3 @@
+desc: Сделать картинки в папке серыми
+code: |
+  $ mogrify -type Grayscale *.jpg
