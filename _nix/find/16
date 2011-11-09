@@ -1,0 +1,4 @@
+link: http://nixcraft.com/getting-started-tutorials/1432-linux-delete-empty-directories.html
+desc: Удалить все пустые директории
+code: |
+  $ find -depth -type d -empty -exec rmdir {} \;

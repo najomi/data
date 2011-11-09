@@ -1,0 +1,11 @@
+link: http://stackoverflow.com/questions/1407451/calling-a-function-from-a-string-with-the-functions-name-in-ruby
+ft: ruby
+desc: Вызвать функцию по имени.
+code: |
+  def hello name
+          puts "Hello, #{name}!"
+  end
+  
+  send :hello, :waserd
+out: |
+  Hello, waserd!

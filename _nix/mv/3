@@ -1,0 +1,3 @@
+desc: Убрать префикс "forum-" из имён файлов и каталогов
+code: |
+  $ for file in * ; do mv $file ${file#forum-}; done

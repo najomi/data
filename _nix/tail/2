@@ -1,0 +1,15 @@
+ft: bash
+desc: Начиная с 5 позиции вывести 3 строки
+data: 
+  - 
+    code: |
+      $ ls 
+    out: |
+      1 2 3 4 5 6 7 8 9
+  -
+    code: |
+      $ ls | tail -n +5 | head -n 3
+    out: |
+      5
+      6
+      7

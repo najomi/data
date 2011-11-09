@@ -1,0 +1,21 @@
+desc: Переименовывание файлов с созданием бэкапа
+data:  
+  -
+    code: |
+      $ echo one > 1
+      $ echo two > 2
+      $ mv --backup=t 2 1
+      $ ls
+    out: |
+      1
+      1.~1~
+  -
+    code: |
+      $ cat 1
+    out: |
+      two
+  -
+    code: |
+      $ cat 1.~1~ 
+    out: |
+      one

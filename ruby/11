@@ -1,0 +1,20 @@
+desc: Обойти файл построчно
+data: 
+  -
+    code: |
+      $ cat test.rb
+    out: |
+      i = 0 
+      File.open('test.rb').each do |line|
+              i += 1
+              print "#{i}\t#{line}"
+      end
+  -
+    code: |
+      $ ruby test.rb
+    out: |
+      1       i = 0 
+      2       File.open('test.rb').each do |line|
+      3               i += 1
+      4               print "#{i}\t#{line}"
+      5       end 
