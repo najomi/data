@@ -2,7 +2,7 @@ ft: html
 desc: |
   Если у тега option не задавать value - то он будет взят из содержимого тега
 code: |
-  <pre><? print_R($_GET) ?></pre>
+  <pre><? print_r($_GET) ?></pre>
   <form>
     <select name='language'>
       <option>perl</option>
