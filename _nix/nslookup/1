@@ -1,0 +1,10 @@
+desc: Получить информацию о домене с определённого dns-сервера
+code: |
+  $ nslookup najomi.org 8.8.8.8
+out: |
+  Server:         8.8.8.8
+  Address:        8.8.8.8#53
+  
+  Non-authoritative answer:
+  Name:   najomi.org
+  Address: 82.146.43.26

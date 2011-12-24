@@ -1,0 +1,12 @@
+desc: Скопировать файл с сохранением информации о владельце и группе
+code: |
+  $ touch src
+  $ chown :www-data src
+  $ cp -p src dest_1
+  $ cp src dest_2
+  $ ls -l
+out: |
+  итого 0
+  -rw-r--r-- 1 waserd www-data 0 Дек 24 18:10 dest_1
+  -rw-r--r-- 1 waserd waserd   0 Дек 24 18:10 dest_2
+  -rw-r--r-- 1 waserd www-data 0 Дек 24 18:10 src

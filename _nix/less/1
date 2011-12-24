@@ -1,0 +1,6 @@
+link: http://superuser.com/questions/173627/gnu-screen-horizontal-scrolling
+desc: | 
+  Вместо сворачивания длинных линий в less - обрезать их
+  при просмотре. Это удобно для горизонтального скроллинга по файлу
+code: |
+  $ ls | cat -n | cat -n | cat -n  | cat -n  | expand -50 | less -S

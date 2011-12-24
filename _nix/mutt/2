@@ -1,0 +1,5 @@
+link: http://debback.blogspot.com/2008/03/blog-post.html
+desc: Отправить файл по почте из консоли
+code: |
+  $ ls > file.txt
+  $ echo "Смотри вложение" | mutt -x -s "Метод 3" -a file.txt -- zendzirou@gmail.com

@@ -1,0 +1,16 @@
+link: http://mindspill.net/computing/linux-notes/using-the-bash-ifs-variable-to-make-for-loops-split-with-non-whitespace-characters/
+desc: Установить разделитель для разбора переменных
+code: |
+  #!/bin/bash
+  IFS=$','
+  vals='/mnt,/var/lib/vmware/Virtual Machines,/dev,/proc,/sys,/tmp,/usr/portage'
+  for i in $vals; do echo $i; done
+  unset IFS
+out: |
+  /mnt
+  /var/lib/vmware/Virtual Machines
+  /dev
+  /proc
+  /sys
+  /tmp
+  /usr/portage

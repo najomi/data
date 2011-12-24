@@ -1,0 +1,3 @@
+desc: Сохранить html страницу в pdf
+code: |
+  $ wkhtmltopdf http://www.google.com google.pdf

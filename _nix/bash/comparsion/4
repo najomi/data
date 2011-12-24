@@ -1,0 +1,7 @@
+desc: Сопоставляем файл с регулярным выражением
+code: |
+  if [[ $file =~ ^[0-9]+\.jpg$ ]] ; then
+        echo $file;
+  else    
+        echo '!' $file;
+  fi

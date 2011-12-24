@@ -1,0 +1,7 @@
+desc: посмотреть содержимое тайника
+code: |
+  $ git stash list 
+out: |
+  stash@{0}: WIP on master: 054daa6 initial commit
+  stash@{1}: WIP on master: 054daa6 initial commit
+  stash@{2}: WIP on master: 054daa6 initial commit

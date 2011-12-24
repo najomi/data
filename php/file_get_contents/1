@@ -1,0 +1,12 @@
+link: http://www.php.net/manual/en/function.file-get-contents.php#82527
+desc: Получить содержимое страницы с таймаутом в 1 секунду
+code: |
+  <?php 
+  $ctx = stream_context_create(array( 
+      'http' => array( 
+          'timeout' => 1 
+          ) 
+      ) 
+  ); 
+  file_get_contents("http://example.com/", 0, $ctx); 
+

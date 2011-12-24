@@ -1,0 +1,8 @@
+desc: Разбить текст на колонки. Заполнять их слева-направо
+code: |
+  $ ls | pr --columns 3 -ta
+out: |
+  foo                     data                    downloads
+  from-user               najomi                  nwn
+  ru.najomi.org           site                    test.php
+  to-sort

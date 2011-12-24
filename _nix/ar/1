@@ -1,0 +1,4 @@
+link: http://www.linuxquestions.org/questions/linux-newbie-8/extracting-files-installing-files-from-*-tar-bz2-and-*ipk-827618/
+desc: Распаковать ipk файл
+code: |
+  $ ar x file.ipk

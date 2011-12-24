@@ -1,0 +1,15 @@
+desc: Заменить все вхождения слова в предыдущей команде и выполнить её
+data: 
+  -
+    code: |
+      $ echo one two one three one one
+    out: |
+      one two one three one one
+  -
+    code: |
+      $ !!:gs/one/1
+    out: |
+      echo 1 two 1 three 1 1
+      1 two 1 three 1 1
+    
+    

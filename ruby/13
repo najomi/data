@@ -1,0 +1,19 @@
+desc: Открыв внешнюю команду на выполнение - передавать и читать с неё данные
+data:
+  - 
+    ft: ruby
+    code: |
+      IO.popen("pr --columns 3 -at", "r+") do |io|
+            (1..10).each { |i| io.puts "Line #{i}\n" }
+            io.close_write
+            puts io.readlines
+      end
+  - 
+    ft: bash
+    code: |
+      $ ./test.rb 
+    out: |
+      Line 1                  Line 2                  Line 3
+      Line 4                  Line 5                  Line 6
+      Line 7                  Line 8                  Line 9
+      Line 10

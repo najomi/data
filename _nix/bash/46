@@ -1,0 +1,7 @@
+desc: Автоинкремент в bash
+code: |
+  $ i=1
+  $ i=$[i+1]
+  $ echo $i
+out: |
+  2

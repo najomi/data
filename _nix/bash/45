@@ -1,0 +1,7 @@
+link: https://github.com/git/git/blob/master/contrib/hooks/post-receive-email
+desc: Сопоставляем переменную с шаблоном 
+code: |
+  if expr "$projectdesc" : "Unnamed repository.*$" >/dev/null
+  then
+          projectdesc="UNNAMED PROJECT"
+  fi

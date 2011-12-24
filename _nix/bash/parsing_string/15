@@ -1,0 +1,7 @@
+link: http://tldp.org/LDP/abs/html/string-manipulation.html
+desc: Получить длинну строки в переменной
+code: |
+  $ stringZ=abcABC123ABCabc
+  $ echo ${#stringZ}                 
+out: |
+  15

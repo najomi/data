@@ -1,0 +1,6 @@
+link: http://www.opennet.ru/man.shtml?topic=cp&category=1
+desc: | 
+  копирует файл a/b/c в existing_dir/a/b/c,
+  создавая отсутствующие промежуточные каталоги.
+code: |
+  $ cp --parents a/b/c existing_dir

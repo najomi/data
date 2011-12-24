@@ -1,0 +1,28 @@
+desc: Раскрыть все табы в пробелы
+data: 
+  - 
+    code: |
+      $ ls | cat -n | expand -10
+    out: |
+           1    data
+           2    downloads
+           3    file.txt
+           4    from-user
+           5    najomi
+           6    nwn
+           7    ru.najomi.org
+           8    site
+           9    to-sort
+  -
+    code: |
+      $ ls | cat -n | expand -30
+    out: |
+           1                        data
+           2                        downloads
+           3                        file.txt
+           4                        from-user
+           5                        najomi
+           6                        nwn
+           7                        ru.najomi.org
+           8                        site
+           9                        to-sort

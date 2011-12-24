@@ -1,0 +1,7 @@
+link: http://tldp.org/LDP/abs/html/string-manipulation.html
+desc: Работаем с потоком ввода
+code: |
+  while read line  
+  do
+          echo "- $line - "
+  done

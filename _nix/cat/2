@@ -1,0 +1,14 @@
+link: http://tldp.org/LDP/abs/html/internalvariables.html
+desc: Преобразовывать спец символы в видимое представление (^I - таб, $ - конец строки)
+code: |
+  $ ls | cat -n  | cat -vte
+out: |
+  1^Idata$
+  2^Idownloads$
+  3^Ifile.txt$
+  4^Ifrom-user$
+  5^Inajomi$
+  6^Inwn$
+  7^Iru.najomi.org$
+  8^Isite$
+  9^Ito-sort$

@@ -1,0 +1,33 @@
+desc: Группировать в регулярном выражении можно вложенно
+code: |
+  <?php
+  $regexp = '@^/(tn(-crop)?)/(\d+)x(\d+)/(.+(jpg|png|gif))$@i';
+  foreach(array('/tn-crop/100x100/foo.jpg', '/tn/100x100/foo.jpg') as $v){
+          echo $v.' - '.(preg_match($regexp, $v, $m) ? 'true' : 'false')."\n";
+          print_r($m);
+  }
+out: |
+  /tn-crop/100x100/foo.jpg - true
+  Array
+  (
+      [0] => /tn-crop/100x100/foo.jpg
+      [1] => tn-crop
+      [2] => -crop
+      [3] => 100
+      [4] => 100
+      [5] => foo.jpg
+      [6] => jpg
+  )
+  /tn/100x100/foo.jpg - true
+  Array
+  (
+      [0] => /tn/100x100/foo.jpg
+      [1] => tn
+      [2] => 
+      [3] => 100
+      [4] => 100
+      [5] => foo.jpg
+      [6] => jpg
+  )
+  
+  

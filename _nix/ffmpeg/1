@@ -1,0 +1,3 @@
+desc: Сконвертировать mov в flv с определённым разрешением и битрэйтом
+code: |
+  $ ffmpeg -i src.mov -s 640x360 -b 1700k -vcodec flv -ar 44100  out.flv

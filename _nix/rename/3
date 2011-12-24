@@ -1,0 +1,5 @@
+link: http://snipplr.com/view/27689/lowercase-extension/
+desc: Расширение в нижний регистр
+code: |
+  $ rename 's/\.JPG$/\.jpg/' *.JPG
+
