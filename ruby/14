@@ -1,0 +1,75 @@
+ft: ruby
+desc: |
+  Получаем 1 символ из ввода пользователя, перехватывая
+  нажатия Ctrl и Alt. 
+data: 
+  - 
+    desc: |
+      Содержимое test.rb
+    code: |
+      def get_char
+              # return char from input or C-? C-A-?. 
+              key = ""
+              begin
+                        system("stty raw -echo")
+                        f = STDIN.getc
+                        if (1..26) === f
+                                key = "C-" + (f + 96).chr
+                        elsif f == ?\e
+                              c = STDIN.getc
+                              if (1..26) === c
+                                      key = "C-A-" + (c + 96).chr
+                              else
+                                      key = "A-" + c.chr
+                              end
+                        else
+                                if f >= 208
+                                        key = f.chr + STDIN.getc.chr
+                                else
+                                        key = f.chr
+                                end
+                        end
+              ensure
+                        system("stty -raw echo")
+              end
+              key
+      end
+      while c = get_char
+              exit if c == "q"
+              puts c
+      end
+  - 
+    desc: Запускаем: 
+    ft: bash
+    code: |
+      $ ruby test.rb
+  -
+    html: |
+      <kbd>a</kbd>
+    out: |
+      a
+  -
+    html: |
+      <kbd>ф</kbd>
+    out: |
+      ф
+  -
+    html: |
+      <kbd>Ctrl</kbd>+<kbd>s</kbd>
+    out: |
+      C-s
+  -
+    html: |
+      <kbd>Alt</kbd>+<kbd>d</kbd>
+    out: |
+      A-d
+  -
+    html: |
+      <kbd>1</kbd>
+    out: |
+      1
+  -
+    html: |
+      <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>w</kbd>
+    out: |
+      C-A-w
