@@ -1,0 +1,35 @@
+desc: |
+  Output-buffering в ruby.
+  Выполняем код, который печатает в stdout и возвращаем его как строку.
+code: |
+  require "stringio"
+  def ob 
+          buffer = StringIO.new
+          old_stdout = $stdout 
+          $stdout = buffer
+          yield
+          $stdout = old_stdout
+          buffer.rewind
+          buffer.read
+  end
+  
+  v = ob do 
+          puts "hello"
+  end
+  v2 = ob do 
+          puts "world"
+  end
+  puts v2 + v
+  
+  puts(ob do
+          print ">"
+          r = ob do
+                  print "!"
+          end
+          print "<"
+          print r
+  end)
+out: |
+  world
+  hello
+  ><!
