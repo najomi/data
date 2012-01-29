@@ -1,0 +1,7 @@
+link: man enscript
+desc: |
+  Собрать ruby файлы в один html файл с подсветкой синтаксиса
+  и оглавлением
+code: |
+  $ enscript -Eruby --color -whtml --toc -pfoo.html *.rb
+

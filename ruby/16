@@ -1,0 +1,7 @@
+desc: Запустить mplayer на воспроизведение файла и передавать ему команды
+code: |
+  IO.popen("mplayer music.mp3 2> /dev/null ", "r+") do |io|
+        while t = gets.chomp
+                io.print t
+        end     
+  end     
