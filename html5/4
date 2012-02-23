@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Теперь можно опускать кавычки у атрибутов
+code: |
+  <p class = myClass id= someId>Что, чёрт возьми, вы здесь делаете?</p>

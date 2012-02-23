@@ -1,0 +1,6 @@
+link: gem help examples 
+desc: |
+  Установить гем в домашний каталог пользователя, а не в систему.
+  У меня это каталог ~/.gem
+code: |
+  $ gem install rake --user-install

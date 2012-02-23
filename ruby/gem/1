@@ -1,0 +1,3 @@
+desc: Примеры использования gem.
+code: |
+  $ gem help examples

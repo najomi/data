@@ -1,0 +1,5 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Более короткая запись для подгружаемых скриптов и css.
+code: |
+  <link rel="stylesheet" href="path/to/stylesheet.css" />  
+  <script src="path/to/script.js"></script>  

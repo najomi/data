@@ -1,0 +1,3 @@
+desc: Посмотреть информацию по пакету testdisk
+code: |
+   $ apt-cache show testdisk

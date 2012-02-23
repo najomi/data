@@ -1,0 +1,3 @@
+desc: Не писать версию nginx в ответе сервера.
+code: |
+  server_tokens off; 

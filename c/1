@@ -1,0 +1,20 @@
+link: http://evan.prodromou.name/Bit-masking_Cheatsheet
+desc: Работа с битовой маской
+code: |
+  #define FOO_FLAG 1
+  #define BAR_FLAG 2
+  #define BAZ_FLAG 4
+  #define QUUX_FLAG 8
+  
+  /* Проверяем - установлен ли флаг? */
+  if (my_flags & FOO_FLAG) {
+          /* do something */
+  }
+  
+  /* Устанавливает флаг */
+  my_flags |= QUUX_FLAG;
+  
+  /* Отменяем флаг */
+  my_flags &= ~BAR_FLAG;
+  
+

@@ -1,0 +1,9 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Заголовок к картинке
+code: |
+      <figure>  
+          <img src="path/to/image" alt="Не видно? Включите просмотр изображений в настройках!" />  
+          <figcaption>  
+              <p>Здесь изображено что-то очень интересное.</p>  
+          </figcaption>  
+      </figure> 
