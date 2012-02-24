@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Задаём текст по умолчанию для поля, который исчезнет при фокусе
+code: |
+  <input name="email" type="email" placeholder="Здесь можно что-то написать!" />

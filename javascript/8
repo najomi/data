@@ -1,0 +1,7 @@
+desc:  Спрашиваем бразуер о местоположении 
+code: |
+  if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(function(fsbkgb) { 
+        var pod_kolpakom = true; 
+      });
+  } 

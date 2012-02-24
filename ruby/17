@@ -1,0 +1,13 @@
+desc: Передаём опции в функцию
+code: |
+  require 'pp'
+  def foo(opts = {})
+          opts = {:key => :value, :key2 => :value2}.merge(opts)
+  end
+  
+  pp foo 
+  pp foo(:bar => :baz,
+         :key => :value3)
+out: |
+  {:key=>:value, :key2=>:value2}
+  {:key=>:value3, :key2=>:value2, :bar=>:baz}

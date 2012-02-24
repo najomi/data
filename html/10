@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Указываем обязательное поле для заполнения
+code: |
+  <input type="text" id="someInput" name="someInput" placeholder="Bill" required>

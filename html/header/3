@@ -1,9 +1,0 @@
-link: http://htmlhelp.com/reference/css/style-html.html
-code: |
-  <STYLE TYPE="text/css" MEDIA=screen>
-  <!--
-    BODY  { background: url(foo.gif) red; color: black }
-    P EM  { background: yellow; color: black }
-    .note { margin-left: 5em; margin-right: 5em }
-  -->
-  </STYLE>

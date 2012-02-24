@@ -1,0 +1,9 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Header и footer в 5 html.
+code: |
+    <header>  
+        3000 км над землёй.
+    </header>  
+    <footer>  
+        -3000 км под. Под землёй.
+    </footer>  

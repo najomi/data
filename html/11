@@ -1,0 +1,8 @@
+link: http://habrahabr.ru/blogs/html5/137049/
+desc: Валидация ввода на стороне браузера с помощью регулярного выражения
+code: |
+  <input type="text"  
+         name="username"   
+         placeholder="Введите имя пользователя..."  
+         pattern="[A-Za-z]{6,16}"
+         required>  

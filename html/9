@@ -1,0 +1,6 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Заставляем ie понимать новые html тэги
+code: |
+  <!--[if IE]>  
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+  <![endif]--> 

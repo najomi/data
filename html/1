@@ -1,18 +1,4 @@
-ft: html
-desc: |
-  Если у тега option не задавать value - то он будет взят из содержимого тега
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: доктайп 5 html`я 
 code: |
-  <pre><? print_r($_GET) ?></pre>
-  <form>
-    <select name='language'>
-      <option>perl</option>
-      <option>python</option>
-      <option>ruby</option>
-    </select>
-    <input type='submit'>
-  </form>
-out: |
-  Array
-  (
-      [language] => python
-  )
+  <!DOCTYPE html>

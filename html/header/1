@@ -1,7 +1,0 @@
-link: http://htmlhelp.com/reference/css/style-html.html
-code: |
-  <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
-  <LINK REL=StyleSheet HREF="color-8b.css" TYPE="text/css" TITLE="8-bit Color Style" MEDIA="screen, print">
-  <LINK REL="Alternate StyleSheet" HREF="color-24b.css" 
-        TYPE="text/css" TITLE="24-bit Color Style" MEDIA="screen, print">
-  <LINK REL=StyleSheet HREF="aural.css" TYPE="text/css" MEDIA=aural>

@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Заставляем браузер валидировать поле с email.
+code: |
+   <input id="email" name="email" type="email" />  

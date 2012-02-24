@@ -1,9 +1,0 @@
-desc:  Спрашиваем бразуер о местоположении 
-code: |
-  <script language="JavaScript"> 
-  if (navigator.geolocation) {
-  	navigator.geolocation.getCurrentPosition(function(fsbkgb) { 
-  		var pod_kolpakom = true; 
-  	});
-  } 
-  </script>  

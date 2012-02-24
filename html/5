@@ -1,0 +1,4 @@
+link: http://habrahabr.ru/blogs/html5/136592/
+desc: Задаём кодировку документа
+code: |
+  <meta charset="utf-8">  
