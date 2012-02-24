@@ -1,0 +1,8 @@
+link: http://mysql-tools.com/ru/articles/mysql/75-15-practical-examples-of-using-commands-mysqladmin-to-administer-a-mysql-server.html
+desc: Смотрим состояние сервера.
+code: |
+  $ mysqladmin -u root -p status
+out: |
+  Uptime: 9267148
+  Threads: 1  Questions: 231977  Slow queries: 0  Opens: 17067
+  Flush tables: 1  Open tables: 64  Queries per second avg: 0.25

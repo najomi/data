@@ -1,0 +1,6 @@
+link: http://javascript.ru/Math.random
+desc: Случайное целое число между min и max
+code: |
+  function int_rand(min, max){
+      return Math.floor(Math.random() * (max - min + 1)) + min
+  }

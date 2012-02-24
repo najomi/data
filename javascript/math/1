@@ -1,0 +1,6 @@
+link: http://javascript.ru/Math.random
+desc: Случайное число между min и max
+code: |
+  function rand(min, max){
+      return Math.random() * (max - min) + min
+  }

@@ -1,0 +1,13 @@
+desc: Разбить файл на несколько по 2 строки на каждый
+code: |
+  $ ls ~/ > source.txt
+  $ split -l 2 source.txt dest_
+  $ ls 
+out: |
+  dest_aa
+  dest_ab
+  dest_ac
+  dest_ad
+  dest_ae
+  dest_af
+  source.txt

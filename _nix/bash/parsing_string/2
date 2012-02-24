@@ -1,4 +1,7 @@
 link: http://user.su/index.php/Bash:Основы
-desc: Извлекает подстроку из $string, начиная с позиции $position
+desc: Извлекаем подстроку из строки
 code: |
-  ${string:position}               
+  $ string=foobarbaz
+  $ echo ${string:3}               
+out: |
+  barbaz

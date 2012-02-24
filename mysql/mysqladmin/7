@@ -1,0 +1,5 @@
+link: http://mysql-tools.com/ru/articles/mysql/75-15-practical-examples-of-using-commands-mysqladmin-to-administer-a-mysql-server.html
+desc: |
+  Удаляем базу данных testdb
+code: |
+  $ mysqladmin -u root -ptmppassword drop 'testdb'

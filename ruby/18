@@ -1,0 +1,18 @@
+link: http://stackoverflow.com/questions/5089802/wich-is-the-shorter-way-to-silently-ignore-a-ruby-exception
+desc: Игнорируем исключения в блоке кода
+code: |
+  def ignore_exception
+    begin
+      yield  
+    rescue Exception
+    end
+  end
+  ignore_exception do
+    puts "Ignoring Exception"
+    raise Exception
+    puts "This is Ignored"
+  end
+  puts "This is NOT ignored"
+out: |
+  Ignoring Exception
+  This is NOT ignored

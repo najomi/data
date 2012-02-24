@@ -1,0 +1,4 @@
+link: http://forums.debian.net/viewtopic.php?t=240
+desc: Заморозить обновления пакета php5-cgi
+code: |
+  \# echo php5-cgi hold | dpkg --set-selections

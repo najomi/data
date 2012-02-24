@@ -1,4 +1,18 @@
 link: http://user.su/index.php/Bash:Основы
-desc: Номер позиции первого совпадения
-code: |
-  expr index $string $substring
+desc: Ищем номер первого вхождения символа в строку
+data:
+  -
+    code: |
+      $ expr index "foobarbaz" b
+    out: |
+      4
+  - 
+    code: |
+      $ expr index "foobarbaz" a
+    out: |
+      5
+  - 
+    code: |
+      $ expr index "foobarbaz" z
+    out: |
+      9

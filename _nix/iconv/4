@@ -1,0 +1,7 @@
+desc: Меняем кодировку у всех файлов в папке
+code: |
+  for file in `find . -type f`
+  do
+      iconv -f cp1251 -t utf8 "$file" > "${file}_utf8"
+      mv "${file}_utf8" "${file}"  
+  done

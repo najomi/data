@@ -1,0 +1,6 @@
+desc: Показать время модификации файла
+code: |
+  $ date -r /etc/nginx/nginx.conf 
+out: |
+  Вск Янв 15 00:57:30 MSK 2012
+

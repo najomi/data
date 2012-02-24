@@ -1,0 +1,30 @@
+desc: Удалить из индекса все файлы, что были удалены не через git.
+data:
+  -
+    code: |
+      $ rm b d foo/baz
+      $ git status
+    out: |
+      \# On branch master
+      \# Changed but not updated:
+      \#   (use "git add/rm <file>..." to update what will be committed)
+      \#   (use "git checkout -- <file>..." to discard changes in working directory)
+      \#
+      \#       deleted:    b
+      \#       deleted:    d
+      \#       deleted:    foo/baz
+      \#
+      no changes added to commit (use "git add" and/or "git commit -a")
+  -
+    code: |
+      $ git add -u
+      $ git status
+    out: |
+      \# On branch master
+      \# Changes to be committed:
+      \#   (use "git reset HEAD <file>..." to unstage)
+      \#
+      \#       deleted:    b
+      \#       deleted:    d
+      \#       deleted:    foo/baz
+      \#

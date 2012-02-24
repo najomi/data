@@ -1,0 +1,16 @@
+link: http://mysql-tools.com/ru/articles/mysql/75-15-practical-examples-of-using-commands-mysqladmin-to-administer-a-mysql-server.html
+desc: Показывать список процессов с интервалом в 1 секунду
+code: |
+  $ mysqladmin -u root -p -i 1 processlist
+out: |
+  +----+------+-----------+----+---------+------+-------+------------------+
+  | Id | User | Host      | db | Command | Time | State | Info             |
+  +----+------+-----------+----+---------+------+-------+------------------+
+  | 20 | root | localhost |    | Sleep   | 36   |       |                  |
+  | 23 | root | localhost |    | Query   | 0    |       | show processlist |
+  +----+------+-----------+----+---------+------+-------+------------------+
+  +----+------+-----------+----+---------+------+-------+------------------+
+  | Id | User | Host      | db | Command | Time | State | Info             |
+  +----+------+-----------+----+---------+------+-------+------------------+
+  | 24 | root | localhost |    | Query   | 0    |       | show processlist |
+  +----+------+-----------+----+---------+------+-------+------------------+

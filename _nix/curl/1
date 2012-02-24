@@ -1,0 +1,14 @@
+desc: Получаем http заголовки с сайта
+code: |
+  $ curl -I ru.najomi.org/_nix/
+out: |
+  HTTP/1.1 200 OK
+  Server: nginx/0.7.65
+  Date: Fri, 24 Feb 2012 20:37:50 GMT
+  Content-Type: text/html; charset=utf-8
+  Connection: keep-alive
+  X-Powered-By: PHP/5.3.2-1ubuntu4.10
+  Set-Cookie: PHPSESSID=ci7l86pv8ns2uao3bpcc14a1o4; path=/
+  Expires: Thu, 19 Nov 1981 08:52:00 GMT
+  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+  Pragma: no-cache

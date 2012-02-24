@@ -1,0 +1,15 @@
+link: http://mysql-tools.com/ru/articles/mysql/75-15-practical-examples-of-using-commands-mysqladmin-to-administer-a-mysql-server.html
+desc: Смотрим расширенную статистику сервера.
+code: |
+  $ mysqladmin -u root -p extended-status
+out: |
+  +-----------------------------------+-----------+
+  | Variable_name                     | Value     |
+  +-----------------------------------+-----------+
+  | Aborted_clients                   | 10        |
+  | Aborted_connects                  | 6         |
+  | Binlog_cache_disk_use             | 0         |
+  | Binlog_cache_use                  | 0         |
+  | Bytes_received                    | 65009057  |
+  | Bytes_sent                        | 227852405 |
+  ...

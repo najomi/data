@@ -1,0 +1,5 @@
+desc: |
+  Сделать дамп базы blog.
+  Для каждой записи в таблицу использовать отдельный insert.
+code: |
+  $ mysqldump blog --extended-insert=FALSE 

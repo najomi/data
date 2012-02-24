@@ -1,0 +1,23 @@
+link: http://mysql-tools.com/ru/articles/mysql/75-15-practical-examples-of-using-commands-mysqladmin-to-administer-a-mysql-server.html
+desc: Убивает процесс в мускуле
+data: 
+  -
+    code: |
+      $ mysqladmin -u root -p processlist
+    out: |
+      +----+------+-----------+----+---------+------+-------+------------------+
+      | Id | User | Host      | db | Command | Time | State | Info             |
+      +----+------+-----------+----+---------+------+-------+------------------+
+      | 20 | root | localhost |    | Sleep   | 64   |       |                  |
+      | 24 | root | localhost |    | Query   | 0    |       | show processlist |
+      +----+------+-----------+----+---------+------+-------+------------------+
+  - 
+    code: |
+      $ mysqladmin -u root -p kill 20
+      $ mysqladmin -u root -p processlist
+    out: |
+      +----+------+-----------+----+---------+------+-------+------------------+
+      | Id | User | Host      | db | Command | Time | State | Info             |
+      +----+------+-----------+----+---------+------+-------+------------------+
+      | 26 | root | localhost |    | Query   | 0    |       | show processlist |
+      +----+------+-----------+----+---------+------+-------+------------------+

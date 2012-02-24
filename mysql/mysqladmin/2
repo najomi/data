@@ -1,0 +1,4 @@
+link: http://mysql-tools.com/ru/articles/mysql/75-15-practical-examples-of-using-commands-mysqladmin-to-administer-a-mysql-server.html
+desc: Меняем пароль у пользователя.
+code: |
+  $ mysqladmin -u root -p password 'newpassword'

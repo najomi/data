@@ -1,0 +1,17 @@
+link: http://stackoverflow.com/questions/229551/string-contains-in-bash
+desc: Проверяем нахождение подстроки в строке
+code: |
+  string='My string';
+   
+  if [[ "$string" == *My* ]]
+  then
+    echo "It's there!";
+  fi
+   
+  needle='y s'
+  if [[ "$string" == *"$needle"* ]]; then
+    echo "haystack '$string' contains needle '$needle'"
+  fi
+out: |
+  It's there!
+  haystack 'My string' contains needle 'y s'
