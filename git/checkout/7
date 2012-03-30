@@ -4,6 +4,6 @@ code: |
   $ git checkout -b iss53
 out: |
   Switched to a new branch "iss53"
-	# Это сокращение для:
-	# $ git branch iss53
-	# $ git checkout iss53
+  # Это сокращение для:
+  # $ git branch iss53
+  # $ git checkout iss53
