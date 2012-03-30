@@ -1,0 +1,6 @@
+link: http://progit.org/book/ru/ch4-2.html
+desc: Добавить право на запись для группы в репозиторий, который находится на сервере
+code: |
+	$ ssh user@git.example.com
+	$ cd /opt/git/my_project.git
+	$ git init --bare --shared

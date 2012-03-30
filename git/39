@@ -1,0 +1,12 @@
+link: http://progit.org/book/ru/ch3-2.html
+desc: Использовать графические инструменты для разрешения конфликтов при слиянии веток
+code: |
+	$ git mergetool
+out: |
+	merge tool candidates: kdiff3 tkdiff xxdiff meld gvimdiff opendiff emerge vimdiff
+	Merging the files: index.html
+	
+	Normal merge conflict for 'index.html':
+		{local}: modified
+		{remote}: modified
+	Hit return to start merge resolution tool (opendiff):

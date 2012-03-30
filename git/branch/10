@@ -1,0 +1,9 @@
+link: http://progit.org/book/ru/ch3-3.html
+desc: |
+	Посмотреть те ветки, для которых выполнено слияние с текущей веткой,
+	на которой вы сейчас находитесь
+code: |
+  $ git branch --merged
+out: |
+	iss53
+	* master

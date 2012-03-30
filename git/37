@@ -1,0 +1,6 @@
+link: http://progit.org/book/ru/ch4-2.html
+desc: Создать новый "голый" репозиторий my_project.git
+code: |
+	$ git clone --bare my_project my_project.git
+out: |
+	Initialized empty Git repository in /opt/projects/my_project.git/

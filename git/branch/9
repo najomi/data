@@ -1,0 +1,8 @@
+link: http://progit.org/book/ru/ch3-3.html
+desc: Посмотреть последний коммит на каждой из веток
+code: |
+  $ git branch -v
+out: |
+	 iss53   93b412c fix javascript issue
+	* master  7a98805 Merge branch 'iss53'
+	testing 782fd34 add scott to the author list in the readmes
