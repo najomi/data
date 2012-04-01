@@ -1,0 +1,15 @@
+link: http://progit.org/book/ru/ch1-5.html
+desc: Показать используемые настройки
+code: |
+ $ git config --list
+out: |
+ user.name=Alesenko Elena
+ core.symlinks=false
+ core.autocrlf=true
+ color.diff=auto
+ color.status=auto
+ color.branch=auto
+code: |
+ $ git config user.name
+out: |
+ user.name=Alesenko Elena

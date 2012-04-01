@@ -1,0 +1,6 @@
+link: http://progit.org/book/ru/ch1-6.html
+desc: Открыть страницу руководства Git по команде merge
+code: |
+  $ git help merge
+  $ git merge --help
+  $ man git-merge

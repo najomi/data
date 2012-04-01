@@ -1,0 +1,16 @@
+link: http://progit.org/book/ru/ch2-3.html
+desc: Вывести только первые несколько символов контрольной суммы SHA-1 вместо всех 40
+code: |
+  $ git log --abbrev-commit
+out: |
+  commit 0cd96b1
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Sat Mar 31 01:02:32 2012 +0400
+
+    tabs > spaces
+  
+  commit 05b539a
+  Author: Alesenko Elena <omegka@gmail.com>
+  Date:   Fri Mar 30 22:05:33 2012 +0400
+
+    Dobavlenie informacii po git, added data -50m

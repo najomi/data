@@ -1,0 +1,14 @@
+link: http://progit.org/book/ru/ch2-3.html
+desc: Вывести список измененых файлов после каждого коммита
+code: |
+  $ git log --name-only
+out: |
+  commit b2ec961f2689fbd73e7c789b7762971d55ca1344
+  Author: Aleksei Kaminin <zendzirou@gmail.com>
+  Date:   Sat Mar 31 01:02:32 2012 +0400
+
+    tabs > spaces
+  
+  git/37
+  git/38
+  git/39
