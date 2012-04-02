@@ -4,18 +4,18 @@ data:
     code: |
       $ git status
     out: |
-      # On branch master
-      # Changes to be committed:
-      #   (use "git reset HEAD <file>..." to unstage)
-      #
-      #       new file:   b
-      #       new file:   c
-      #       new file:   d
-      #
-      # Untracked files:
-      #   (use "git add <file>..." to include in what will be committed)
-      #
-      #       e
+      \# On branch master
+      \# Changes to be committed:
+      \#   (use "git reset HEAD <file>..." to unstage)
+      \#
+      \#       new file:   b
+      \#       new file:   c
+      \#       new file:   d
+      \#
+      \# Untracked files:
+      \#   (use "git add <file>..." to include in what will be committed)
+      \#
+      \#       e
   -
     code: |
       $ git stash 
@@ -26,10 +26,10 @@ data:
     code: |
       $ git status
     out: |
-      # On branch master
-      # Untracked files:
-      #   (use "git add <file>..." to include in what will be committed)
-      #
-      #       e
+      \# On branch master
+      \# Untracked files:
+      \#   (use "git add <file>..." to include in what will be committed)
+      \#
+      \#       e
       nothing added to commit but untracked files present (use "git add" to track)
     
