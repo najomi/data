@@ -2,7 +2,7 @@ link: http://progit.org/book/ru/ch2-6.html
 desc: Отправить метку v1.5 на удаленный сервер
 code: |
   $ git push origin v1.5
-out |
+out: |
   Counting objects: 50, done.
   Compressing objects: 100% (38/38), done.
   Writing objects: 100% (44/44), 4.56 KiB, done.
