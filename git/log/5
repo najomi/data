@@ -1,5 +1,14 @@
-link: http://habrahabr.ru/blogs/Git/60347/
-desc: |
-  Исследовать историю отдельной папки, начиная с определенного момента
-code: |
-  $ git log --since="2 hours" dir/
+link: http://progit.org/book/ru/ch2-3.html
+data:
+  -
+    desc: Вывести список коммитов папки etc, сделанных за последние 2 часа
+    code: |
+      $ git log --since="2 hours" etc
+  -
+    desc: Вывести список коммитов, сделанных в промежутке от 1 дня до 5 часов назад.
+    code: |
+      $ git log --since="1 day" --after="5 hours"
+  -
+    desc: Вывести список коммитов, сделанных до 2 дней назад и после 1 дня назад
+    code: |
+      $ git log --since="2 day" --after="1 day"

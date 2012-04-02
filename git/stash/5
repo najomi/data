@@ -1,0 +1,16 @@
+link: http://progit.org/book/ru/ch6-3.html
+desc: |
+  Применить последние спрятанные в тайнике данные 
+  и применить их в индексе.
+code: |
+  $ git stash apply --index
+out: |
+  # Changes to be committed:
+  #   (use "git reset HEAD <file>..." to unstage)
+  #
+  #      modified:   index.html
+  #
+  # Changed but not updated:
+  #   (use "git add <file>..." to update what will be committed)
+  #
+  #      modified:   lib/simplegit.rb

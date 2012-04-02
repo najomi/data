@@ -1,0 +1,10 @@
+link: http://progit.org/book/ru/ch6-3.html
+data: 
+  -
+    desc: Отменить изменения, внесенные командой stash apply
+    code: |
+      $ git stash show -p stash@{0} |git apply -R
+  -         
+    desc: Отменить последние изменения, внесенные командой stash apply
+    code: |
+      $ git stash show -p |git apply -R

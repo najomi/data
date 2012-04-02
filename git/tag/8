@@ -1,0 +1,11 @@
+link: http://progit.org/book/ru/ch2-6.html
+desc: Отправить метку v1.5 на удаленный сервер
+code: |
+  $ git push origin v1.5
+out |
+  Counting objects: 50, done.
+  Compressing objects: 100% (38/38), done.
+  Writing objects: 100% (44/44), 4.56 KiB, done.
+  Total 44 (delta 18), reused 8 (delta 1)
+  To git@github.com:schacon/simplegit.git
+  * [new tag]         v1.5 -> v1.5 

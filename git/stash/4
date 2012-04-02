@@ -1,0 +1,11 @@
+link: http://progit.org/book/ru/ch6-3.html
+desc: Применить последние спрятанные в тайнике данные
+code: |
+  $ git stash apply
+out: |
+  # On branch master
+  # Changed but not updated:
+  #   (use "git add <file>..." to update what will be committed)
+  #
+  #      modified:   index.html
+  #      modified:   lib/simplegit.rb

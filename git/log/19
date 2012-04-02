@@ -1,0 +1,11 @@
+link: http://progit.org/book/ru/ch2-3.html
+desc: |
+  Вывести время изменения коммитов в относительном формате (например, "2 недели назад")
+  вместо использования полного формата времени
+code: |
+  $ git log --abbrev-commit
+out: |
+  commit b2ec961f2689fbd73e7c789b7762971d55ca1344
+  Author: Alesenko Elena <omegka@gmail.com>
+  Date:   3 days ago
+     Added data -50m

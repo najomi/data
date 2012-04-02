@@ -1,0 +1,21 @@
+link: http://progit.org/book/ru/ch6-3.html
+desc: |
+  Создать новую ветку testchanges с началом из того коммита, на котором вы находились
+  во время прятанья, восстановить работу в этой ветке 
+  и удалить спрятанное из стека, если оно применилось успешно.
+code: |
+  $ git stash branch testchanges
+out: |
+  Switched to a new branch "testchanges"
+  # On branch testchanges
+  # Changes to be committed:
+  #   (use "git reset HEAD <file>..." to unstage)
+  #
+  #      modified:   index.html
+  #
+  # Changed but not updated:
+  #   (use "git add <file>..." to update what will be committed)
+  #
+  #      modified:   lib/simplegit.rb
+  #
+  Dropped refs/stash@{0} (f0dfc4d5dc332d1cee34a634182e168c4efc3359)

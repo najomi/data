@@ -1,0 +1,15 @@
+link: http://progit.org/book/ru/ch2-6.html
+desc: Отправить все метки на удаленный сервер
+code: |
+  $ git push origin --tags
+out |
+  Counting objects: 50, done.
+  Compressing objects: 100% (38/38), done.
+  Writing objects: 100% (44/44), 4.56 KiB, done.
+  Total 44 (delta 18), reused 8 (delta 1)
+  To git@github.com:schacon/simplegit.git
+  * [new tag]         v0.1 -> v0.1
+  * [new tag]         v1.2 -> v1.2
+  * [new tag]         v1.4 -> v1.4
+  * [new tag]         v1.4-lw -> v1.4-lw
+  * [new tag]         v1.5 -> v1.5
