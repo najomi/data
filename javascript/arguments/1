@@ -1,6 +1,6 @@
 link: http://habrahabr.ru/blogs/javascript/117868/ 
 ft: javascript
-desc: Получить колличество аргументов переданных функции
+desc: Получить количество аргументов, переданных функции
 code: |
   var count = function () {
       console.log(arguments.length);
