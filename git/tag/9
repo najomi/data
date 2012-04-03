@@ -1,5 +1,5 @@
 link: http://progit.org/book/ru/ch2-6.html
-desc: Отправить все метки на удаленный сервер
+desc: Отправить все тэги на удаленный сервер
 code: |
   $ git push origin --tags
 out: |

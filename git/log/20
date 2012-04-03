@@ -1,5 +1,5 @@
 link: http://progit.org/book/ru/ch2-3.html
 desc: |
-  Показать коммиты, автор которых Ivanov Sergei
+  Показать коммиты, автор которых "Ivanov Sergei"
 code: |
   $ git log --author="Ivanov Sergei"

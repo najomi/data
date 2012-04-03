@@ -5,14 +5,14 @@ data:
     code: |
       $ git config --list
     out: |
-      \# user.name=Alesenko Elena
-      \# core.symlinks=false
-      \# core.autocrlf=true
-      \# color.diff=auto
-      \# color.status=auto
-      \# color.branch=auto
+      user.name=Alesenko Elena
+      core.symlinks=false
+      core.autocrlf=true
+      color.diff=auto
+      color.status=auto
+      color.branch=auto
   -
     code: |
-      $ git config user.name
+      git config user.name
     out: |
-      \# user.name=Alesenko Elena
+      user.name=Alesenko Elena

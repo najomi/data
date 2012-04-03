@@ -1,7 +1,7 @@
 link: http://progit.org/book/ru/ch6-3.html
 desc: |
   Применить последние спрятанные в тайнике данные 
-  и применить их в индексе.
+  и добавить их в индекс.
 code: |
   $ git stash apply --index
 out: |

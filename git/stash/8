@@ -1,10 +1,38 @@
-link: http://progit.org/book/ru/ch6-3.html
+link:
+ft:
+desc: Пример работы с гит stash
 data: 
+  - 
+    code: |
+      $ git status
+    out: |
+      Changed but not updated:
+        modified:   b
+        deleted:    c
+        modified:   d
+      
+      Untracked files:
+        j
   -
-    desc: Отменить изменения, внесенные командой stash apply
     code: |
-      $ git stash show -p stash@{0} |git apply -R
-  -         
-    desc: Отменить последние изменения, внесенные командой stash apply
+      $ git add .
+      $ git stash
+    out: |
+      Saved working directory and index state WIP on master: b11a467 commit 1
+      HEAD is now at b11a467 commit 1
+  -
     code: |
-      $ git stash show -p |git apply -R
+      $ git status
+    out: |
+      On branch master
+      nothing to commit (working directory clean)
+  -
+    code: |
+      $ git stash pop
+    out: |
+      Changes to be committed:
+        new file:   j
+      Changed but not updated:
+        modified:   b
+        deleted:    c
+        modified:   d
