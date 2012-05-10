@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбрать div, идущий под номером N в DOM
+code: |
+  $('div:eq(N)'); 

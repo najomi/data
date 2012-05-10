@@ -1,0 +1,22 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+data:
+  -
+    desc: Выбор всех div с атрибутом title=my
+    code: |
+      $("div[title='my']"); 
+  -
+    desc: Выбор всех div с атрибутом title не равного my
+    code: |
+      $("div[title!='my']");
+  -
+    desc: Вбор всех div с атрибутом title, начинающихся с my
+    code: |
+      $("div[title^='my']"); 
+  -
+    desc: Выбор всех div с атрибутом title, заканчивающихся на my
+    code: |
+      $("div[title$='my']"); 
+  -
+    desc: Выбор всех div с атрибутом title, содержащих my
+    code: |
+      $("div[title*='my']"); 

@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: |
+  Получить значение выделенного пункта из списка,
+  при использовании атрибута <option value="some value">:
+code: |
+  var file = $('select[@name=loadFileName] option:selected').val();

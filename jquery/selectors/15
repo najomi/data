@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбрать div'ы, индекс которых больше, чем N в DOM
+code: |
+  $('div:gt(N)'); 

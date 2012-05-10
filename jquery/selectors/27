@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Удалить все элементы списка mySelect
+code: |
+  $('select[@name=mySelect] option').remove();

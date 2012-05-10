@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбор всех предков элемента p, которые есть div
+code: |
+  $('p').parents('div');

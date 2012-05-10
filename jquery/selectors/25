@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Получение выбранного значения радиобатона с именем some
+code: |
+  $("form :radio[name=some]:checked").val();

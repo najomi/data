@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбор всех выбранных чекбоксов
+code: |
+  $("form :checkbox:checked");

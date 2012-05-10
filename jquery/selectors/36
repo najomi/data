@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Разрешить выделение всех ранее недоступных элементов
+code: |
+  $('select[@name=loadFileName] option:disabled').removeAttr('disabled');

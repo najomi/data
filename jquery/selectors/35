@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Сделать элемент недоступным для выбора
+code: |
+  $('select[@name=loadFileName] option:contains('текст нужного элемента')').attr('disabled', 'disabled');

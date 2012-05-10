@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбор видимого div'a с именем city, который содержит тег p
+code: |
+  $("div[name=city]:visible:has(p)"); 

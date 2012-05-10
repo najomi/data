@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбор всех input элементов с типом =radio
+code: |
+  $(":radio");  

@@ -1,0 +1,13 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: |
+  Выбор всех A с атрибутом rel, содержащих external
+  в списке значений, разделенных пробелом
+code: |
+  $("a[rel~='external']");
+out: |
+  #В результате будут выбраны следующие теги:
+  <a href="" rel="external">link</a> — да
+  <a href="" rel="nofollow external">link</a> — да
+  <a href="" rel="external nofollow">link</a> — да
+  <a href="" rel="friend external follow">link</a> — да
+  <a href="" rel="external-link">link</a> — нет

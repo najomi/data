@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Принудительно снять выделение с элемента списка
+code: |
+  $('select[@name=loadFileName] option:first').removeAttr('selected');

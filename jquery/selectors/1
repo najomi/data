@@ -1,0 +1,18 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+data:
+  -
+    desc: Выбор элемента с id = sidebar
+    code: |
+      $('#sidebar'); 
+  -
+    desc: Выбор элементов с class = post
+    code: |
+      $('.post'); 
+  -
+    desc: Выбор элемента div с id = sidebar
+    code: |
+      $('div#sidebar');
+  -
+    desc: Выбор элементов div с class = post
+    code: |
+      $('div.post'); 

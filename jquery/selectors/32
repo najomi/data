@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: |
+  Получить значение выделенного пункта из списка,
+  если вас интересует то, что заключено между <option>...</option>:
+code: |
+  var file = $('select[@name=loadFileName] option:selected').text();

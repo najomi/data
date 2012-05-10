@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Проверить, выбран ли какой-нибудь элемент списка
+code: |
+  if( typeof $('select[@name=loadFileName] option:selected').text() === 'undefined' ){
+       alert('Ни один элемент списка не выбран');
+  }

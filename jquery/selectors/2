@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбор всех span элементов в элементах div
+code: |
+  $('div, span');
+  $('div').find('span'); 
+

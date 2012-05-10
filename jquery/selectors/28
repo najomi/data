@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: добавить в список новый элемент 
+code: |
+  $('select[@name=mySelect]').append('<option>Новый элемент списка</option>');

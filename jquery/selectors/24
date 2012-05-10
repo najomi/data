@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Получение выбранного(-ых) элементов в селекте city
+code: |
+  $("form select[name=city] option:selected").val();

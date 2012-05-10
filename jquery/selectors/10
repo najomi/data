@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Выбрать последний div в DOM
+code: |
+  $('div:last'); 

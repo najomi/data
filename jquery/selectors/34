@@ -1,0 +1,4 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-selectors/
+desc: Превратить список в "автомасштабируемый"
+code: |
+  $('select[@name=loadFileName]').attr('size', $('select[@name=loadFileName] option').size());
