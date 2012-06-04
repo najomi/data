@@ -19,7 +19,14 @@ code: |
         }
     }
     
-    var release = async('one', 'two', 'three', 'lastsignal', function(){ console.log('BINGO!'); });
+    var release = async(
+			'one', 
+			'two', 
+			'three', 
+			'lastsignal', 
+			function(){ 
+			    console.log('BINGO!'); 
+			});
         
     setTimeout(function(){ release('one') }, 500);
     setTimeout(function(){ release('two') }, 1000);
