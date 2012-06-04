@@ -1,0 +1,21 @@
+name: Компиляция URL из обьекта
+code: |
+  function compileUrl(url) {
+      var string = '#',
+          pairs = [],
+          i;
+  
+      string += url.path.join('/');
+  
+      for(i in url.params) pairs.push([i,url.params[i]].join('='));
+      if (pairs.length) string += '?'+pairs.join('&');
+      return string;
+  }
+  
+  compuleURL({
+    path : ['user','videos','18'],
+    params : {
+       quality : 480
+    }
+  });
+  // Возвращает '#user/videos/18?quality=480'
