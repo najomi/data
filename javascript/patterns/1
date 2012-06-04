@@ -1,8 +1,6 @@
 link: http://javascript.ru/Math.random
 desc: Ассинхронный callback
 code: |
-
-<script>
 function async() {
 	// список ожидаемых сигналов
     var args = Array.prototype.slice.call(arguments),
@@ -29,5 +27,3 @@ setTimeout(function(){ release('three') }, 1500);
 setTimeout(function(){ release('lastsignal') }, 2500);
     
 // По прошествию всех отложенных вызовов, будет вызвана callback функция
-
-</script>
