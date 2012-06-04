@@ -1,36 +1,33 @@
 link: http://javascript.ru/Math.random
 desc: Ассинхронный callback
 code: |
-    function async() {
-    	// список ожидаемых сигналов
-        var args = Array.prototype.slice.call(arguments),
-    	// callback-функция, которая будет вызывана при получении всех ожидаемых сигналов
-        callback = args.pop();
-    
-        // Функция-обработчик сигналов
-        return function(v) {
-    	console.log('recieved:', v);
-    	// получаем сигнал и удаляем из списка ожидания
-    	for (var i in args)
-    	    if (args[i] == v) args.splice(i, 1);
-        
-    	// если больше не осталось сигналов, вызываем callback
-    	if (!args.length) callback();
-        }
+  function async() {
+      // список ожидаемых сигналов
+    var args = Array.prototype.slice.call(arguments),
+      // callback-функция, которая будет вызывана при получении всех ожидаемых сигналов
+      callback = args.pop();
+      // Функция-обработчик сигналов
+    return function(v) {
+      console.log('recieved:', v);
+      // получаем сигнал и удаляем из списка ожидания
+      for (var i in args)
+        if (args[i] == v) args.splice(i, 1);
+        // если больше не осталось сигналов, вызываем callback
+        if (!args.length) callback();
     }
-    
-    var release = async(
-			'one', 
-			'two', 
-			'three', 
-			'lastsignal', 
-			function(){ 
-			    console.log('BINGO!'); 
-			});
-        
-    setTimeout(function(){ release('one') }, 500);
-    setTimeout(function(){ release('two') }, 1000);
-    setTimeout(function(){ release('three') }, 1500);
-    setTimeout(function(){ release('lastsignal') }, 2500);
-        
-    // По прошествию всех отложенных вызовов, будет вызвана callback функция
+  }
+  
+  var release = async(
+    'one', 
+    'two', 
+    'three', 
+    'lastsignal', 
+    function(){ 
+      console.log('BINGO!'); 
+    });
+  setTimeout(function(){ release('one') }, 500);
+  setTimeout(function(){ release('two') }, 1000);
+  setTimeout(function(){ release('three') }, 1500);
+  setTimeout(function(){ release('lastsignal') }, 2500);
+  
+  // По прошествию всех отложенных вызовов, будет вызвана callback функция
