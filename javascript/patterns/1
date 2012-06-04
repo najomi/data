@@ -6,7 +6,7 @@ code: |
         var args = Array.prototype.slice.call(arguments),
     	// callback-функция, которая будет вызывана при получении всех ожидаемых сигналов
         callback = args.pop();
-
+    
         // Функция-обработчик сигналов
         return function(v) {
     	console.log('recieved:', v);
