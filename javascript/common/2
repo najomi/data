@@ -1,4 +1,4 @@
-name: Компиляция URL из обьекта
+desc: Компиляция URL из обьекта
 code: |
   function compileUrl(url) {
       var string = '#',

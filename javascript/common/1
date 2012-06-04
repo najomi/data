@@ -1,4 +1,4 @@
-name: Парсинг URL хэша
+desc: Парсинг URL хэша
 code: |
   // Задача, разобрать URL вида: 
   // domain.com/#user/videos/18?view=fullscreen&quality=1080
