@@ -1,4 +1,3 @@
-link: http://javascript.ru/Math.random
 desc: Ассинхронный callback
 code: |
     function async() {
@@ -6,7 +5,8 @@ code: |
       var args = Array.prototype.slice.call(arguments),
         // callback-функция, которая будет вызывана при получении всех ожидаемых сигналов
         callback = args.pop();
-        // Функция-обработчик сигналов
+      
+      // Функция-обработчик сигналов
       return function(v) {
         console.log('recieved:', v);
         // получаем сигнал и удаляем из списка ожидания
@@ -17,7 +17,8 @@ code: |
       }
     }
     
-    var release = async('one', 'two', 'three', 'lastsignal', function(){  console.log('BINGO!');  });
+    var release = async('one', 'two', 'three', 'lastsignal', function(){ console.log('BINGO!'); });
+    
     setTimeout(function(){ release('one') }, 500);
     setTimeout(function(){ release('two') }, 1000);
     setTimeout(function(){ release('three') }, 1500);
