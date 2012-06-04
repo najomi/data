@@ -14,7 +14,8 @@ code: |
     }
     // Проигрывает очередь
     this.next = function() {
-        var opts = q.shift();
+        if (!this.q.length) return;
+        var opts = this.q.shift();
         if (opts.length = 1) return opts[0]();
         return opts[0].apply(opts[1], opts[2]||[]);
     }
