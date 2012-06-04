@@ -26,7 +26,7 @@ code: |
   var animaton = function(){
     console.log('очень много анимации');
     setTimeout(function(){
-	q.next(); // Крутим очередь дальше
+      q.next(); // Крутим очередь дальше
     }, 1000);
   }
   
