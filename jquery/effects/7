@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Одновременно сдвигать элемент влево и вверх
+code: |
+  $('.panel').animate({left:'+=100'})
+      .animate({top:'+=100'}, {queue:false});
+

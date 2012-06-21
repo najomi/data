@@ -1,0 +1,5 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Уменьшить ширину элемента #my на 20px
+code: |
+  $('#my').animate({width:'-=20px'});
+

@@ -1,0 +1,5 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Запустить первый элемент из очереди
+code: |
+  $(".panel").dequeue();
+

@@ -1,0 +1,5 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Увеличить высоту элемента #my до 20in
+code: |
+  $('#my').animate({height:'20in'});
+

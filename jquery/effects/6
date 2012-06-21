@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Сдвинуть элемент .panel сначала на 100px влево, а затем на 100 px вверх
+code: |
+  $('.panel').animate({left:'+=100px'})
+      .animate({top:'+=100px'});
+

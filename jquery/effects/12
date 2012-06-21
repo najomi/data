@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Возвратить очередь эффектов анимации
+code: |
+  $(".panel").queue('fx');
+  $(".panel").data('fxqueue');
+

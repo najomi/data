@@ -1,0 +1,5 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Остановить выполнение текущей анимации и всех последующих
+code: |
+  $('.panel').stop(true); 
+

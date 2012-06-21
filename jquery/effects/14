@@ -1,0 +1,5 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Очистить очередь анимации, установив пустой массив в качестве новой очереди
+code: |
+  $(".panel").queue("fx", []);
+
