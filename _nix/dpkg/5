@@ -1,0 +1,23 @@
+desc: Посмотреть статус покета. Заодно можно узнать - установлен ли он
+data: 
+  -
+    code: |
+      $ dpkg -s apache2
+    out: |
+      Package `apache2' is not installed and no info is available.
+      Use dpkg --info (= dpkg-deb --info) to examine archive files,
+      and dpkg --contents (= dpkg-deb --contents) to list their contents.
+  - 
+    code: |
+      $ dpkg -s nginx
+    out: |
+      Package: nginx
+      Status: install ok installed
+      Priority: optional
+      Section: httpd
+      Installed-Size: 856
+      Maintainer: Jose Parrella <bureado@debian.org>
+      Architecture: amd64
+      Version: 0.7.67-3+squeeze1
+      Provides: httpd
+      ...
