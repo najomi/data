@@ -1,0 +1,18 @@
+link: http://en.wikipedia.org/wiki/Email_address
+desc: Допустимые email-адреса согласно стандарту 
+ft: txt
+code: |
+  niceandsimple@example.com
+  simplewithsymbol@example.com
+  less.common@example.com
+  a.little.more.unusual@dept.example.com
+  user@[IPv6:2001:db8:1ff::a0b:dbd0]
+  "much.more unusual"@example.com
+  "very.unusual.@.unusual.com"@example.com
+  "very.(),:;<>[]\".VERY.\"very@\\ \"very\".unusual"@strange.example.com
+  0@a
+  !#$%&'*+-/=?^_`{}|~@example.org
+  "()<>[]:,;@\\\"!#$%&'*+-/=?^_`{}| ~  ? ^_`{}|~.a"@example.org
+  ""@example.org
+  postbox@com (top-level domains are valid hostnames)
+  
