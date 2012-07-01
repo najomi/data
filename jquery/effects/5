@@ -1,0 +1,6 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: Скрыть элемент #my
+code: |
+  $('#my').hide();
+  $('#my').css({display:"none"});
+

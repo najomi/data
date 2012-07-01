@@ -1,0 +1,32 @@
+desc: Парсинг URL хэша
+code: |
+  // Задача, разобрать URL вида: 
+  // domain.com/#user/videos/18?view=fullscreen&quality=1080
+  
+  function parseUrl() {
+          // Получаем кусок пути, после #
+      var url = document.location.hash.replace('#',''),
+          // Получаем путь
+          path = url.split('?')[0].split('/'),
+          // Получаем массив пар 'key=value'
+          pairs = url.split('?')[1] ? url.split('?')[1].split('&') : false,
+          params = {},
+          i;
+  
+      // собираем пары ключ значение в обьект.
+      if (pairs) {
+          for(i in pairs) {
+              pairs[i] = pairs[i].split('=');
+              params[pairs[i][0]] = pairs[i][1];
+          }
+      }
+  
+      // Возвращаем обьект, содержащий всю инфу об URL
+      return {
+          path : path,
+          params : params
+      }
+  }
+  
+  console.log(parseUrl().path); // ['user','videos','18'];
+  console.log(parseUrl().params); // { view : 'fullscreen', quality : 1080 }

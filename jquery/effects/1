@@ -1,0 +1,7 @@
+link: http://anton.shevchuk.name/javascript/jquery-for-beginners-effects/
+desc: |
+  Установить прозрачность элемента #my в ноль,
+  прозрачность изменяется от 0 до 1.
+code: |
+  $('#my').animate({opacity:0});
+
