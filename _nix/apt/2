@@ -1,0 +1,5 @@
+desc: |
+  Заставляем работать apt через прокси,
+  прописав строчку в файле /etc/apt/apt.conf
+code: |
+  Acquire::http { Proxy "http://10.1.4.35:3142"; };
