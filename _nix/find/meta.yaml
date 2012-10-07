@@ -4,3 +4,5 @@ info: |
   папки на текущем уровне:
   <code><pre><b>find .
   find *</b></pre></code>
+links:
+  - [ 'http://find.unixpin.com/ru/', 'Генератор команды find']

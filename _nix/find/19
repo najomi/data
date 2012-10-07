@@ -1,0 +1,7 @@
+link: http://blog.rac.me.uk/2007/07/19/techy-find-all-symlinks-symbolic-links-on-a-linux-system/
+desc: Найти симлинки 
+code: |
+  $ find ~/ -type l 
+  
+  // можно сразу посмотреть куда они ведут:
+  $ find ~/ -type l -exec ls -l {} \;

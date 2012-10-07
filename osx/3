@@ -1,0 +1,4 @@
+link: http://hints.macworld.com/article.php?story=20010627221216167
+desc: Записать содержимое буфера обмена в файл
+code: |
+  $ pbpaste > file.txt

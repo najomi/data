@@ -1,5 +1,10 @@
-desc: Content-Type для основных типов картинок
+desc: Основные варианты задания Content-Type что могут пригодиться в работе
 code: |
-  header("Content-Type: image/gif"); 
-  header("Content-Type: image/png"); 
-  header("Content-Type: image/jpg"); 
+  <?php
+  header('Content-Type: text/javascript');
+  header('Content-Type: text/css');
+  header('Content-Type: text/html; charset=utf-8'); 
+  
+  header('Content-Type: image/gif'); 
+  header('Content-Type: image/png'); 
+  header('Content-Type: image/jpg'); 

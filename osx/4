@@ -1,0 +1,4 @@
+link: http://hints.macworld.com/article.php?story=20100609140550467
+desc: Добавить пользователя USERNAME в группу GROUP.
+code: |
+  $ dseditgroup -o edit -u YOURUSERNAME -p -a USERNAME -t user GROUP 

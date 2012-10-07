@@ -3,6 +3,6 @@ ft: php
 desc: Заставить браузер скачивать файл
 code: |
   <?php
-    header('Content-type: application/pdf');
-    header('Content-Disposition: attachment; filename="downloaded.pdf"');
-    readfile('original.pdf');
+  header('Content-type: application/pdf');
+  header('Content-Disposition: attachment; filename="downloaded.pdf"');
+  readfile('original.pdf');

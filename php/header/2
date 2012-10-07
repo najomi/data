@@ -3,4 +3,4 @@ ft: php
 desc: Перенаправить пользователя на другую страницу
 code: |
   <?php
-    header("Location: http://www.example.com/");
+  header("Location: http://www.example.com/");

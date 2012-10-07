@@ -1,0 +1,6 @@
+link: http://www.coderholic.com/invaluable-command-line-tools-for-web-developers/
+desc: |
+  В 20 потоков на протяжении 5 секунд долбимся на локалхост
+  и замеряем его отзывчивость
+code: |
+  $ siege -c20 localhost:8000 -b -t5s

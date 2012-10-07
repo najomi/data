@@ -1,0 +1,4 @@
+link: http://hints.macworld.com/article.php?story=20010627221216167
+desc: Скопировать вывод команды в буфер обмена
+code: |
+  $ ls -al | pbcopy

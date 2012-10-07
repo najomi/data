@@ -1,0 +1,5 @@
+link: man mount_smbfs
+desc: Монтируем smb диск 
+code: |
+  $ mkdir /smb/public
+  $ mount -t smbfs //username:userpass@myserver/PUBLIC /smb/public

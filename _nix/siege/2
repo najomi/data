@@ -1,0 +1,6 @@
+link: http://www.coderholic.com/invaluable-command-line-tools-for-web-developers/
+desc: |
+  Проводим тестирование сайта под нагрузку по списку ссылок
+code: |
+  $ cut -d ' ' -f7 /var/log/apache2/access.log > urls.txt
+  $ siege -c<concurreny rate> -b -f urls.txt

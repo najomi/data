@@ -1,0 +1,6 @@
+link: http://my.galagzee.com/2009/02/23/unix-shell-find-files-by-a-date-range/
+desc: Ищем файлы изменялись в определённом диапазоне времени
+code: |
+  $ touch -t yyyymmddHHMM range_start
+  $ touch -t yyyymmddHHMM range_end
+  $ find . -type f -newer range_start ! -newer range_end -ls
