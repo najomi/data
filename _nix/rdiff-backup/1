@@ -4,11 +4,12 @@ desc: |
 author: MihanEntalpo
 code: |
   # Экспортируем переменную удаленного хоста
-  $ export $SOURCE_HOST=remoteuser@192.168.1.2
+  $ export SOURCE_HOST=remoteuser@192.168.1.2
 
   # Для того, чтобы доступ по SSH состоялся,
   # нужно чтобы публичный ключ текущего пользователя 
   # был прописан на удаленной системе в  /home/remoteuser/.ssh/authorized_hosts
+  # Также, нужно чтобы на удаленной системе rdiff-backup был установлен
 
   $ rdiff-backup -v5 --include-globbing-filelist file_list.txt \
           --exclude-symbolic-links  $SOURCE_HOST::/mnt/data/ $LOCAL_TARGET/data
