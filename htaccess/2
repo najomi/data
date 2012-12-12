@@ -1,0 +1,4 @@
+desc: Установить для папки кодировку по умолчанию
+code: |
+  AddDefaultCharset utf-8
+  
