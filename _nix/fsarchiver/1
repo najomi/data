@@ -1,0 +1,7 @@
+ft: bash
+desc: |
+Создать резервную копию раздела /dev/sda1, 
+выводя проценты выполнения в процессе
+code: |
+$ fsarchiver -v savefs /mnt/backup/backup_sda1.fsa /dev/sda1
+
