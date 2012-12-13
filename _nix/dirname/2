@@ -1,14 +1,13 @@
 ft: bash
 desc: |
-Пример использования в скрипте: допустим данный скрипт
-запускает exe-файл в wine, используя нестандартный wine-префикс.
-Скрипт лежит в папке с префиксом, например так:
-/home/user/.wine_bank/runbank.sh
-
+  Пример использования в скрипте: допустим данный скрипт
+  запускает exe-файл в wine, используя нестандартный wine-префикс.
+  Скрипт лежит в папке с префиксом, например так:
+  /home/user/.wine_bank/runbank.sh
 code: |
-# Получаем текущий каталог
-    $ export DIR=`dirname $0`
-# Сообщаем wine о том, в какой папке следует искать "виртуальную винду"
-    $ export WINEPREFIX=$DIR
-# Запускаем наш EXE-файл
-    $ wine $DIR/dos_devices/drive_c/Program\ Files/bank-client/bank.exe
+  # Получаем текущий каталог
+  $ export DIR=`dirname $0`
+  # Сообщаем wine о том, в какой папке следует искать "виртуальную винду"
+  $ export WINEPREFIX=$DIR
+  # Запускаем наш EXE-файл
+  $ wine $DIR/dos_devices/drive_c/Program\ Files/bank-client/bank.exe
