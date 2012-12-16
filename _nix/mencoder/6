@@ -11,6 +11,7 @@ desc: |
 
 data: 
   -
+    ft: bash
     desc: |
         
         Простой скрипт для запуска желаемого
@@ -20,9 +21,11 @@ data:
         $ export OUTCARD=25
         $ export FILE="output.avi"
         $ mencoder \"mf://*.jpg\" -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
-           -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc MP43 -o \"$FILE\"
+           -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc \
+           MP43 -o \"$FILE\"
 
   -
+    ft:bash
     desc: |
     
         Если в системе установлен kdialog, можно воспользоваться относительно приятным
@@ -41,9 +44,11 @@ data:
         SIZE_Y=`kdialog --inputbox "Введите высоту изображения" "480"`
         
         CMD="mencoder \"mf://*.jpg\" -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
-           -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc MP43 -o \"$FILE\""
+           -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc \
+           MP43 -o \"$FILE\""
         
-        i=0 ; for f in *.$EXT ; do mv "$f" $(printf "frame%04d.$EXT" $i) ; i=$((i+1)) ; done
+        i=0 ; for f in *.$EXT ; do mv "$f" $(printf "frame%04d.$EXT" $i) ; i=$((i+1)) ; 
+        done
         echo $CMD
         bash -c "$CMD" 
         
