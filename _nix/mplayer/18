@@ -1,0 +1,6 @@
+desc: |
+  Отключить xscreensaver во время воспроизведения в mplayer
+  Для этого нужно в файле ~/.mplayer/config добавить строчку:
+code: |
+  heartbeat-cmd="xscreensaver-command -deactivate &"
+author: MihanEntalpo

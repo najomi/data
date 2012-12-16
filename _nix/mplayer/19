@@ -1,0 +1,6 @@
+desc: |
+  Если mplayer не хочет открывать файлы wmv (Windows media video),
+  нужно прописать в его конфиг-файле ~/.mplayer/config строчку:
+code: |
+  vfm=ffmpeg
+author: MihanEntalpo

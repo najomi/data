@@ -1,0 +1,9 @@
+desc: |
+  Если нужно воспроизвести файлы с различных китайский nonane-видеорегистраторах,
+  имеющих расширение mp4, но нигде не работающих, может пригодиться команда:
+code: |
+  mplayer '%1' -demuxer h264es -fps 25
+
+link: [http://unixforum.org/index.php?showtopic=130568&st=0&p=1198832&#entry1198832, unixforum]
+author: MihanEntalpo
+
