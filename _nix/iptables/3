@@ -14,7 +14,10 @@ desc: |
 
 data:
   -
-    desc: Файл block_site.sh - блокирует один домен, переданный переметром
+    desc: |
+    
+      Файл block_site.sh - блокирует один домен, переданный переметром
+      
     code: |
       #!/bin/bash
       E_WRONGARGS=65
@@ -32,7 +35,10 @@ data:
       i=0; while [ "${A[$i]}" ] ; do
       `iptables -A OUTPUT -p tcp -d  ${A[i]} --dport 80 -j DROP` ; (( i++ )) ; done ;
   -
-    desc: Файл block_sites.sh - блокирует список доменов из файла blacklist.name
+    desc: |
+      
+      Файл block_sites.sh - блокирует список доменов из файла blacklist.name
+      
     code: |
       #!/bin/bash
       echo "Block sites script by MihanEntalpo"
@@ -45,7 +51,10 @@ data:
         `$DIR/block_site.sh $line`
       done
   -
-    desc: Файл blacklist.name - список плохих доменов
+    desc: |
+      
+      Файл blacklist.name - список плохих доменов
+      
     code: |
       vk.com
       vkontakte.com
