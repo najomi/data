@@ -8,7 +8,7 @@ code: |
   function get_file_age($filename)
   {
     $curtime = time();
-    $filetime = filetime($filename);
+    $filetime = filemtime($filename);
     return $curtime - $filetime;
   }
-  
+author: Mihanentalpo
