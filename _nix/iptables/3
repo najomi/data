@@ -14,46 +14,46 @@ data:
   -
     desc: Файл block_site.sh - блокирует один домен, переданный переметром
     code: |
-	  #!/bin/bash
-	  E_WRONGARGS=65
-	  ARGNO=1
-	  if [ $# -ne $ARGNO ]
-	  then
-	    echo "***** Ошибка параметров! ******"
-	    echo "Порядок использования: `basename $0` Доменное_имя" >&2
-	    exit $E_WRONGARGS
-	  fi
-	  nslookup $1 > /tmp/nslookup.txt
-	  X=`sed -rn '1,/^$/d;/^Address:\s+/s///p' /tmp/nslookup.txt `
-	  rm /tmp/nslookup.txt
-	  A=( $X )
-	  i=0; while [ "${A[$i]}" ] ; do
-	  `iptables -A OUTPUT -p tcp -d  ${A[i]} --dport 80 -j DROP` ; (( i++ )) ; done ;
+      #!/bin/bash
+      E_WRONGARGS=65
+      ARGNO=1
+      if [ $# -ne $ARGNO ]
+      then
+        echo "***** Ошибка параметров! ******"
+        echo "Порядок использования: `basename $0` Доменное_имя" >&2
+        exit $E_WRONGARGS
+      fi
+      nslookup $1 > /tmp/nslookup.txt
+      X=`sed -rn '1,/^$/d;/^Address:\s+/s///p' /tmp/nslookup.txt `
+      rm /tmp/nslookup.txt
+      A=( $X )
+      i=0; while [ "${A[$i]}" ] ; do
+      `iptables -A OUTPUT -p tcp -d  ${A[i]} --dport 80 -j DROP` ; (( i++ )) ; done ;
   -
     desc: Файл block_sites.sh - блокирует список доменов из файла blacklist.name
     code: |
-	  #!/bin/bash
-	  echo "Block sites script by MihanEntalpo"
-	  echo "Reading blacklist..."
-	  FILENAME=`readlink -e "$0"`
-	  DIR=`dirname $FILENAME`
-	  echo "Blocking sites..."
-	  cat "$DIR/blacklist.name" | while read line 
-	  do
-	    `$DIR/block_site.sh $line`
-	  done
-	  
+      #!/bin/bash
+      echo "Block sites script by MihanEntalpo"
+      echo "Reading blacklist..."
+      FILENAME=`readlink -e "$0"`
+      DIR=`dirname $FILENAME`
+      echo "Blocking sites..."
+      cat "$DIR/blacklist.name" | while read line 
+      do
+        `$DIR/block_site.sh $line`
+      done
+   
   -
     desc: Файл blacklist.name - список плохих доменов
     code:
-	  vk.com
-	  vkontakte.com
-	  livejournal.com
-	  odnoklassniki.ru
-	  bash.org.ru
-	  bash.im
-	  bash.org
-	  ibash.org.ru
-	  xyu.tv
+      vk.com
+      vkontakte.com
+      livejournal.com
+      odnoklassniki.ru
+      bash.org.ru
+      bash.im
+      bash.org
+      ibash.org.ru
+      xyu.tv
   
   
