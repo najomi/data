@@ -38,7 +38,8 @@ data:
         SIZE_X=`kdialog --inputbox "Введите ширину изображения" "640"`
         SIZE_Y=`kdialog --inputbox "Введите высоту изображения" "480"`
         
-        CMD="mencoder \"mf://*.jpg\" -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc MP43 -o \"$FILE\""
+        CMD="mencoder \"mf://*.jpg\" -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
+           -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc MP43 -o \"$FILE\""
         
         i=0 ; for f in *.$EXT ; do mv "$f" $(printf "frame%04d.$EXT" $i) ; i=$((i+1)) ; done
         echo $CMD
