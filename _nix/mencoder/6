@@ -1,65 +1,60 @@
 ft: bash
+author: MihanEntalpo
+link: mailto:MihanEntalpo@yandex.ru
 desc: |
-  Собрать видеофайл из набора JPEG - картинок (кадров),
+  Собрать видеофайл из набора jpeg-картинок,
   лежащих в той же папке что и скрипт.
   Задаваемые параметры: 
-  SIZE_X, SIZE_y - разрешение выходного видео
-  OUTCADR - число кадров в секунду в выходном видео
-  FILE    - имя выходного файла 
+    SIZE_X, SIZE_Y - разрешение выходного видео
+    OUTCADR        - число кадров в секунду в выходном видео
+    FILE           - имя выходного файла 
   Качество стоит  очень высокое, кодек MPEG4, битрейт 10 Мегабит, делалось для
   создания видео размером 3000 на 2000 точек. 
-ft: bash
-desc: |
-  Собрать видеофайл из набора JPEG - картинок (кадров),
-  лежащих в той же папке что и скрипт.
-  Задаваемые параметры: 
-  SIZE_X, SIZE_y - разрешение выходного видео
-  OUTCADR - число кадров в секунду в выходном видео
-  FILE    - имя выходного файла 
-  Качество стоит  очень высокое, кодек MPEG4, битрейт 10 Мегабит, делалось для
-  создания видео размером 3000 на 2000 точек. 
-
 data:
   -
     ft: bash
     desc: |
-       
         Простой скрипт для запуска желаемого
     code: |
         $ export SIZE_X=640
         $ export SIZE_Y=480
         $ export OUTCARD=25
         $ export FILE="output.avi"
-        $ mencoder \"mf://*.jpg\" -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
-        -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc \
-        MP43 -o \"$FILE\"
-
+        $ mencoder "mf://*.jpg" \
+            -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
+            -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 \
+            -ffourcc MP43 -o "$FILE"
   -
     ft: bash
     desc: |
-        Если в системе установлен kdialog, можно воспользоваться относительно приятным
-        скриптом, который cпрашивает все параметры спрашивает в виде графических всплывающих 
-        окошек, а также переименовывает файлы так чтобы они ТОЧНО шли подряд, после чего 
-        запускает mencoder, и по завершению проигрывает полученный файл в mplayer'е
+        Если в системе установлен {X,k,}dialog,
+        можно воспользоваться приятным скриптом,
+        который запрашивает все параметры, а также переименовывает 
+        файлы так чтобы они ТОЧНО шли подряд, после чего 
+        запускает mencoder, и по завершению проигрывает 
+        полученный файл в mplayer'е
     code: |
-        #!	/bin/bash
-        FILE=`kdialog --inputbox "Введите имя видеофайла" "out.avi"`
-        OUTCADR=`kdialog --inputbox "Сколько кадров в секунду будет в видео?:" "25"`
-        EXT=`kdialog --inputbox "Введите расширение ваших файлов(то что после точки)"\
-        "jpg"`
-        SIZE_X=`kdialog --inputbox "Введите ширину изображения" "640"`
-        SIZE_Y=`kdialog --inputbox "Введите высоту изображения" "480"`
+        #!/bin/bash
+        DIALOG=${DIALOG=kdialog}
+        FILE=`$DIALOG --inputbox "Введите имя видеофайла" "out.avi"`
+        OUTCADR=`$DIALOG --inputbox "Сколько кадров в секунду будет в видео?:" "25"`
+        EXT=`$DIALOG --inputbox "Введите расширение ваших файлов" "jpg"`
+        SIZE_X=`$DIALOG --inputbox "Введите ширину изображения" "640"`
+        SIZE_Y=`$DIALOG --inputbox "Введите высоту изображения" "480"`
         
-        CMD="mencoder \"mf://*.jpg\" -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
-        -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000 -ffourcc \
-        MP43 -o \"$FILE\""
+        CMD="mencoder \"mf://*.jpg\" \
+               -mf w=$SIZE_X:h=$SIZE_Y:fps=$OUTCADR:type=jpg \
+               -oac copy -ovc lavc -lavcopts vcodec=msmpeg4:vbitrate=10000\
+               -ffourcc MP43 -o \"$FILE\""
         
-        i=0 ; for f in *.$EXT ; do mv "$f" $(printf "frame%04d.$EXT" $i) ; i=$((i+1)) ;
+        i=0 
+        for f in *.$EXT ;
+        do 
+          mv "$f" $(printf "frame%04d.$EXT" $i)
+          i=$((i+1))
         done
+
         echo $CMD
         bash -c "$CMD" 
         
         mplayer $FILE
-
-author: MihanEntalpo
-link: mailto:MihanEntalpo@yandex.ru
