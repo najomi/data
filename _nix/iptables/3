@@ -10,6 +10,7 @@ desc: |
   и запускать через rc.local а также прописать в cron - на всякий случай, против "умных" пользователей.
   Блокировка всех доменов: $ block_sites.sh
   Блокировка 1 домена:     $ block_site.sh vk.com
+
 data:
   -
     desc: Файл block_site.sh - блокирует один домен, переданный переметром
@@ -42,7 +43,6 @@ data:
       do
         `$DIR/block_site.sh $line`
       done
-   
   -
     desc: Файл blacklist.name - список плохих доменов
     code:
@@ -55,5 +55,3 @@ data:
       bash.org
       ibash.org.ru
       xyu.tv
-  
-  
