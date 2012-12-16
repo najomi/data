@@ -1,0 +1,59 @@
+ft: bash
+desc: |
+  Заблокировать список доменов, чтобы не ходить туда и
+  не тратить свое рабочее время. Также можно заблокировать
+  сайты для своих сотрудников ну или кому угодно.
+  Для этого нужны 3 файла - 2 скрипта, и 1 файл со списком плохих доменов:
+  block_site.sh - блокирует 1 домен
+  block_sites.sh - блокирует много доменов, перечисленных в файле
+  blacklist.name - список плохих доменов
+  Все файлы должны лежать в одной папке. Лучше всего сделать их доступными
+  только root-пользователю, и запускать через rc.local а также
+  прописать в cron - на всякий случай, против "умных" пользователей.
+  Запуск: $ block_sites.sh
+  или:    $ block_site.sh vk.com
+code: |
+  # Файл block_site.sh
+
+  #!/bin/bash
+  E_WRONGARGS=65
+  ARGNO=1
+  if [ $# -ne $ARGNO ]
+  then
+    echo "***** Ошибка параметров! ******"
+    echo "Порядок использования: `basename $0` Доменное_имя" >&2  # Сообщение об ошибке на >stderr.
+    exit $E_WRONGARGS
+  fi
+  nslookup $1 > /tmp/nslookup.txt
+  X=`sed -rn '1,/^$/d;/^Address:\s+/s///p' /tmp/nslookup.txt `
+  rm /tmp/nslookup.txt
+  A=( $X )
+  i=0; while [ "${A[$i]}" ] ; do
+  `iptables -A OUTPUT -p tcp -d  ${A[i]} --dport 80 -j DROP` ; (( i++ )) ; done ;
+
+  # Файл block_sites.sh
+  
+  #!/bin/bash
+  echo "Block sites script by MihanEntalpo"
+  echo "Reading blacklist..."
+  FILENAME=`readlink -e "$0"`
+  DIR=`dirname $FILENAME`
+  echo "Blocking sites..."
+  cat "$DIR/blacklist.name" | while read line 
+  do
+    `$DIR/block_site.sh $line`
+  done
+  
+  # Файл blacklist.name
+  
+  vk.com
+  vkontakte.com
+  livejournal.com
+  odnoklassniki.ru
+  bash.org.ru
+  bash.im
+  bash.org
+  ibash.org.ru
+  xyu.tv
+  
+  
