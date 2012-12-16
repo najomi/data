@@ -2,4 +2,4 @@ info: |
   xDmx - система распределения видео-потока с одного X-сервера на
   несколько других по сети, позволяет собрать из нескольких машин,
   подключенных по сети, один большой мега-экран для одного X-клиента
-links: [http://www.ibm.com/developerworks/ru/library/os-mltihed/, Распределенная мультиэкранная среда]
+links: [ http://www.ibm.com/developerworks/ru/library/os-mltihed/ ]
