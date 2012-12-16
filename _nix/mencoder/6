@@ -60,3 +60,6 @@ data:
         bash -c "$CMD" 
         
         mplayer $FILE
+
+author: MihanEntalpo
+link: mailto:MihanEntalpo@yandex.ru
