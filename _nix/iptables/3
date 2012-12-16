@@ -45,7 +45,7 @@ data:
       done
   -
     desc: Файл blacklist.name - список плохих доменов
-    code:
+    code: |
       vk.com
       vkontakte.com
       livejournal.com
