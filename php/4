@@ -1,6 +1,5 @@
-link: http://user.su/index.php/Php:Запуск_процессов_в_фон
-desc: Запуск процессов в фон Windows 
+desc: Продвигаем СПО в массы.
 code: |
   <?php
-  $execStr =  "start /b $php $script $params";
-  pclose(popen($execStr, 'r'));
+  if(strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')
+      die('Segmentation fault');

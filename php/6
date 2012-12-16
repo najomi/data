@@ -1,12 +1,30 @@
-link: http://user.su/index.php/Php:Шаблоны_на_чистом_PHP
-desc: Простой шаблонизатор:
-code: |
-  <?php
-  function view($template, $values) {
-      extract($values);
-      ob_start();
-      include($template);
-      $content = ob_get_contents();
-      ob_end_clean();
-      return $content;
-  }
+desc: Иллюстрация на тему того что php считает `false'
+data: 
+  -
+    code: |
+      <?php
+      function t($v){
+          echo ($v ? 'true' : 'false')."\n";
+      }
+      t(0);
+      t(0.0);
+      t(false);
+      t(null);
+      t(array());
+      t('');
+      t('0');
+    out: |
+      false
+      false
+      false
+      false
+      false
+      false
+      false
+  -
+    code: | 
+      // ВНЕЗАПНО:
+      t((0 == 'a'));
+    out: |
+      true
+    

@@ -1,5 +1,12 @@
-link: http://xtips.ru/?act=tview&tid=102
-desc: Проверка конфигурации PHP в консоли 
-ft: bash
+link: http://user.su/index.php/Php:Шаблоны_на_чистом_PHP
+desc: Простой шаблонизатор:
 code: |
-  $ php -r "phpinfo();"
+  <?php
+  function view($template, $values) {
+      extract($values);
+      ob_start();
+      include($template);
+      $content = ob_get_contents();
+      ob_end_clean();
+      return $content;
+  }

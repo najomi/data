@@ -1,0 +1,6 @@
+link: http://user.su/index.php/Php:Запуск_процессов_в_фон
+desc: Запуск процессов в фон Unix 
+code: |
+  <?php
+  $execStr =  "$php $script $params > /dev/null &";
+  exec($execStr);

@@ -1,0 +1,6 @@
+link: http://user.su/index.php/Php:Запуск_процессов_в_фон
+desc: Запуск процессов в фон Windows 
+code: |
+  <?php
+  $execStr =  "start /b $php $script $params";
+  pclose(popen($execStr, 'r'));

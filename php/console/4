@@ -1,0 +1,7 @@
+link: http://user.su/index.php/Php:Работа_Php_в_консоли
+desc: Читать данные с потока ввода
+code: |
+  <?php
+  $st = fopen('php://stdin', 'r');
+  $line = trim(fgets($st));
+  echo "Input: ".$line;

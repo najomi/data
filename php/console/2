@@ -1,0 +1,5 @@
+link: http://xtips.ru/?act=tview&tid=102
+desc: Проверка конфигурации PHP в консоли 
+ft: bash
+code: |
+  $ php -r "phpinfo();"

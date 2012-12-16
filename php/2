@@ -1,9 +1,16 @@
-link: http://user.su/index.php/Php:Работа_Php_в_консоли
+link: http://juick.com/skobkin-ru/872787
+desc: |
+  Использование тернарного оператора в sql запросе для подстановки значений в
+  зависимости от условий 
 code: |
   <?php
-  // Текущий рабочий путь
-  echo getcwd();
-  // Число аргументов
-  echo $argc;
-  // Переданные аргументы
-  print_r($argv);
+  $iquery = "INSERT INTO $wp_table VALUES(
+             '',
+             '".$post_author."',
+             '".date("Y-m-d G:i:s", $row['Stamp'])."',
+             '".date("Y-m-d G:i:s", $row['Stamp'])."',
+             '".$post_text."',
+             '".$post_title."',
+             '',
+             '".$post_status."',
+             '".($row['IsCommentable']=="1" ? "open" : "closed")."', 
