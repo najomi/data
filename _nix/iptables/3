@@ -21,7 +21,7 @@ code: |
   if [ $# -ne $ARGNO ]
   then
     echo "***** Ошибка параметров! ******"
-    echo "Порядок использования: `basename $0` Доменное_имя" >&2  # Сообщение об ошибке на >stderr.
+    echo "Порядок использования: `basename $0` Доменное_имя" >&2
     exit $E_WRONGARGS
   fi
   nslookup $1 > /tmp/nslookup.txt
