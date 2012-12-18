@@ -7,7 +7,7 @@ desc: |
   отдельно а не через репозиторий. Допустим приложение - файл tool.jar:
 code: |
   LINK=`readlink $0` 
-  if [[ -z ${LINK} ]]; then
+  if [ -z ${LINK} ]; then
     LINK=$0
   fi
   DIRNAME=`dirname ${LINK}`
