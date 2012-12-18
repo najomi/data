@@ -1,14 +1,7 @@
 desc: |
-  Простая функция для определния возраста файла в секундах,
-  то есть время прошедшее с последнего изменения файла.
+  Получение времени в секундах с момента последнего изменения файла
 code: |
-  /** Определяет возраст файла в секундах
-  *  @param string $filename полное имя файла, содержащее путь
-  */ 
-  function get_file_age($filename)
-  {
-    $curtime = time();
-    $filetime = filemtime($filename);
-    return $curtime - $filetime;
+  function get_file_age($pth){
+    return time() - filemtime($pth);
   }
 author: Mihanentalpo

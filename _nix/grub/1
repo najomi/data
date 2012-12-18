@@ -1,20 +1,25 @@
 ft: bash
 desc: |
-  Если установить Debian Squeeze (и другие дистрибутивы в которых используется grub2)
-  на флешку, то не всегда удается с нее загрузиться.
-  Чтобы загрузиться можно было всегда, делаем следующее (от рута):
+  Если установить debian squeeze (и другие дистрибутивы в которых 
+  используется grub2) на флешку, то не всегда удается с нее загрузиться. 
+  
+  Исправить это можно в grub.cfg, указав явно UUID устройства:
 code: |
-  # cd /boot/grub
-  Открываем для правки файл grub.cfg
-  Находим в нем строку вроде этой: 
-    menuentry 'Debian GNU/Linux, with Linux 2.6.32-5-686'
-  чуть ниже этой строки будет:
-    linux	/boot/vmlinuz-2.6.32-5-686 root=/dev/sde1 ro quiet
-  нужно изменить параметр root на UUID вашего системного раздела флешки:
-    linux	/boot/vmlinuz-2.6.32-5-686 root=UUID=6168d0d0-99ad-4c44-8f43-12d2aaef9b1c
-  а чуть выше - будет строчка начинающаяся с search, ее надо изменить так:
-    search --no-floppy --fs-uuid --set 6168d0d0-99ad-4c44-8f43-12d2aaef9b1c
-  после этого всего можно пробовать перезагружаться
+  # vi /boot/grub/grub.cfg
+out: |
+  Находим строку вида: 
+  menuentry 'Debian GNU/Linux, with Linux 2.6.32-5-686'
+
+  чуть ниже будет:
+  linux	/boot/vmlinuz-2.6.32-5-686 root=/dev/sde1 ro quiet
+
+  меняем root на UUID системного раздела флешки:
+  linux	/boot/vmlinuz-2.6.32-5-686 root=UUID=6168d0d0-99ad-4c44-8f43-12d2aaef9b1c
+
+  а чуть выше - будет строчка начинающаяся с search, ее надо изменить на:
+  search --no-floppy --fs-uuid --set 6168d0d0-99ad-4c44-8f43-12d2aaef9b1c
+
+  после этого можно пробовать перезагрузиться.
 author: MihanEntalpo
 
 
