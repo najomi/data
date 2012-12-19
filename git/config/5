@@ -1,3 +1,4 @@
 desc: Задать глобальный файл исключений для гита.
 code: |
   $ git config --global core.excludesfile ~/.gitignore
+  
