@@ -23,7 +23,9 @@ code: |
         {
           foreach($v as $key=>$val)
           {
-            $result .=  "\n".str_repeat(' ',$prepend_spaces) . ("[" . $key . "] => " .print_r_slice($val,$maxdepth-1,$prepend_spaces + strlen($key) + 6)  );
+            $result .=  "\n".str_repeat(' ',$prepend_spaces) . ("[" . $key
+        	    . "] => " . print_r_slice($val,$maxdepth-1,
+        	    $prepend_spaces  +  strlen($key) + 6)  );
           }
         }
         else
