@@ -1,0 +1,35 @@
+ft: php
+desc: |
+  Расширенная версия функции print_r, позволяет выводить массив до
+  определенной глубины, а не полностью
+code: |
+  /**
+  *  Функция аналог print_r, за исключением того что выводит не всю глубину
+  *  массива или объекта, а только указанную, возвращая строку с выводом.
+  *
+  *  @param any $v переменная для вывода
+  *  @param integer $maxdepth максимальная глубина, 
+  *     если $maxdepth < 0 - то глубина будет неограниченной
+  *  @param integer  $prepend_spaces количество пробелов перед строкой 
+  *     с текстом. Как правило использовать не нужно, будет работать само.
+  *  @return string возвращает строку (в отличии от print_r не делает echo)
+  */ 
+  function print_r_slice($v,$maxdepth=-1,$prepend_spaces=0)
+  {
+    $result = '';
+    if (is_array($v) || is_object($v))
+    {
+      if ($maxdepth!=0)
+        {
+          foreach($v as $key=>$val)
+          {
+            $result .=  "\n".str_repeat(' ',$prepend_spaces) . ("[" . $key . "] => " .print_r_slice($val,$maxdepth-1,$prepend_spaces + strlen($key) + 6)  );
+          }
+        }
+        else
+        {	$result .=  " Array() ";   }
+    }
+    else
+    {   $result .= $v; }
+  return $result;
+  }
