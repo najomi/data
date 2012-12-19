@@ -1,8 +1,8 @@
 info: |
   Глобальные настройки пользователя хранятся в ~/.gitconfig<br>
-  Для задания настроек есть 2 пути:
-  1) Команда: $ git config --global color.diff "auto"
-  2) Запись в файле ~/.gitconfig:
-  [color]
-    diff = auto
+  Для задания настроек есть 2 пути:<br>
+  1) Команда: $ git config --global color.diff "auto"<br>
+  2) Запись в файле ~/.gitconfig:<br>
+  [color]<br>
+  &nbsp;&nbsp;diff = auto<br>
   Результат будет идентичным - в файле ~/.gitconfig появится новая строчка.
