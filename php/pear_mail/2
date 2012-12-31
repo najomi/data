@@ -1,0 +1,8 @@
+desc: |
+  Указываем utf-8 имя отправителя
+code: |
+  <?php
+  // ...
+  smtp_from(
+    '=?UTF-8?B?'.base64_encode('Алёшенька Погромист').
+    '?=<zendzirou@gmail.com>');
