@@ -1,0 +1,3 @@
+desc: изменяем максимальный размер загружаемых файлов у nginx
+code: |
+  client_max_body_size 10m;
