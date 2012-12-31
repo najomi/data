@@ -1,0 +1,14 @@
+desc: Удалить элемент из массива
+link: http://stackoverflow.com/questions/4825812/clean-way-to-remove-element-from-javascript-array-with-jquery-coffeescript
+code: |
+  Array.prototype.remove = function(e) {
+    var t, _ref;
+    if ((t = this.indexOf(e)) > -1) {
+      return ([].splice.apply(this, [t, t - t + 1].concat(_ref = [])), _ref);
+    }
+  };
+  var arr = [1,2,3,4,3]
+  arr.remove(3)
+  console.log(arr)
+out: |
+  [1,2,4,3]
