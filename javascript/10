@@ -1,0 +1,5 @@
+desc: Получить элемент по id
+code: |
+  function byid(id){
+    return document.getElementById(id);
+  }

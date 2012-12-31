@@ -1,0 +1,8 @@
+desc: |
+  Убрать пробельные символы из начала и конца строки
+link: http://api.jquery.com/jQuery.trim/
+code: |
+  var str = "         lots of spaces before and after         ";
+  console.log('"'+$.trim(str)+'"');
+out: |
+  "lots of spaces before and after"

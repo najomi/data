@@ -1,0 +1,3 @@
+desc: Передёрнуть munin
+code: |
+ # sudo -u munin munin-cron
