@@ -1,0 +1,4 @@
+desc: Открыть из javascript ссылку в новом окне
+link: http://stackoverflow.com/questions/1574008/how-to-simulate-target-blank-in-javascript
+code: |
+  window.open('http://www.mydomain.com?ReportID=1');
