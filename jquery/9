@@ -1,0 +1,7 @@
+link: http://simple.procoding.net/2008/11/22/how-to-reset-form-with-jquery/
+desc: |
+  Сбрасываем форму
+code: |
+  $('#'+id).each(function(){
+    this.reset();
+  });
