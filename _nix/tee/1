@@ -1,0 +1,12 @@
+desc: Вывести поток ввода программы на экран, записав его попутно в файл
+data: 
+  -
+    code: |
+      $ echo 'hello, world' | tee our.log 
+    out: |
+      hello world
+  - 
+    code: |
+      $ cat our.log
+    out: |
+      hello world
