@@ -1,0 +1,4 @@
+link: http://superuser.com/questions/71028/batch-converting-png-to-jpg-in-linux
+desc: Изменить формат всех изображений с png на jpg
+code: |
+  mogrify -format jpg *.png  
