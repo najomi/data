@@ -1,0 +1,25 @@
+desc: |
+  Не выводить заголовок таблицы при выполнении команды
+data:
+  - 
+    code: |
+      $ mysql -e 'show databases'
+    out: |
+      +--------------------+
+      | Database           |
+      +--------------------+
+      | information_schema |
+      | canario            |
+      | dogs               |
+      | mysql              |
+      +--------------------+
+  - 
+    code: |
+      $ mysql -N -e 'show databases'
+    out: |
+      +--------------------+
+      | information_schema |
+      |            canario |
+      |               dogs |
+      |              mysql |
+      +--------------------+
