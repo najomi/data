@@ -1,0 +1,23 @@
+desc: |
+  Получить имена переменных у функции и их порядок.
+
+  С помощью call_kv мы можем вызвать другую функцию не заботясь
+  о порядке аргументов
+code: |
+  <?php
+  function call_kv($fn, $_args){
+    $t = new ReflectionFunction($fn);
+    $args = array();
+    foreach($t->getParameters() as $v)
+      $args[] = $_args[$v->name];
+
+    return call_user_func_array($fn, $args);
+  }
+
+  function send($to, $from){
+    echo "Sending $from -> $to";
+  }
+
+  call_kv('send', array('from'=>'amazon', 'to'=>'me'));
+out: |
+  Sending amazon -> me
