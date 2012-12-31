@@ -1,0 +1,6 @@
+desc: |
+  Сгенерировать случайный пароль с помощью openssl
+code: |
+  $ openssl rand -base64 12
+out: |
+  h6SgvwRhRe3Y5KbY
