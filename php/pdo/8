@@ -1,0 +1,29 @@
+desc: |
+  Singleton для PDO.
+  Установка режима выборки по умолчанию в FETCH_ASSOC.
+  Исключения при ошибках.
+  Пара вспомогательных функций.
+code: |
+  <?php
+  function db(){
+    static $db = null;
+    if(is_null($db)){
+      $db = new PDO('mysql:host=localhost;dbname=test', 'user', 'PaSsWoRd);
+      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+      $db->query('set names utf8');
+    }
+    return $db;
+  }
+  function q($t){
+    return db()->quote($t);
+  }
+  function query($q){
+    return db()->query($q);
+  }
+  function one($q){
+    return query($q)->fetch();
+  }
+  function all($q){
+    return query($q)->fetchAll();
+  }
