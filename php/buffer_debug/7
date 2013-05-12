@@ -9,24 +9,22 @@ code: |
   *  количество секунд выполнения с точностью до 4-го знака.
   *  Пример:
   *  tick_time("Сканируем данные");
-  * 	scan_data();
+  *  scan_data();
   *  tick_time("Загружаем файл");
   *  load_file();
   *  tick_time("Анализируем информацию");
   *  $analyzer->dataAnalyze();
-  * 	tick_time();
+  *  tick_time();
   *  Выдаст в консоль (или в браузер)
   *  @param string $message - название операций которую мы измеряем. Используется просто для того чтобы знать.
   */ 
-  function tick_time($message="")
-  {
-	static $lastMessage;
-	static $startTime;
-	if ($startTime)
-	{
-		echo "\n " . $lastMessage . ": " . ((int)((microtime(true) - $startTime)*10000))/10000 . "\n";
-	}
-	$startTime = microtime(true);
-	$lastMessage = $message;
+  function tick_time($message=""){
+    static $lastMessage;
+    static $startTime;
+    if ($startTime){
+        echo "\n " . $lastMessage . ": " . ((int)((microtime(true) - $startTime)*10000))/10000 . "\n";
+    }
+    $startTime = microtime(true);
+    $lastMessage = $message;
   }
 
