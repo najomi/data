@@ -5,4 +5,7 @@ desc: |
   Все это красиво раскрашивает (если консоль позволяет раскраску)
 code: |
   //Найдем все файлы *.php, содержание строку print_r
-  $ find . -name "*.php"|while read i;do cat "$i"|grep -H --label="$i" -n "print_r";done
+  $ find . -name "*.php" |\
+      while read i; do \
+        cat "$i" | grep -H --label="$i" -n "print_r"; \
+      done
