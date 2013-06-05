@@ -1,29 +1,25 @@
 desc: Преобразование строки к верблюжейНотацииЗаписиИмен (camelCase)
 code: |
-	/**
-	* @param string $name имя разделеное подчеркиваниями, например user_first_name
-	* @return string имя в формате camelCase, например userFirstName
-	*/
-	function toCamelCase($name)
-	{
-		$parts = explode("_",$name);
-		foreach ($parts as $num=>&$part)
-		{
-			if ($num == 0) 
-			{
-				$part = strtolower($part);
-			}
-			else
-			{
-				$part = ucfirst($part);
-			}            
-		}
-		return implode($parts);        
-	}
+  /**
+  * @param string $name имя разделеное подчеркиваниями, например user_first_name
+  * @return string имя в формате camelCase, например userFirstName
+  */
+  function toCamelCase($name) {
+    $parts = explode("_",$name);
+    foreach ($parts as $num=>&$part) {
+      if ($num == 0){
+        $part = strtolower($part);
+      }
+      else{
+        $part = ucfirst($part);
+      }            
+    }
+    return implode($parts);        
+  }
 
-	//Пример: echo toCamelCase('user_phones_to_users_link');
+  echo toCamelCase('user_phones_to_users_link');
 out: |
-	userPhonesToUsersLink
+  userPhonesToUsersLink
 author: MihanEntalpo@yandex.ru
   
   
