@@ -9,3 +9,7 @@ code: |
       while read i; do \
         cat "$i" | grep -H --label="$i" -n "print_r"; \
       done
+
+  //Тоже самое - в виде одной строки (для удобства копипасты)
+  $ find . -name "*.php" | while read i; do cat "$i" | grep -H --label="$i" -n "print_r"; done
+
