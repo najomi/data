@@ -1,0 +1,3 @@
+desc: Набрать текст
+code: |
+  $ xdotool type 'Hello, world!'

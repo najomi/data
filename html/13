@@ -1,0 +1,3 @@
+desc: Добавить возможность распознавания речи для инпута
+code: |
+  <input type=text x-webkit-speech />
