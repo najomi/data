@@ -1,0 +1,5 @@
+link: http://www.tech-recipes.com/rx/378/add-a-column-to-an-existing-mysql-table/
+desc: |
+  Добавить колонку email в конец таблицы contacts
+code: |
+  ALTER TABLE contacts ADD email VARCHAR(60);
