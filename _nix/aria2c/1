@@ -1,0 +1,4 @@
+ft: text
+desc: Скачать torrent из консоли
+code: |
+  $ aria2c unzip610b.zip.torrent
