@@ -1,0 +1,20 @@
+link: http://php.net/manual/ru/function.class-uses.php
+desc: Получить массив трэйтов, что использует класс или объект
+code: |
+  <?php
+  trait foo { }
+  class bar {
+    use foo;
+  }
+
+  print_r(class_uses(new bar));
+  print_r(class_uses('bar'));
+out: |
+  Array
+  (
+      [foo] => foo
+  )
+  Array
+  (
+      [foo] => foo
+  )
