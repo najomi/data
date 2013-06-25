@@ -1,0 +1,4 @@
+link: http://sash-kan.blogspot.ru/2010/01/git-clone-without-history-git-clone.html
+desc: Склонировать репозиторий без истории
+code: |
+  $ git clone --depth 1 https://github.com/Bubujka/ru.najomi.org-data.git
