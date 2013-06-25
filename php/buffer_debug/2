@@ -4,14 +4,12 @@ code: |
   function ob($fn){
       ob_start();
       $fn();
-      $r = ob_get_contents();
-      ob_end_clean();
-      return $r;
+      return ob_get_clean();
   }
   
   $v = ob(function(){
           echo "Hello, world!";
-      });
+  });
   
   echo ">$v<";
 out: |
