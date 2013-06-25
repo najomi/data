@@ -1,0 +1,28 @@
+desc: |
+  Спросить сервер о любых dns записях 
+  по домену.
+code: $ dig any najomi.org
+out: | 
+  ; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> any najomi.org
+  ;; global options: +cmd
+  ;; Got answer:
+  ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35297
+  ;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 0
+
+  ;; QUESTION SECTION:
+  ;najomi.org.			IN	ANY
+
+  ;; ANSWER SECTION:
+  najomi.org.		21143	IN	TXT	"v=spf1 redirect=_spf.yandex.ru"
+  najomi.org.		21143	IN	MX	10 mx.yandex.ru.
+  najomi.org.		21143	IN	NS	dns2.yandex.ru.
+  najomi.org.		21143	IN	SOA	dns1.yandex.ru. Zendzirou.yandex.ru.\
+                              2011012701 14400 900 1209600 14400
+  najomi.org.		21143	IN	NS	dns1.yandex.ru.
+  najomi.org.		21143	IN	A	188.127.225.148
+
+  ;; Query time: 26 msec
+  ;; SERVER: 8.8.8.8#53(8.8.8.8)
+  ;; WHEN: Wed Jun 26 02:29:20 2013
+  ;; MSG SIZE  rcvd: 199
+

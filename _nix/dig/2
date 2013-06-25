@@ -1,0 +1,20 @@
+name: Получить информацию о mx записи у домена
+code: $ dig mx najomi.org
+out: |
+  ; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> mx najomi.org
+  ;; global options: +cmd
+  ;; Got answer:
+  ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28728
+  ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+  ;; QUESTION SECTION:
+  ;najomi.org.			IN	MX
+
+  ;; ANSWER SECTION:
+  najomi.org.		21571	IN	MX	10 mx.yandex.ru.
+
+  ;; Query time: 27 msec
+  ;; SERVER: 8.8.8.8#53(8.8.8.8)
+  ;; WHEN: Wed Jun 26 02:32:33 2013
+  ;; MSG SIZE  rcvd: 56
+
