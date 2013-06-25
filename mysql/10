@@ -1,0 +1,3 @@
+link: http://yoonkit.blogspot.ru/2006/03/mysql-charset-from-latin1-to-utf8.html
+desc: Сменить кодировку столбца
+code: alter table mytable alter column mycol charset=utf8;
