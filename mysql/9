@@ -1,0 +1,3 @@
+link: http://stackoverflow.com/questions/979656/mysql-change-column-collation-and-character-set-of-information-schema
+desc: Сменить кодировку таблицы
+code: alter table some_table convert to character set utf8;
