@@ -1,0 +1,3 @@
+link: http://stackoverflow.com/questions/2844863/mysql-updating-entry-without-updating-timestamp
+desc: Не обновлять поле timestamp при выполнении запроса
+code: UPDATE table SET x=y, timestampColumn=timestampColumn WHERE a=b;
