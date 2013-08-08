@@ -1,0 +1,11 @@
+desc: |
+  Поменять CapsLock и левый ctrl на macbook air 2011 года под debian wheezy.
+code: |
+  clear Control
+  clear Lock
+
+  keycode 66 = Control_L
+  add Control = Control_L
+
+  keycode 37 = ISO_Next_Group
+  add Lock = ISO_Next_Group
