@@ -1,0 +1,5 @@
+link: http://api.jquery.com/serializeArray/
+desc: |
+  Сериализовать форму.
+code: |
+  $('form').serializeArray();
