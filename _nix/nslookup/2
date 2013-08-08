@@ -1,0 +1,9 @@
+desc: Получить MX записи по домену с определённого dns сервера
+code: |
+  $ nslookup -type=mx wikipedia.org ns2.wikimedia.org
+out: |
+  Server:         ns2.wikimedia.org
+  Address:        91.198.174.4#53
+
+  wikipedia.org   mail exchanger = 10 mchenry.wikimedia.org.
+  wikipedia.org   mail exchanger = 50 lists.wikimedia.org.

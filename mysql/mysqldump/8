@@ -1,0 +1,5 @@
+link: http://www.electrictoolbox.com/mysqldump-selectively-dump-data/
+desc:|
+  Сделать дамп таблицы но исползовать ограничение where
+code:| 
+  $ mysqldump my_super_shop_database shop_products --where="active=1"

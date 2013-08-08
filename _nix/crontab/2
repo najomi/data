@@ -1,0 +1,6 @@
+desc: Вывести список заданий что заданы в cron
+code: |
+  $ crontab -l
+out: |
+  # m h  dom mon dow   command
+  */10 * * * * /home/bubujka/.bu.bin/bin/sync-cards
