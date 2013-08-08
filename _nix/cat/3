@@ -1,0 +1,22 @@
+link: http://www.in-ulm.de/~mascheck/various/uuoc/
+desc: |
+  Что-то длинное и многострочное набрать в консоли и передать 
+  на вход другой команде.
+
+  В данном случае с консоли набирается сначала вся логика 
+  (cat <<EOF | sort ...), а после неё - данные.
+code: |
+  $ cat <<EOF | sort | uniq
+  > one
+  > two
+  > three
+  > four
+  > aaa
+  > one
+  > EOF
+out: |
+  aaa
+  four
+  one
+  three
+  two
