@@ -1,0 +1,15 @@
+link: http://stackoverflow.com/questions/8072623/get-single-char-from-console-immediately
+desc: |
+  Получить один символ и вернуть управление программе.
+
+  На stackoverflow ещё есть интересные примеры - стоит почитать 
+  первоисточник
+code: |
+  tty_param = `stty -g`
+  system 'stty raw'
+
+  a = IO.read '/dev/stdin', 1
+
+  system "stty #{tty_param}"
+
+  print a
