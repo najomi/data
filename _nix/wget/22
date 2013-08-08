@@ -1,0 +1,17 @@
+desc: Проверить ссылки из файла на живость 
+data:
+  -
+    code: |
+      $ cat list.txt 
+    out: |
+      http://yandex.ru
+      http://google.ru
+      http://yandex.ru/qweqweqweqwe
+  -
+    code: |
+      $ wget -nv  --spider -i list.txt
+    out: |
+      2013-08-08 22:40:20 URL: http://www.yandex.ru/ 200 Ok
+      2013-08-08 22:40:20 URL: http://www.google.ru/ 200 OK
+      http://yandex.ru/qweqweqweqwe:
+      Удалённый файл не существует — битая ссылка!
