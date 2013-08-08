@@ -1,0 +1,14 @@
+desc: |
+  Сериализовать объект в JSON и обратно.
+data:
+  -
+    code: |
+      JSON.stringify({foo: 'bar'})
+    out: |
+      '{"foo":"bar"}'
+  -
+    code: |
+      JSON.parse('{"foo":"bar"}')
+    out: |
+      { foo: 'bar' }
+
