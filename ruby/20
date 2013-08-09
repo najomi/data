@@ -1,0 +1,6 @@
+link: http://stackoverflow.com/questions/2871402/ruby-convert-int-to-time
+desc: Число в объект Time
+code: |
+  Time.at(1234567890)
+out: |
+  => 2009-02-14 02:31:30 +0300
