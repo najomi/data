@@ -1,0 +1,5 @@
+ft: bash
+desc: Список установленных ВРУЧНУЮ пакетов в дебиане в виде строки
+code: |
+  $ aptitude search '!~M!~prequired~i' | sed 's|^i   ||g;s|-.*$||g' | tr '\n' ',' | sed 's| ||g' | sed 's|,| |g'
+
