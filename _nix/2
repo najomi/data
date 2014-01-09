@@ -1,0 +1,11 @@
+link:  https://github.com/dotcloud/docker/issues/1555#issuecomment-22874190
+ft: text
+desc: Создаём и подключаем swap как файл на диске
+code: |
+  # dd if=/dev/zero of=/extraswap bs=1M count=512
+  # mkswap /extraswap
+  
+  В файл /etc/fstab
+  /extraswap         none            swap    sw                0       0
+
+  # swapon -a
