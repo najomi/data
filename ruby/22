@@ -1,0 +1,29 @@
+desc: |
+  Устанавливаем mysql соединение через ssh-туннель, авторизуясь по ключам
+code: |
+  #!/usr/bin/env ruby
+  require 'rubygems'
+  require 'mysql2'
+  require 'net/ssh/gateway'
+
+  gateway = Net::SSH::Gateway.new('productionserver.ru', 'user',
+    { port: 22,
+      keys: ["id_rsa.pub"],
+      keys_only: true })
+
+  port = gateway.open('localhost', 3306, 3307)
+
+  client = Mysql2::Client.new(
+    host: "127.0.0.1",
+    username: 'root',
+    password: 'qwerty',
+    database: 'wp_blog',
+    port: port
+  )
+  results = client.query("show tables")
+  results.each do |row|
+    p row
+  end
+
+  client.close
+  gateway.shutdown!
