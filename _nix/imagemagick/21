@@ -1,0 +1,11 @@
+link: http://www.imagemagick.org/Usage/files/#write
+desc: |
+  Уменьшить изображение в несколько размеров за один вызов convert.
+  При этом есть выйгрыш по скорости выполнения.
+code: |
+  $ convert orig.png \
+    \( +clone -resize x128  -write  parrots_lrg.jpg +delete \) \
+    \( +clone -resize x96   -write  parrots_big.jpg +delete \) \
+    \( +clone -resize x64   -write  parrots_med.jpg +delete \) \
+    -resize x32           parrots_sml.jpg
+
