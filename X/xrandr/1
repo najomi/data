@@ -1,0 +1,4 @@
+ft: bash
+desc: Вручную задать DPI во время работы Xorg сервера
+code: |
+  $ xrandr --dpi 96
