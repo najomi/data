@@ -1,0 +1,6 @@
+desc: Использование разных аккаунтов в s3cmd
+link: http://mikesisk.tumblr.com/post/8703449578/s3cmd-and-multiple-accounts
+code: |
+  # В ~/.bashrc
+  alias s3g5='s3cmd -c ~/.s3cfg-g5'
+  alias s3tcp='s3cmd -c ~/.s3cfg-tcp'
