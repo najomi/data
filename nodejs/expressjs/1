@@ -1,0 +1,12 @@
+desc: Описываем разные типы запросов, которые относятся к одному маршруту
+link: http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4
+code: |
+  var router = express.Router();
+  router.route('/bears')
+    .post(function(req, res) {
+      // ...
+    })
+    .get(function(req, res) {
+      // ...
+    });
+  app.use('/api', router);
