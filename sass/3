@@ -1,0 +1,27 @@
+desc: |
+  Расширить селектор свойствами из других классов
+code: |
+  .error
+    border: 1px #f00
+    background-color: #fdd
+
+  .attention
+    font-size: 3em
+    background-color: #ff0
+
+  .seriousError
+    @extend .error
+    @extend .attention
+    border-width: 3px
+
+out: |
+  .error, .seriousError {
+    border: 1px red;
+    background-color: #ffdddd; }
+
+  .attention, .seriousError {
+    font-size: 3em;
+    background-color: yellow; }
+
+  .seriousError {
+    border-width: 3px; }
