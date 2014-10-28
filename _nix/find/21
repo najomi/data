@@ -1,0 +1,12 @@
+link: http://blog.dander.ru/2010/04/linux.html
+desc: |
+  Найти файлы *.php и проверить их лексическим анализатором
+code: |
+  $ find . -name "*.php" |\
+      while read i; do \
+        php -l "$i"; \
+      done
+
+  //Тоже самое - в виде одной строки (для удобства копипасты)
+  $ find . -name "*.php" | while read i; do php -l $i; done
+
