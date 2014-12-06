@@ -1,0 +1,10 @@
+desc: |
+  Откладываем ответы сервера на небольшое время, чтобы видеть как
+  поведёт себя сайт в случае плохого интернета у пользователя.
+code: |
+  if(process.env.THROTTLE_API){
+    app.use('/api', function(req,res,next){
+      setTimeout(next, Math.floor(Math.random() * 500) + 0);
+    });
+  }
+
