@@ -1,5 +1,5 @@
 ft: javascript
-order: [13]
+order: [13, 14, 15]
 links:
   - [http://javascript.ru/, много информации по js]
   - [https://github.com/bebraw/jswiki/wiki, сборник ссылок на либы и ресурсы по js]
