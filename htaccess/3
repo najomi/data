@@ -1,0 +1,13 @@
+desc: Разрешить доступ или по ip адресу или по паролю
+code: |
+  Order deny,allow
+
+  Deny from all
+  AuthType Basic
+  AuthUserFile  /var/www/html/.htpasswd
+  AuthName "Protected Area"
+  require valid-user
+
+
+  Allow from xx.xx.xx.xx
+  Satisfy Any
