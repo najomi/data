@@ -1,6 +1,6 @@
 desc: Проксирование запросов на 127.0.0.1:9999
 code: |
-    location / {
+  location / {
     proxy_set_header X-Real-IP  $remote_addr;
     proxy_set_header X-Forwarded-For $remote_addr;
     proxy_set_header Host $host;
