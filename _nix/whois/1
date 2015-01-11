@@ -1,0 +1,9 @@
+link: https://ru.wikipedia.org/wiki/WHOIS
+link: http://www.ripe.net/
+desc: Служебная информация по хосту
+code: |
+  Получить информацию по домену google.com
+  $ whois google.com
+
+  Получить информацию по айпи адресу 8.8.8.8
+  $ whois -h v4.whois.cymru.com " -c -p 8.8.8.8"
