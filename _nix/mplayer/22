@@ -1,0 +1,6 @@
+link: http://tuxdiary.com/2014/03/06/mplayer-plays-mp4-video-too-fast/
+desc: |
+  Возможное решение проблемы, если видео при просмотре идёт слишком
+  быстро
+code: |
+  $ mplayer -fps 23.976 myvideo.mp4
