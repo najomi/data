@@ -1,0 +1,8 @@
+link: http://stackoverflow.com/questions/1310378/determining-image-file-size-dimensions-via-javascript
+desc: |
+  Получить ширину и высоту элемента или изображения на экране
+code: |
+  var img = document.getElementById('imageId');
+
+  var width = img.clientWidth;
+  var height = img.clientHeight;
