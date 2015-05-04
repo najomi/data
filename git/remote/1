@@ -1,0 +1,5 @@
+link: http://stackoverflow.com/questions/2432764/change-the-uri-url-for-a-remote-git-repository
+desc: Заменить адрес по которому располагается удалённый реп
+code: |
+  git remote set-url origin git://new.url.here
+
