@@ -1,0 +1,4 @@
+desc: |
+  Установить определённую версию пакета под другим именем.
+code: |
+  $ bower install 'jquery-veryold=jquery#1.0.1'
