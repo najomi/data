@@ -1,0 +1,24 @@
+desc: Закодировать в json по-человечески
+
+code: |
+  <?php
+  echo json_encode(
+    ['Hello'=>'Вор/лд', 'say'=>['something', 1, 2, 3]])."\n";
+
+  echo json_encode(
+    ['Hello'=>'Вор/лд', 'say'=>['something', 1, 2, 3]],
+    JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+
+out: |
+  {"Hello":"\u0412\u043e\u0440\/\u043b\u0434","say":["something",1,2,3]}
+  {
+      "Hello": "Вор/лд",
+      "say": [
+          "something",
+          1,
+          2,
+          3
+      ]
+  }
+
+
