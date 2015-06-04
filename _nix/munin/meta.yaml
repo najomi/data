@@ -1,0 +1,4 @@
+links:
+  - [http://guide.munin-monitoring.org/en/latest/plugin/writing.html, 'О разработке плагинов']
+  - [http://munin-monitoring.org/wiki/HowToWritePlugins, 'О разработке плагинов#2']
+
