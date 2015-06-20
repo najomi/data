@@ -1,0 +1,3 @@
+desc: Отсортировать в произвольном порядке записи
+link: http://stackoverflow.com/questions/396748/ordering-by-the-order-of-values-in-a-sql-in-clause
+code: SELECT * FROM user where id <= 3 order by field(`id`, 2, 3, 1)
