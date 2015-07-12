@@ -1,0 +1,5 @@
+desc: |
+  Смена mac адреса сетевого интерфейса,
+  en0 - ethernet / en1 - wireless interface
+code: |
+  $ sudo ifconfig en0 ether 20:74:A6:97:B7:5F
