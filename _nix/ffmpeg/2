@@ -1,0 +1,3 @@
+desc: Сконвертировать mp4 в webm среднего качества
+code: |
+  $ ffmpeg -i src.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis out.webm

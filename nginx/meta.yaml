@@ -1,3 +1,4 @@
 links: 
   - [http://wiki.nginx.org/, 'Вики nginx`а']
   - [http://sysoev.ru/nginx/docs/, 'Документация по последней версии']
+  - [http://winginx.com/ru/, 'Комплекс локального веб-сервера под Windows для разработки']
