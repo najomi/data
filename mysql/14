@@ -1,0 +1,11 @@
+desc: Вывести список баз данных без заголовка 
+code: |
+  echo 'show databases' | mysql -N | grep -v information_schema | grep -v performance_schema
+out: |
+  mbs2013
+  mbs2014
+  mbs2015
+  najomi
+  pir2013
+  pir2014
+  pir2015
