@@ -1,0 +1,6 @@
+desc: Добавляем префикс к выводу 
+code: |
+  $ echo ", world!" | echo "Hello$(cat -)"
+out: |
+  Hello, world!
+
