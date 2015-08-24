@@ -1,0 +1,5 @@
+desc: Включить автоматическую установку секьюрити обновлений
+code: |
+  # apt-get install unattended-upgrades
+  # dpkg-reconfigure -plow unattended-upgrades
+
