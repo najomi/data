@@ -1,0 +1,18 @@
+desc: Убрать префикс у файлов
+data: 
+  -
+    code: |
+      $ ls
+    out: |
+      _001_header.jpg
+      _002_body.jpg
+      _003_footer.jpg
+  -
+    code: |
+      $ rename "s/_[0-9]+_//g" _*.jpg
+      $ ls 
+    out: |
+      body.jpg
+      footer.jpg
+      header.jpg
+
