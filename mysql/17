@@ -1,0 +1,35 @@
+desc: Сортируем строки в выборке в натуральном порядке (1,2,...,10,11)
+data: 
+  -
+    code: |
+      mysql> select * from numbers order by value;
+    out: |
+      +----------+
+      | value    |
+      +----------+
+      | value 1  |
+      | value 10 |
+      | value 11 |
+      | value 12 |
+      | value 13 |
+      | value 2  |
+      | value 3  |
+      +----------+
+      7 rows in set (0.00 sec)
+  -
+    code: |
+      mysql> select * from numbers order by length(value), value;
+    out: |
+      +----------+
+      | value    |
+      +----------+
+      | value 1  |
+      | value 2  |
+      | value 3  |
+      | value 10 |
+      | value 11 |
+      | value 12 |
+      | value 13 |
+      +----------+
+      7 rows in set (0.00 sec)
+
