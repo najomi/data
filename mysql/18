@@ -1,0 +1,24 @@
+ft: sql
+desc: |
+  Проставить в поле сортировки значения через 10. 
+  Полезно, если используется некое числовое поле sort в ORDER BY. 
+  В этом случае для перемещения записи А между двумя другими B и С,
+  достаточно присвоить A.sort значение между B.sort и C.sort
+  После этого надо привести нумерацию в порядок:
+  my_table - имя таблицы, sort_field - имя поля сортировки
+code: |
+  DROP TEMPORARY TABLE IF EXISTS tmp_sort_table;
+  CREATE TEMPORARY TABLE tmp_sort_table (
+    id BIGINT,
+    sort BIGINT,
+    PRIMARY KEY(id)
+  );
+  set @row_num = 0;
+  INSERT INTO tmp_sort_table (id, sort)
+  SELECT
+    id, @row_num := @row_num + 10 as row_index
+  FROM `my_table` ORDER BY `sort_field` ASC;
+  UPDATE `my_table` AS t_upd
+    INNER JOIN tmp_sort_table AS t_src ON t_upd.id = t_src.id
+  SET t_upd.`sort_field` = t_src.`sort`;
+  DROP TEMPORARY TABLE IF EXISTS tmp_sort_table;
