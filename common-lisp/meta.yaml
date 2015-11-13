@@ -6,6 +6,7 @@ notes: |
   должны быть в блоке code, отделённые '; '.
 links:
   - [http://www.lispmachine.net/, 'сборник ссылок на интересные материалы по Common Lisp']
+  - [http://www.whoishostingthis.com/resources/common-lisp/, 'Ещё один сборник ссылок по Common Lisp']
   - [http://lisper.ru/]
   - [http://lisp.ru/]
   - [http://cl-cookbook.sourceforge.net/, 'сборник рецептов по Common Lisp']
