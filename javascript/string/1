@@ -1,0 +1,37 @@
+desc: Разбить строку на последовательность байтов, составляющих её
+code: |
+  /**
+  * Преобразовать строку JavaScript в массив байтов,
+  * каждый байт представлен числовым кодом.
+  *
+  * Пример:
+  * console.log( stringToBytes("Привет!").join(", ") );
+  * выведет:
+  * "4, 31, 4, 64, 4, 56, 4, 50, 4, 53, 4, 66, 33"
+  *
+  * @param {String} str
+  * @returns {Array}
+  */
+  function stringToBytes ( str ) {
+  	var ch, st, re = [], j=0;
+  	for (var i = 0; i < str.length; i++ ) {
+  		ch = str.charCodeAt(i);
+  		if(ch < 127)
+  		{
+  			re[j++] = ch & 0xFF;
+  		}
+  		else
+  		{
+  			st = [];    // clear stack
+  			do {
+  				st.push( ch & 0xFF );  // push byte to stack
+  				ch = ch >> 8;          // shift value down by 1 byte
+  			}
+  			while ( ch );
+  			st = st.reverse();
+  			for(var k=0;k<st.length; ++k)
+  				re[j++] = st[k];
+  		}
+  	}
+  	return re;
+  }
