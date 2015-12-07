@@ -1,0 +1,3 @@
+desc: Почистить кэш пакетов
+code: | 
+  # apt-get clean

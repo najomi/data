@@ -1,0 +1,6 @@
+desc: |
+  Получаем координаты курсора мыши при его движении
+code: |
+  $('body').mousemove(function(e){
+    console.log(e.clientX, e.clientY);
+  });

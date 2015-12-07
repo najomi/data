@@ -1,0 +1,13 @@
+desc: Вывести список глобально установленных пакетов
+code: |
+  $ npm -g ls --depth=0
+out: |
+  /home/bubujka/.nvm/versions/node/v4.1.1/lib
+  ├── async@1.4.2
+  ├── bower@1.6.5
+  ├── browserify@12.0.1
+  ├── bu-tgl@0.0.0 -> /home/bubujka/.bu.tgl
+  ├── csvtojson@0.4.3
+  ├── ember-cli@1.13.13
+  ├── enml2md@0.1.0 -> /home/bubujka/.db/prj/enml2md
+  ...

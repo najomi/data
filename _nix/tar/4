@@ -1,0 +1,3 @@
+desc: Распаковать содержимое архива в определённый каталог
+code: tar xfz archive.tgz -C destination/ 
+

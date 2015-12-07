@@ -1,0 +1,5 @@
+desc: Скопировать файлы определённого расширения сохраняя структуру папок
+link: http://superuser.com/questions/299938/how-can-i-recursively-copy-files-by-file-extension-preserving-directory-structu
+code: |
+  $ cd /top/level/to/copy
+  $ find . -name '*.txt' | cpio -pdm /path/to/destdir

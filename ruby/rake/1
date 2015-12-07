@@ -1,0 +1,3 @@
+desc: Запустить какой то определённый тест
+code: |
+  rake test TESTOPTS='--name=test_div_in_a_in_div'

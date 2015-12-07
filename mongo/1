@@ -1,0 +1,3 @@
+desc: Сделать дамп базы данных, если включена авторизация на сервере
+code: |
+  $ mongodump --db DATABASE_NAME --authenticationDatabase admin -u USER -p PASSWORD
