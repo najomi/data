@@ -1,0 +1,4 @@
+desc: npm будет созранять точную версию пакета в зависимости
+code: |
+  $ npm config set save-exact=true
+
