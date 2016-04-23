@@ -12,8 +12,8 @@ link: http://askubuntu.com/questions/6176/how-do-i-upgrade-from-x86-to-x64-witho
 
 2. На другой системе загружаем этот список и даём задачу установить всё
   ```sh
-  sudo dpkg --set-selections < ~/installed-software
-  sudo apt-get -f install
+  # dpkg --set-selections < ~/installed-software
+  # apt-get -f install
   ```
 
 
