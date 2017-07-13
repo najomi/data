@@ -1,0 +1,28 @@
+desc: | 
+  Запросить из таблицы с id и parent_id запись и все её родительские записи рекурсивно
+  Допустим, в таблице my_table есть столбцы id, parent_id, name, где parent_id указывает на id родителя
+  Нужно получить список всех родителей начиная с элемента с id = 12345
+code: |
+    with recursive records_list as (
+      select
+        n.id as id,
+        n.name as name,
+        n.parent_id as parent_id,
+        1 as depth
+      from my_table as n
+      where
+        id = 12345  -- А вот и id
+
+      union all
+
+      select
+        n.id as id,
+        n.name as name,
+        n.parent_id as parent_id,
+        records_list.depth + 1 as depth
+      from my_table as n 
+      join records_list on records_list.parent_id = n.id
+    )
+    select *
+    from records_list
+    order by depth
