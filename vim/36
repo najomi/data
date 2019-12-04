@@ -6,9 +6,21 @@ html: |
       <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>v</kbd> - разбить окно по вертикали
     </li>
     <li>
+      <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>s</kbd> - разбить окно по горизонтали
+    </li>
+    
+    <li>
       <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>w</kbd> - переключиться между окнами
     </li>
     <li>
       <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>{h,j,k,l}</kbd> - перейти к окну левее, ниже, выше, правее
+    </li>
+    
+    <li>
+      <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>{<,>,+,-}</kbd> - изменить размеры текущего окна
+    </li>
+    
+    <li>
+      <kbd>Ctrl</kbd>+<kbd>w</kbd><kbd>q</kbd> - закрыть окно
     </li>
   </ul>
